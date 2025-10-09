@@ -4,7 +4,7 @@ project:
 
 website:
   title: "CopPhil EO AI/ML Training - Day 1"
-  site-url: https://YOUR_GITHUB_USERNAME.github.io/ESAPhil
+  site-url: https://DimitrisKasabalis.github.io/ESAPhil
   description: "Day 1: EO Data, AI/ML Fundamentals & Geospatial Python - A comprehensive training program for Philippine EO professionals on AI/ML for Earth Observation"
   favicon: images/favicon.png
 
