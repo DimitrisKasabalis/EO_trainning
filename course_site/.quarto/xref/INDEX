@@ -1,0 +1,47 @@
+{
+  "index.qmd": {
+    "index.html": "fb34daba"
+  },
+  "sessions/session1.qmd": {
+    "session1.html": "38230252"
+  },
+  "resources/downloads.qmd": {
+    "downloads.html": "6adb223f"
+  },
+  "resources/glossary.qmd": {
+    "glossary.html": "f1f3dbf7"
+  },
+  "resources/faq.qmd": {
+    "faq.html": "92a67243"
+  },
+  "resources/philippine-eo.qmd": {
+    "philippine-eo.html": "84346968"
+  },
+  "resources/setup.qmd": {
+    "setup.html": "f36ef12a"
+  },
+  "resources/cheatsheets.qmd": {
+    "cheatsheets.html": "9787b1f0"
+  },
+  "sessions/session4.qmd": {
+    "session4.html": "0ac8f2d4"
+  },
+  "sessions/session3.qmd": {
+    "session3.html": "de77097f"
+  },
+  "sessions/session2.qmd": {
+    "session2.html": "559d6e86"
+  },
+  "notebooks/notebook1.qmd": {
+    "notebook1.html": "be2e3f1b"
+  },
+  "notebooks/notebook2.qmd": {
+    "notebook2.html": "1fd08671"
+  },
+  "notebooks/Day1_Session4_Google_Earth_Engine.ipynb": {
+    "Day1_Session4_Google_Earth_Engine.html": "d01000f7"
+  },
+  "notebooks/Day1_Session3_Python_Geospatial_Data.ipynb": {
+    "Day1_Session3_Python_Geospatial_Data.html": "54c5a686"
+  }
+}

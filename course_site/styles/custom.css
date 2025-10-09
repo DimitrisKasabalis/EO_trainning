@@ -1,0 +1,402 @@
+/* Additional custom styles for CopPhil Training Site */
+
+/* Utility classes */
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.mt-2 {
+  margin-top: 2rem;
+}
+
+.mb-2 {
+  margin-bottom: 2rem;
+}
+
+/* Badge styles */
+.badge {
+  display: inline-block;
+  padding: 0.35em 0.65em;
+  font-size: 0.85em;
+  font-weight: 600;
+  line-height: 1;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 0.25rem;
+}
+
+.badge-primary {
+  background-color: #003399;
+}
+
+.badge-success {
+  background-color: #28a745;
+}
+
+.badge-info {
+  background-color: #17a2b8;
+}
+
+.badge-warning {
+  background-color: #ffc107;
+  color: #212529;
+}
+
+.badge-danger {
+  background-color: #dc3545;
+}
+
+/* Icon styles */
+.icon-large {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+/* Grid layouts */
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.feature-card {
+  padding: 1.5rem;
+  border: 1px solid rgba(0,0,0,.1);
+  border-radius: 0.5rem;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.feature-card:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,.15);
+  transform: translateY(-4px);
+}
+
+/* Timeline */
+.timeline {
+  position: relative;
+  padding-left: 2rem;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background-color: #003399;
+}
+
+.timeline-item {
+  position: relative;
+  padding-bottom: 2rem;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -2.45rem;
+  top: 0;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #003399;
+  border: 3px solid white;
+}
+
+/* Notebook preview */
+.notebook-preview {
+  border: 2px solid #f9ab00;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin: 1rem 0;
+  background-color: #fff9e6;
+}
+
+.notebook-preview h4 {
+  color: #e37400;
+  margin-top: 0;
+}
+
+/* Philippine EO Agency cards */
+.agency-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  border: 1px solid rgba(0,0,0,.1);
+  border-radius: 0.5rem;
+  margin-bottom: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.agency-card:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,.15);
+}
+
+.agency-logo {
+  flex-shrink: 0;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f8f9fa;
+  border-radius: 0.5rem;
+}
+
+.agency-content {
+  flex-grow: 1;
+}
+
+.agency-content h3 {
+  margin-top: 0;
+  color: #003399;
+}
+
+/* Sentinel satellite badges */
+.satellite-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: linear-gradient(135deg, #003399 0%, #0038A8 100%);
+  color: white;
+  border-radius: 2rem;
+  font-weight: 600;
+  margin: 0.25rem;
+}
+
+/* Code examples with copy button */
+.code-example {
+  position: relative;
+}
+
+/* Session navigation */
+.session-nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 3rem 0 2rem;
+  padding-top: 2rem;
+  border-top: 2px solid rgba(0,0,0,.1);
+}
+
+.session-nav-link {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  border: 1px solid rgba(0,0,0,.1);
+  border-radius: 0.5rem;
+  text-decoration: none;
+  color: #212529;
+  transition: all 0.3s ease;
+  max-width: 45%;
+}
+
+.session-nav-link:hover {
+  background-color: #f8f9fa;
+  text-decoration: none;
+  color: #003399;
+  box-shadow: 0 2px 8px rgba(0,0,0,.1);
+}
+
+.session-nav-label {
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #6c757d;
+  margin-bottom: 0.5rem;
+}
+
+.session-nav-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+/* Quick links */
+.quick-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.quick-link {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.75rem 1.25rem;
+  background-color: white;
+  border: 2px solid #003399;
+  color: #003399;
+  text-decoration: none;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.quick-link:hover {
+  background-color: #003399;
+  color: white;
+  text-decoration: none;
+  transform: translateY(-2px);
+}
+
+/* Responsive video embeds */
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  border-radius: 0.5rem;
+  margin: 2rem 0;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Progress Tracker */
+.progress-tracker {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 3rem 0;
+  position: relative;
+  padding: 0 1rem;
+}
+
+.progress-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  flex: 1;
+  position: relative;
+  z-index: 1;
+}
+
+.progress-step:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  top: 20px;
+  left: calc(50% + 20px);
+  width: calc(100% - 40px);
+  height: 2px;
+  background-color: #ccc;
+  z-index: -1;
+}
+
+.progress-step.active:not(:last-child)::after {
+  background-color: #003399;
+}
+
+.step-number {
+  width: 40px;
+  height: 40px;
+  min-width: 40px;
+  min-height: 40px;
+  border-radius: 50%;
+  background-color: #e9ecef;
+  border: 2px solid #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1;
+  color: #6c757d;
+  margin: 0 auto 0.75rem;
+  position: relative;
+  z-index: 2;
+  background-clip: padding-box;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.progress-step.active .step-number {
+  background-color: #003399;
+  border-color: #003399;
+  color: white;
+}
+
+.step-label {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #495057;
+  max-width: 200px;
+  line-height: 1.4;
+}
+
+.progress-step.active .step-label {
+  color: #003399;
+  font-weight: 600;
+}
+
+/* Responsive progress tracker */
+@media (max-width: 768px) {
+  .progress-tracker {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .progress-step {
+    flex-direction: row;
+    justify-content: flex-start;
+    text-align: left;
+    margin-bottom: 2rem;
+  }
+
+  .progress-step:not(:last-child)::after {
+    top: 40px;
+    left: 20px;
+    width: 2px;
+    height: calc(100% + 2rem);
+  }
+
+  .step-number {
+    margin-right: 1rem;
+    margin-bottom: 0;
+  }
+
+  .step-label {
+    flex: 1;
+    text-align: left;
+  }
+}
+
+/* Print styles */
+@media print {
+  .navbar,
+  .sidebar,
+  .page-footer,
+  .session-nav {
+    display: none;
+  }
+
+  .hero {
+    background: white;
+    color: black;
+    border: 2px solid black;
+  }
+
+  code {
+    border: 1px solid #ccc;
+  }
+
+  pre {
+    page-break-inside: avoid;
+  }
+}

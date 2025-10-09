@@ -1,0 +1,120 @@
+project:
+  type: website
+  output-dir: _site
+
+website:
+  title: "CopPhil EO AI/ML Training - Day 1"
+  site-url: https://YOUR_GITHUB_USERNAME.github.io/ESAPhil
+  description: "Day 1: EO Data, AI/ML Fundamentals & Geospatial Python - A comprehensive training program for Philippine EO professionals on AI/ML for Earth Observation"
+  favicon: images/favicon.png
+
+  navbar:
+    background: primary
+    search: true
+    left:
+      - text: "Home"
+        href: index.qmd
+      - text: "Sessions"
+        menu:
+          - text: "Session 1: Copernicus & Philippine EO"
+            href: sessions/session1.qmd
+          - text: "Session 2: AI/ML Fundamentals"
+            href: sessions/session2.qmd
+          - text: "Session 3: Python for Geospatial"
+            href: sessions/session3.qmd
+          - text: "Session 4: Google Earth Engine"
+            href: sessions/session4.qmd
+      - text: "Resources"
+        menu:
+          - text: "Setup Guide"
+            href: resources/setup.qmd
+          - text: "Philippine EO Links"
+            href: resources/philippine-eo.qmd
+          - text: "Cheat Sheets"
+            href: resources/cheatsheets.qmd
+          - text: "FAQ"
+            href: resources/faq.qmd
+          - text: "Glossary"
+            href: resources/glossary.qmd
+    right:
+      - icon: github
+        href: https://github.com/copphil-training
+        aria-label: GitHub
+      - icon: download
+        text: "Materials"
+        href: resources/downloads.qmd
+
+  sidebar:
+    style: "floating"
+    search: true
+    contents:
+      - section: "Getting Started"
+        contents:
+          - index.qmd
+          - resources/setup.qmd
+      - section: "Training Sessions"
+        contents:
+          - sessions/session1.qmd
+          - sessions/session2.qmd
+          - sessions/session3.qmd
+          - sessions/session4.qmd
+      - section: "Resources"
+        contents:
+          - resources/philippine-eo.qmd
+          - resources/cheatsheets.qmd
+          - resources/downloads.qmd
+          - resources/faq.qmd
+          - resources/glossary.qmd
+
+  page-footer:
+    left: |
+      CopPhil EO AI/ML Training Programme
+    center: |
+      Funded by the European Union - Global Gateway Initiative
+    right:
+      - icon: envelope
+        href: mailto:info@philsa.gov.ph
+      - icon: globe
+        href: https://philsa.gov.ph
+
+format:
+  html:
+    theme:
+      light: [cosmo, styles/custom.scss]
+      dark: [darkly, styles/custom.scss]
+    css: styles/custom.css
+    toc: true
+    toc-depth: 3
+    toc-expand: 2
+    toc-title: "On This Page"
+    code-copy: true
+    code-fold: false
+    code-tools: true
+    code-link: true
+    code-overflow: wrap
+    number-sections: false
+    smooth-scroll: true
+    link-external-icon: true
+    link-external-newwindow: true
+    anchor-sections: true
+    fig-cap-location: bottom
+    tbl-cap-location: top
+    citations-hover: true
+    footnotes-hover: true
+
+comments:
+  hypothesis: false
+  utterances:
+    repo: copphil-training/day1
+
+filters:
+  - include-code-files
+
+execute:
+  freeze: auto
+  cache: true
+
+language:
+  title-block-author-single: "Instructor"
+  title-block-published: "Date"
+  toc-title-document: "Contents"
