@@ -1,0 +1,1960 @@
+---
+title: "AI/ML Fundamentals for Earth Observation"
+subtitle: "CopPhil EO AI/ML Training - Day 1, Session 2"
+author: "EU Technical Assistance for the Philippines' Copernicus Capacity Support Programme"
+date: "October 2025"
+format:
+  revealjs:
+    theme: [default, custom.scss]
+    logo: images/copphil-logo.png
+    footer: "Session 2: AI/ML Fundamentals | CopPhil Training 2025"
+    slide-number: true
+    progress: true
+    history: true
+    center: true
+    transition: slide
+    background-transition: fade
+    highlight-style: github
+    code-line-numbers: false
+    fig-align: center
+---
+
+# Welcome to Session 2 {background-color="#003399"}
+
+## Session Overview
+
+**AI/ML Fundamentals for Earth Observation**
+
+::: {.fragment}
+From traditional methods to modern AI approaches for satellite data analysis
+:::
+
+::: {.fragment}
+**Duration:** 2 hours
+:::
+
+## Learning Objectives
+
+By the end of this session, you will be able to:
+
+::: {.incremental}
+1. Define AI, Machine Learning, and Deep Learning
+2. Explain the AI/ML workflow for EO applications
+3. Distinguish between supervised and unsupervised learning
+4. Understand neural networks and CNN fundamentals
+5. Recognize the importance of data-centric AI for EO
+:::
+
+# What is AI? What is ML? {background-color="#0066CC"}
+
+## Artificial Intelligence
+
+::: {.columns}
+::: {.column width="60%"}
+**Definition:**
+
+The capability of machines to imitate intelligent human behavior
+
+::: {.fragment}
+**AI Encompasses:**
+
+- Reasoning
+- Problem-solving
+- Planning
+- Learning
+- Language understanding
+- Perception
+:::
+:::
+
+::: {.column width="40%"}
+![AI Concept](images/ai-concept.png){width=100%}
+:::
+:::
+
+::: {.fragment}
+**In Earth Observation:**
+
+AI enables automated interpretation of satellite imagery at scales impossible for human analysts.
+:::
+
+## Machine Learning
+
+::: {.columns}
+::: {.column width="60%"}
+**Definition:**
+
+A subset of AI where systems **learn from data** without being explicitly programmed
+
+::: {.fragment}
+**Key Concept:**
+
+Instead of writing rules, we provide examples, and the algorithm discovers the patterns.
+:::
+
+::: {.fragment}
+**Traditional Programming vs ML:**
+
+- **Traditional:** Rules + Data → Answers
+- **Machine Learning:** Data + Answers → Rules
+:::
+:::
+
+::: {.column width="40%"}
+![ML Concept](images/ml-concept.png){width=100%}
+:::
+:::
+
+## Deep Learning
+
+::: {.columns}
+::: {.column width="50%"}
+**Definition:**
+
+A subset of ML using neural networks with many layers (deep architectures)
+
+::: {.fragment}
+**Characteristics:**
+
+- Automatically learns features
+- Hierarchical representations
+- Excels with large datasets
+- Requires more computational power
+:::
+:::
+
+::: {.column width="50%"}
+![AI/ML/DL Venn Diagram](images/ai-ml-dl-venn.png){width=100%}
+:::
+:::
+
+::: {.fragment}
+**Why "Deep"?**
+
+Multiple layers of processing, each learning increasingly complex features from simple to abstract.
+:::
+
+## Why ML for Earth Observation?
+
+**Traditional Challenges:**
+
+::: {.incremental}
+- **Volume:** Petabytes of satellite data daily
+- **Complexity:** Multi-spectral, temporal, spatial dimensions
+- **Speed:** Need for rapid analysis (disasters, monitoring)
+- **Scale:** Global or national coverage requirements
+- **Variability:** Different seasons, regions, sensors
+:::
+
+::: {.fragment}
+**ML Advantages:**
+
+- Automated pattern recognition
+- Handles high-dimensional data
+- Scales to large areas
+- Learns complex relationships
+- Adaptable to new regions/sensors
+:::
+
+## Historical Evolution
+
+::: {.incremental}
+**1970s-1990s: Traditional Methods**
+
+- Manual interpretation
+- Simple vegetation indices (NDVI)
+- Threshold-based classification
+- Expert systems
+
+**2000s-2010s: Classical Machine Learning**
+
+- Random Forest, SVM
+- Feature engineering required
+- Better than traditional methods
+- Still needs domain expertise
+
+**2010s-Present: Deep Learning**
+
+- Convolutional Neural Networks
+- Automatic feature extraction
+- State-of-the-art performance
+- Large-scale applications
+
+**2020s-2025: Foundation Models**
+
+- Pre-trained on massive datasets
+- Transfer learning
+- Few-shot learning capabilities
+- Democratizing AI for EO
+:::
+
+## 2025: The Foundation Model Era
+
+::: {.columns}
+::: {.column width="60%"}
+**Major Developments:**
+
+::: {.fragment}
+**NASA-IBM Geospatial Foundation Model**
+
+- Open-source
+- Pre-trained on HLS data
+- Transfer learning for EO tasks
+:::
+
+::: {.fragment}
+**ESA Φsat-2**
+
+- On-board AI processing
+- Real-time imagery analysis
+- 22×10×33 cm CubeSat
+:::
+
+::: {.fragment}
+**Planet Labs + Anthropic**
+
+- Claude LLM integration
+- Advanced satellite image analysis
+:::
+:::
+
+::: {.column width="40%"}
+![Foundation Models](images/foundation-models.png){width=100%}
+:::
+:::
+
+::: notes
+2025 marks a paradigm shift with foundation models becoming operational. These models are pre-trained on massive datasets and can be fine-tuned for specific tasks with much less data than training from scratch.
+:::
+
+# AI/ML Workflow for EO {background-color="#009933"}
+
+## Complete Workflow Overview
+
+![AI/ML Workflow](images/ml-workflow-diagram.png){width=90%}
+
+::: notes
+The workflow is iterative, not linear. You often need to go back to earlier steps based on results. This diagram shows the complete end-to-end process from problem definition to deployment.
+:::
+
+## Step 1: Problem Definition
+
+**Define the Question**
+
+::: {.incremental}
+- What do you want to predict or detect?
+- What is the spatial and temporal scope?
+- What accuracy is required?
+- Who are the end users?
+- What decisions will this support?
+:::
+
+::: {.fragment}
+**Example: Rice Crop Mapping**
+
+- **Goal:** Map rice cultivation areas in Central Luzon
+- **Temporal:** Two growing seasons per year
+- **Spatial:** 10m resolution, 50,000 km²
+- **Users:** Department of Agriculture
+- **Decision:** Yield forecasting, food security
+:::
+
+## Step 2: Data Acquisition
+
+**Gather Required Data**
+
+::: {.incremental}
+**Satellite Imagery:**
+
+- Sentinel-1 time series (SAR)
+- Sentinel-2 time series (optical)
+- Consider temporal coverage, cloud cover, processing level
+
+**Ground Truth / Training Data:**
+
+- Field surveys
+- Existing land cover maps
+- High-resolution imagery interpretation
+- Expert knowledge
+:::
+
+::: {.fragment}
+**Ancillary Data:**
+
+- DEM (elevation)
+- Climate data
+- Administrative boundaries
+:::
+
+## Step 3: Data Pre-processing
+
+**Prepare Data for Analysis**
+
+::: {.incremental}
+**For Satellite Imagery:**
+
+- Atmospheric correction (if not already done)
+- Geometric correction / co-registration
+- Cloud masking
+- Radiometric calibration (SAR)
+- Speckle filtering (SAR)
+:::
+
+::: {.fragment}
+**For Training Data:**
+
+- Quality control
+- Format standardization
+- Spatial alignment with imagery
+- Class balancing considerations
+:::
+
+::: {.fragment}
+**Critical Note:**
+
+Poor pre-processing leads to poor models. "Garbage in, garbage out."
+:::
+
+## Step 4: Feature Engineering
+
+**Extract Meaningful Variables**
+
+::: {.columns}
+::: {.column width="50%"}
+**Spectral Features:**
+
+- Original bands
+- Vegetation indices (NDVI, EVI, SAVI)
+- Water indices (NDWI, MNDWI)
+- Textural features
+:::
+
+::: {.column width="50%"}
+**Temporal Features:**
+
+- Mean, median, percentiles
+- Temporal metrics (amplitude, phase)
+- Trend analysis
+- Phenological features
+:::
+:::
+
+::: {.fragment}
+**Spatial Features:**
+
+- DEM derivatives (slope, aspect)
+- Distance metrics
+- Neighborhood statistics
+:::
+
+::: {.fragment}
+**Note for Deep Learning:**
+
+CNNs can learn features automatically from raw data, reducing manual feature engineering needs.
+:::
+
+## Step 5: Model Selection & Training
+
+**Choose and Train Algorithm**
+
+::: {.columns}
+::: {.column width="50%"}
+**Model Selection Factors:**
+
+- Problem type (classification/regression)
+- Data size
+- Feature dimensionality
+- Interpretability needs
+- Computational resources
+- Accuracy requirements
+:::
+
+::: {.column width="50%"}
+**Common EO Models:**
+
+- **Random Forest** - Robust, interpretable
+- **Support Vector Machines** - High-dimensional data
+- **CNNs** - Image classification, segmentation
+- **U-Net** - Semantic segmentation
+- **LSTMs** - Time series
+:::
+:::
+
+::: {.fragment}
+**Training Process:**
+
+Split data into training, validation, and test sets (e.g., 70/15/15)
+:::
+
+## Step 6: Validation & Evaluation
+
+**Assess Model Performance**
+
+::: {.incremental}
+**Metrics for Classification:**
+
+- Overall Accuracy
+- Producer's Accuracy (Recall)
+- User's Accuracy (Precision)
+- F1-Score
+- Confusion Matrix
+- Kappa Coefficient
+:::
+
+::: {.fragment}
+**Metrics for Regression:**
+
+- Mean Absolute Error (MAE)
+- Root Mean Squared Error (RMSE)
+- R² (coefficient of determination)
+:::
+
+::: {.fragment}
+**Cross-Validation:**
+
+Test on independent data from different locations/times to assess generalization.
+:::
+
+## Understanding the Confusion Matrix {.smaller}
+
+::: {.columns}
+::: {.column width="50%"}
+**Example: Rice vs Non-Rice**
+
+|                    | **Predicted Rice** | **Predicted Non-Rice** |
+|--------------------|-------------------|----------------------|
+| **Actual Rice**    | 850 (TP)          | 150 (FN)            |
+| **Actual Non-Rice**| 100 (FP)          | 900 (TN)            |
+
+::: {.fragment}
+**Metrics:**
+
+- Overall Accuracy: (850+900)/2000 = 87.5%
+- Producer's Acc (Rice): 850/1000 = 85%
+- User's Acc (Rice): 850/950 = 89.5%
+:::
+:::
+
+::: {.column width="50%"}
+![Confusion Matrix](images/confusion-matrix.png){width=100%}
+:::
+:::
+
+::: notes
+Understanding the confusion matrix is critical. It shows not just overall accuracy but where errors occur. In this example, the model misses 15% of actual rice (false negatives) and incorrectly labels 10.5% as rice when it's not (false positives). Different applications may prioritize minimizing different types of errors.
+:::
+
+## Step 7: Deployment
+
+**Apply Model to New Data**
+
+::: {.incremental}
+**Deployment Options:**
+
+- Batch processing for large areas
+- Real-time or near-real-time processing
+- Web services / APIs
+- Desktop applications
+- Cloud platforms (GEE, AWS, Azure)
+:::
+
+::: {.fragment}
+**Considerations:**
+
+- Computational requirements
+- Update frequency
+- User interface needs
+- Integration with existing systems
+- Maintenance and retraining schedules
+:::
+
+## The Iterative Nature
+
+**AI/ML is a Cycle, Not a Linear Process**
+
+::: {.fragment}
+![Iterative Workflow](images/iterative-workflow.png){width=70%}
+:::
+
+::: {.fragment}
+**Common Iterations:**
+
+- Poor accuracy → Collect more/better training data
+- Model doesn't generalize → Add more diverse data
+- Errors in specific classes → Refine class definitions
+- New sensor available → Retrain with new features
+- User feedback → Adjust outputs or thresholds
+:::
+
+## Complete Example: Philippine Rice Monitoring {.smaller}
+
+::: {.columns}
+::: {.column width="50%"}
+**1. Problem:** Map rice cultivation in Nueva Ecija
+
+**2. Data:**
+
+- Sentinel-1 time series (12 months)
+- Sentinel-2 time series (cloud-free composites)
+- Field survey data (1000 samples)
+
+**3. Pre-processing:**
+
+- Cloud masking (Sentinel-2)
+- Speckle filtering (Sentinel-1)
+- Co-registration
+
+**4. Features:**
+
+- SAR backscatter (VV, VH)
+- NDVI, EVI time series
+- Precipitation data (PAGASA)
+:::
+
+::: {.column width="50%"}
+**5. Model:**
+
+- Random Forest (100 trees)
+- Trained on 700 samples
+- Validated on 300 samples
+
+**6. Evaluation:**
+
+- Overall accuracy: 92%
+- Rice producer's acc: 89%
+- Rice user's acc: 94%
+
+**7. Deployment:**
+
+- Monthly rice maps
+- GEE-based workflow
+- Dashboard for Dept. of Agriculture
+- Integration with yield models
+:::
+:::
+
+# Types of Machine Learning {background-color="#CC3333"}
+
+## ML Paradigms Overview
+
+::: {.columns}
+::: {.column width="50%"}
+**Supervised Learning**
+
+- Labeled data
+- Learn input → output mapping
+- Classification or regression
+- Most common in EO
+:::
+
+::: {.column width="50%"}
+**Unsupervised Learning**
+
+- Unlabeled data
+- Discover patterns/structure
+- Clustering or dimensionality reduction
+- Exploratory analysis
+:::
+:::
+
+::: {.fragment}
+**Other Paradigms:**
+
+- **Semi-supervised:** Mix of labeled and unlabeled
+- **Self-supervised:** Creates labels from data itself
+- **Reinforcement:** Learns through rewards (less common in EO)
+:::
+
+## Supervised Learning: Definition
+
+::: {.columns}
+::: {.column width="60%"}
+**Learning from Labeled Examples**
+
+::: {.fragment}
+**Training Data Structure:**
+
+- Input: Satellite image pixels/patches
+- Output: Known labels (e.g., "forest", "water", "urban")
+:::
+
+::: {.fragment}
+**Process:**
+
+1. Show model many labeled examples
+2. Model learns patterns that distinguish classes
+3. Apply model to new unlabeled data
+4. Model predicts labels
+:::
+:::
+
+::: {.column width="40%"}
+![Supervised Learning](images/supervised-learning.png){width=100%}
+:::
+:::
+
+::: {.fragment}
+**Requirement:**
+
+Good quality labeled data is essential - often the biggest challenge in EO applications.
+:::
+
+## Supervised Learning: Classification
+
+**Assigning Discrete Labels**
+
+::: {.fragment}
+**Definition:**
+
+Predict which category/class an observation belongs to
+:::
+
+::: {.fragment}
+**EO Examples:**
+
+::: {.incremental}
+- **Land Cover Classification:** Forest, water, urban, agriculture, bare soil
+- **Crop Type Mapping:** Rice, corn, sugarcane, vegetables
+- **Building Detection:** Building vs non-building
+- **Cloud Detection:** Cloud, clear, shadow, cirrus
+- **Disaster Mapping:** Flooded vs non-flooded, damaged vs intact
+:::
+:::
+
+::: {.fragment}
+**Output:**
+
+Categorical labels for each pixel or image patch
+:::
+
+## Classification Example: Land Cover Mapping
+
+::: {.columns}
+::: {.column width="50%"}
+**Input:** Sentinel-2 image
+
+![Raw Sentinel-2](images/s2-raw-example.png){width=100%}
+:::
+
+::: {.column width="50%"}
+**Output:** Classified map
+
+![Land Cover Map](images/landcover-classified.png){width=100%}
+:::
+:::
+
+::: {.fragment}
+**Classes:**
+
+- Forest (dark green)
+- Agriculture (light green)
+- Urban (red)
+- Water (blue)
+- Bare soil (brown)
+:::
+
+## Supervised Learning: Regression
+
+**Predicting Continuous Values**
+
+::: {.fragment}
+**Definition:**
+
+Predict a numerical value rather than a category
+:::
+
+::: {.fragment}
+**EO Examples:**
+
+::: {.incremental}
+- **Biomass Estimation:** Predict forest biomass (tons/hectare)
+- **Crop Yield Prediction:** Estimate yield (kg/hectare)
+- **Soil Moisture:** Predict soil moisture content (%)
+- **Water Quality:** Estimate chlorophyll concentration (mg/m³)
+- **Temperature Mapping:** Predict land surface temperature (°C)
+:::
+:::
+
+::: {.fragment}
+**Output:**
+
+Continuous numerical values for each pixel or location
+:::
+
+## Regression Example: Biomass Estimation
+
+::: {.columns}
+::: {.column width="60%"}
+**Workflow:**
+
+::: {.fragment}
+1. **Training Data:**
+   - Satellite features (SAR backscatter, vegetation indices)
+   - Field-measured biomass (tons/ha)
+:::
+
+::: {.fragment}
+2. **Model Training:**
+   - Learn relationship between satellite data and biomass
+:::
+
+::: {.fragment}
+3. **Prediction:**
+   - Apply model to entire region
+   - Generate biomass map
+:::
+:::
+
+::: {.column width="40%"}
+![Biomass Map](images/biomass-prediction.png){width=100%}
+
+**Color scale:**
+
+Low to high biomass (tons/ha)
+:::
+:::
+
+## Unsupervised Learning: Definition
+
+::: {.columns}
+::: {.column width="60%"}
+**Finding Patterns Without Labels**
+
+::: {.fragment}
+**Training Data Structure:**
+
+- Input: Satellite image pixels
+- Output: **No labels provided**
+:::
+
+::: {.fragment}
+**Process:**
+
+1. Algorithm analyzes data
+2. Discovers inherent patterns/groupings
+3. Organizes data into clusters
+4. User interprets meaning of clusters
+:::
+:::
+
+::: {.column width="40%"}
+![Unsupervised Learning](images/unsupervised-learning.png){width=100%}
+:::
+:::
+
+::: {.fragment}
+**Use Cases:**
+
+- Exploratory analysis
+- When labels are unavailable
+- Discovering unknown patterns
+- Change detection
+:::
+
+## Unsupervised Learning: Clustering
+
+**Grouping Similar Observations**
+
+::: {.fragment}
+**Definition:**
+
+Automatically group pixels with similar spectral/spatial characteristics
+:::
+
+::: {.fragment}
+**Common Algorithms:**
+
+- **K-Means:** Partition into K clusters
+- **ISODATA:** Iterative self-organizing data analysis
+- **Hierarchical:** Build cluster tree
+:::
+
+::: {.fragment}
+**EO Applications:**
+
+- Initial land cover stratification
+- Change detection (cluster differences)
+- Identifying spectral classes
+- Anomaly detection
+:::
+
+## Clustering Example: Spectral Clustering
+
+::: {.columns}
+::: {.column width="50%"}
+**Input:** Multi-spectral image
+
+All 13 Sentinel-2 bands
+
+::: {.fragment}
+**Process:**
+
+- Algorithm finds 6 distinct spectral groups
+- No pre-defined labels
+- Based purely on spectral similarity
+:::
+:::
+
+::: {.column width="50%"}
+**Output:** 6 clusters
+
+![Clustered Image](images/clustering-example.png){width=100%}
+
+::: {.fragment}
+**Interpretation:**
+
+- Cluster 1 → Water (user interprets)
+- Cluster 2 → Dense vegetation
+- Cluster 3 → Urban
+- Cluster 4 → Agriculture
+- Cluster 5 → Bare soil
+- Cluster 6 → Sparse vegetation
+:::
+:::
+:::
+
+## Supervised vs Unsupervised Comparison {.smaller}
+
+| Aspect | Supervised Learning | Unsupervised Learning |
+|--------|---------------------|----------------------|
+| **Training Data** | Requires labeled data | No labels needed |
+| **Effort** | High (labeling) | Low (no labeling) |
+| **Accuracy** | Generally higher | Variable |
+| **Control** | User defines classes | Algorithm finds patterns |
+| **Interpretability** | Classes known | Requires interpretation |
+| **Use Case** | Specific mapping task | Exploratory analysis |
+| **EO Example** | Land cover classification | Initial stratification |
+
+::: {.fragment}
+**In Practice:**
+
+Often use unsupervised methods first (exploration), then supervised methods for final mapping.
+:::
+
+# Neural Networks & Deep Learning {background-color="#663399"}
+
+## What is a Neural Network?
+
+::: {.columns}
+::: {.column width="60%"}
+**Inspired by the Brain**
+
+::: {.fragment}
+- Interconnected "neurons" (nodes)
+- Organized in layers
+- Each connection has a weight
+- Information flows forward
+- Learns by adjusting weights
+:::
+
+::: {.fragment}
+**Basic Structure:**
+
+- **Input Layer:** Receives data
+- **Hidden Layers:** Process data
+- **Output Layer:** Produces prediction
+:::
+:::
+
+::: {.column width="40%"}
+![Neural Network](images/neural-network-basic.png){width=100%}
+:::
+:::
+
+## Anatomy of a Neuron
+
+::: {.columns}
+::: {.column width="50%"}
+**Mathematical Function:**
+
+::: {.fragment}
+1. **Weighted Sum:**
+   $$z = w_1x_1 + w_2x_2 + ... + w_nx_n + b$$
+:::
+
+::: {.fragment}
+2. **Activation Function:**
+   $$a = f(z)$$
+:::
+
+::: {.fragment}
+**Components:**
+
+- **Inputs (x):** Features
+- **Weights (w):** Learned parameters
+- **Bias (b):** Offset
+- **Activation (f):** Non-linearity
+:::
+:::
+
+::: {.column width="50%"}
+![Neuron Diagram](images/neuron-diagram.png){width=100%}
+:::
+:::
+
+## Activation Functions
+
+**Introducing Non-Linearity**
+
+::: {.columns}
+::: {.column width="50%"}
+**ReLU (Rectified Linear Unit)**
+
+$$f(x) = max(0, x)$$
+
+::: {.fragment}
+- Most common in modern networks
+- Simple and effective
+- Allows deep networks
+:::
+:::
+
+::: {.column width="50%"}
+**Sigmoid**
+
+$$f(x) = \frac{1}{1 + e^{-x}}$$
+
+::: {.fragment}
+- Output between 0 and 1
+- Useful for probabilities
+- Can suffer from vanishing gradients
+:::
+:::
+:::
+
+::: {.fragment}
+**Why Non-Linearity?**
+
+Without activation functions, network would be linear (limited expressiveness). Non-linearity enables learning complex patterns.
+:::
+
+## Loss Functions
+
+**Measuring Model Error**
+
+::: {.fragment}
+**For Classification:**
+
+**Cross-Entropy Loss**
+
+$$L = -\sum_{i} y_i \log(\hat{y}_i)$$
+
+- Measures difference between predicted probabilities and true labels
+- Encourages confident correct predictions
+:::
+
+::: {.fragment}
+**For Regression:**
+
+**Mean Squared Error (MSE)**
+
+$$MSE = \frac{1}{n}\sum_{i=1}^{n}(y_i - \hat{y}_i)^2$$
+
+- Penalizes large errors more heavily
+- Smooth and differentiable
+:::
+
+## Optimizers
+
+**How Networks Learn**
+
+::: {.fragment}
+**Gradient Descent:**
+
+Iteratively adjust weights to minimize loss function
+
+$$w_{new} = w_{old} - \alpha \frac{\partial L}{\partial w}$$
+
+- α (alpha) = learning rate
+:::
+
+::: {.fragment}
+**Common Optimizers:**
+
+::: {.incremental}
+- **SGD (Stochastic Gradient Descent):** Basic approach
+- **Adam:** Adaptive learning rate, most popular
+- **RMSprop:** Good for recurrent networks
+:::
+:::
+
+## Training Process Visualization
+
+::: {.columns}
+::: {.column width="50%"}
+**Iterative Learning:**
+
+::: {.fragment}
+1. **Forward Pass:**
+   - Input data through network
+   - Generate predictions
+:::
+
+::: {.fragment}
+2. **Calculate Loss:**
+   - Compare predictions to true labels
+:::
+
+::: {.fragment}
+3. **Backward Pass (Backpropagation):**
+   - Calculate gradients
+   - Determine how to adjust weights
+:::
+
+::: {.fragment}
+4. **Update Weights:**
+   - Adjust based on gradients
+:::
+
+::: {.fragment}
+5. **Repeat:**
+   - Many iterations (epochs)
+:::
+:::
+
+::: {.column width="50%"}
+![Training Process](images/training-visualization.png){width=100%}
+:::
+:::
+
+## Convolutional Neural Networks (CNNs)
+
+::: {.columns}
+::: {.column width="60%"}
+**Specialized for Image Data**
+
+::: {.fragment}
+**Key Innovation:**
+
+Learn spatial hierarchies of features through **convolutional layers**
+:::
+
+::: {.fragment}
+**Why CNNs for Images?**
+
+- Preserve spatial relationships
+- Parameter sharing (same filter everywhere)
+- Translation invariance
+- Automatic feature extraction
+:::
+
+::: {.fragment}
+**Applications:**
+
+- Image classification
+- Object detection
+- Semantic segmentation
+:::
+:::
+
+::: {.column width="40%"}
+![CNN Architecture](images/cnn-architecture.png){width=100%}
+:::
+:::
+
+## CNN Building Blocks
+
+**Three Main Layer Types:**
+
+::: {.incremental}
+**1. Convolutional Layers**
+
+- Apply filters/kernels to detect features
+- Edge detection, textures, patterns
+- Learn optimal filters during training
+
+**2. Pooling Layers**
+
+- Reduce spatial dimensions
+- Create invariance to small translations
+- Max pooling, average pooling
+
+**3. Fully Connected Layers**
+
+- Final classification/regression
+- Combine all learned features
+- Output predictions
+:::
+
+## How Convolutional Layers Work
+
+::: {.columns}
+::: {.column width="50%"}
+**Convolution Operation:**
+
+::: {.fragment}
+- Small filter (e.g., 3×3) slides across image
+- Element-wise multiplication and sum
+- Produces feature map
+- Multiple filters learn different features
+:::
+
+::: {.fragment}
+**Learned Features:**
+
+- **Early layers:** Edges, colors
+- **Middle layers:** Textures, patterns
+- **Deep layers:** Objects, concepts
+:::
+:::
+
+::: {.column width="50%"}
+![Convolution Animation](images/convolution-operation.gif){width=100%}
+:::
+:::
+
+## Pooling Layers
+
+::: {.columns}
+::: {.column width="60%"}
+**Downsampling Feature Maps**
+
+::: {.fragment}
+**Max Pooling (most common):**
+
+- Take maximum value in each window
+- Typically 2×2 window, stride 2
+- Reduces dimensions by half
+:::
+
+::: {.fragment}
+**Benefits:**
+
+- Reduces computational load
+- Creates translation invariance
+- Prevents overfitting
+- Retains most important features
+:::
+:::
+
+::: {.column width="40%"}
+![Pooling Operation](images/pooling-operation.png){width=100%}
+:::
+:::
+
+## CNN Architecture Example
+
+**Typical CNN for Image Classification:**
+
+```
+Input Image (256×256×13)
+    ↓
+Conv Layer 1 (32 filters, 3×3) + ReLU
+    ↓
+Max Pooling (2×2)
+    ↓
+Conv Layer 2 (64 filters, 3×3) + ReLU
+    ↓
+Max Pooling (2×2)
+    ↓
+Conv Layer 3 (128 filters, 3×3) + ReLU
+    ↓
+Global Average Pooling
+    ↓
+Fully Connected (256 neurons)
+    ↓
+Output Layer (6 classes)
+```
+
+## Why CNNs Excel at Image Analysis
+
+**Advantages for Earth Observation:**
+
+::: {.incremental}
+1. **Automatic Feature Extraction**
+   - No manual feature engineering
+   - Learns optimal features from data
+
+2. **Spatial Context**
+   - Considers neighboring pixels
+   - Learns textural patterns
+
+3. **Hierarchical Learning**
+   - Simple to complex features
+   - Multi-scale understanding
+
+4. **Transfer Learning**
+   - Pre-trained models
+   - Fine-tune for EO tasks
+
+5. **State-of-the-Art Performance**
+   - Outperforms traditional methods
+   - Handles complex scenes
+:::
+
+# Data-Centric AI in EO {background-color="#CC6600"}
+
+## The Paradigm Shift
+
+::: {.columns}
+::: {.column width="50%"}
+**Model-Centric AI (Traditional)**
+
+::: {.fragment}
+- Focus: Algorithm optimization
+- Fixed dataset
+- Iterate on model architecture
+- Hyperparameter tuning
+- Ensemble methods
+:::
+:::
+
+::: {.column width="50%"}
+**Data-Centric AI (Modern)**
+
+::: {.fragment}
+- Focus: **Data quality**
+- Fixed model (or baseline)
+- Iterate on dataset
+- Improve labels
+- Enhance data diversity
+:::
+:::
+:::
+
+::: {.fragment}
+**Key Insight:**
+
+In many EO applications, improving data quality yields better results than optimizing models.
+:::
+
+## Why Data-Centric AI for EO?
+
+**EO-Specific Challenges:**
+
+::: {.incremental}
+1. **Sensor Issues:**
+   - Cloud contamination
+   - Atmospheric effects
+   - Sensor artifacts
+   - Calibration differences
+
+2. **Annotation Challenges:**
+   - Expensive field campaigns
+   - Mixed pixels
+   - Temporal mismatches
+   - Expert disagreement
+
+3. **Variability:**
+   - Seasonal changes
+   - Geographic differences
+   - Land use dynamics
+:::
+
+## Data Quality Dimensions {.smaller}
+
+**Four Critical Aspects:**
+
+::: {.columns}
+::: {.column width="50%"}
+**1. Data Quality**
+
+::: {.fragment}
+- Cloud/shadow-free imagery
+- Proper atmospheric correction
+- Appropriate spectral/spatial resolution
+- Minimal sensor artifacts
+- Consistent preprocessing
+:::
+
+::: {.fragment}
+**2. Data Quantity**
+
+::: {.fragment}
+- Sufficient training samples per class
+- Represents class variability
+- Research shows: sometimes <20% needed!
+- Quality over quantity
+:::
+:::
+:::
+
+::: {.column width="50%"}
+**3. Data Diversity**
+
+::: {.fragment}
+- Geographic diversity
+- Temporal diversity (seasons)
+- Different weather conditions
+- Class variations
+- Edge cases included
+:::
+
+::: {.fragment}
+**4. Annotation Quality**
+
+::: {.fragment}
+- Clear class definitions
+- Consistent labeling protocols
+- Expert validation
+- Spatial accuracy
+- Temporal alignment
+:::
+:::
+:::
+:::
+
+## Data Quality: Cloud and Shadow Issues
+
+::: {.columns}
+::: {.column width="50%"}
+**The Problem:**
+
+::: {.fragment}
+- Clouds are the #1 issue for optical EO
+- Cloud shadows confuse models
+- Partial clouds create mixed pixels
+- Undetected clouds in training data
+:::
+
+::: {.fragment}
+**Solutions:**
+
+- Robust cloud masking (SCL, s2cloudless)
+- Temporal compositing
+- Multi-sensor fusion (add SAR)
+- Manual quality control
+- Augmentation with cloudy examples
+:::
+:::
+
+::: {.column width="50%"}
+![Cloud Contamination](images/cloud-issues.png){width=100%}
+
+**Example:**
+Model trained on cloud-contaminated data will learn wrong patterns.
+:::
+:::
+
+## Data Quality: Sensor Artifacts
+
+**Common Issues:**
+
+::: {.columns}
+::: {.column width="50%"}
+**Optical:**
+
+- Striping
+- Saturation
+- Atmospheric residuals
+- Sun glint (water)
+
+**SAR:**
+
+- Speckle noise
+- Geometric distortions
+- Layover and shadow
+- Calibration errors
+:::
+
+::: {.column width="50%"}
+![Sensor Artifacts](images/sensor-artifacts.png){width=100%}
+:::
+:::
+
+::: {.fragment}
+**Mitigation:**
+
+Use properly processed products (Level-2A for Sentinel-2, calibrated GRD for Sentinel-1)
+:::
+
+## Data Quantity: How Much is Enough?
+
+**2025 Research Findings:**
+
+::: {.fragment}
+**ArXiv Study:** "Data-Centric Machine Learning for Earth Observation: Necessary and Sufficient Features"
+:::
+
+::: {.fragment}
+**Key Results:**
+
+- Some datasets reach optimal accuracy with **<20% of temporal instances**
+- Single band from single modality can be sufficient
+- More data helps, but quality matters more
+:::
+
+::: {.fragment}
+**Practical Implications:**
+
+::: {.incremental}
+- Start with small, high-quality dataset
+- Iteratively add diverse examples
+- Focus on challenging cases
+- Don't just collect more of the same
+:::
+:::
+
+## Data Diversity: Geographic Variation
+
+::: {.columns}
+::: {.column width="60%"}
+**The Challenge:**
+
+::: {.fragment}
+Models trained in one region often fail in another
+:::
+
+::: {.fragment}
+**Example: Forest Mapping**
+
+- Northern Luzon forest (pine)
+- Mindanao forest (tropical rainforest)
+- Same class, different spectral signatures
+:::
+
+::: {.fragment}
+**Solution:**
+
+- Include samples from multiple regions
+- Stratified sampling by geography
+- Test generalization on held-out regions
+- Consider region-specific models
+:::
+:::
+
+::: {.column width="40%"}
+![Geographic Diversity](images/geographic-diversity.png){width=100%}
+:::
+:::
+
+## Data Diversity: Temporal Variation
+
+::: {.columns}
+::: {.column width="50%"}
+**Seasonal Changes:**
+
+::: {.fragment}
+- Vegetation phenology
+- Water levels (rivers, lakes)
+- Agricultural cycles
+- Snow/ice (if applicable)
+- Monsoon vs dry season
+:::
+
+::: {.fragment}
+**Best Practice:**
+
+Include training samples from multiple seasons to ensure temporal robustness.
+:::
+:::
+
+::: {.column width="50%"}
+![Temporal Diversity](images/temporal-diversity.png){width=100%}
+
+**Same location, different seasons**
+:::
+:::
+
+## Annotation Quality: Class Definitions
+
+**The Foundation of Good Training Data**
+
+::: {.fragment}
+**Common Problems:**
+
+::: {.incremental}
+- Vague class definitions
+- Overlapping classes
+- Inconsistent interpretation
+- Regional terminology differences
+:::
+:::
+
+::: {.fragment}
+**Example: "Urban" Class**
+
+- Does it include roads?
+- What about sparse settlements?
+- Industrial vs residential?
+- Peri-urban transitions?
+:::
+
+::: {.fragment}
+**Solution:**
+
+Create detailed class definition document with examples, including edge cases and difficult scenarios.
+:::
+
+## Annotation Quality: Spatial Accuracy
+
+::: {.columns}
+::: {.column width="50%"}
+**Geo-location Challenges:**
+
+::: {.fragment}
+- GPS accuracy in field
+- Image co-registration
+- Polygon boundary precision
+- Mixed pixels at edges
+:::
+
+::: {.fragment}
+**Best Practices:**
+
+- Use high-resolution imagery for digitizing
+- Buffer boundaries inward
+- Avoid mixed pixels in training samples
+- Document spatial uncertainty
+:::
+:::
+
+::: {.column width="50%"}
+![Spatial Accuracy](images/annotation-accuracy.png){width=100%}
+
+**Poor annotation (top) vs Good annotation (bottom)**
+:::
+:::
+
+## Real-World Example: Coral Reef Mapping
+
+**Case Study: Data Quality Impact**
+
+::: {.fragment}
+**Initial Model (70% accuracy):**
+
+- Mixed labels (coral vs algae)
+- Variable water clarity in images
+- Inconsistent annotation depth
+:::
+
+::: {.fragment}
+**Data-Centric Improvements:**
+
+1. Refined class definitions (6 → 4 clear classes)
+2. Selected only clear-water images
+3. Re-annotated with expert validation
+4. Added diverse reef types
+:::
+
+::: {.fragment}
+**Improved Model (88% accuracy):**
+
+Same model architecture, better data quality
+:::
+
+## 2025 Technology: NASA-IBM Foundation Model
+
+::: {.columns}
+::: {.column width="60%"}
+**Geospatial AI Foundation Model**
+
+::: {.fragment}
+**Characteristics:**
+
+- Open-source (Hugging Face)
+- Pre-trained on HLS data
+- Transfer learning ready
+- Reduced training data needs
+:::
+
+::: {.fragment}
+**Applications:**
+
+- Flood detection
+- Wildfire mapping
+- Crop classification
+- Any EO task with limited labels
+:::
+
+::: {.fragment}
+**Impact:**
+
+Democratizes AI for EO by reducing data requirements
+:::
+:::
+
+::: {.column width="40%"}
+![NASA-IBM Model](images/nasa-ibm-model.png){width=100%}
+:::
+:::
+
+## 2025 Technology: ESA Φsat-2 On-Board AI
+
+::: {.columns}
+::: {.column width="50%"}
+**Launched 2025**
+
+::: {.fragment}
+**Specifications:**
+
+- 22×10×33 cm CubeSat
+- Multispectral camera
+- Powerful onboard AI computer
+- Real-time processing
+:::
+
+::: {.fragment}
+**Capabilities:**
+
+- On-satellite image analysis
+- Cloud detection
+- Feature extraction
+- Data compression
+- Anomaly detection
+:::
+:::
+
+::: {.column width="50%"}
+![Phi-sat-2](images/phisat-2.jpg){width=100%}
+:::
+:::
+
+::: {.fragment}
+**Significance:**
+
+Processing at the edge (space) reduces downlink needs and latency. Only send relevant processed information.
+:::
+
+## Data-Centric AI Best Practices Checklist
+
+::: {.incremental}
+**Before Training:**
+
+- [ ] Define clear, non-overlapping classes
+- [ ] Create annotation protocol document
+- [ ] Select high-quality imagery (cloud-free, well-calibrated)
+- [ ] Ensure geographic and temporal diversity
+- [ ] Validate annotations with experts
+
+**During Training:**
+
+- [ ] Monitor training on diverse validation sets
+- [ ] Identify systematic errors (not just accuracy)
+- [ ] Analyze confusion matrix for class issues
+
+**After Training:**
+
+- [ ] Test on completely independent data
+- [ ] Examine failure cases
+- [ ] Iterate on data, not just model
+- [ ] Document data quality decisions
+:::
+
+# Practical Considerations {background-color="#009999"}
+
+## Choosing Between ML Approaches
+
+**Decision Framework:**
+
+::: {.fragment}
+**Use Traditional ML (Random Forest, SVM) When:**
+
+- Limited training data (<1000 samples)
+- Need interpretability (feature importance)
+- Quick prototype needed
+- Computational resources limited
+- Simple classification problem
+:::
+
+::: {.fragment}
+**Use Deep Learning (CNNs) When:**
+
+- Large training dataset available (>10,000 samples)
+- Complex spatial patterns
+- State-of-the-art accuracy needed
+- Transfer learning applicable
+- GPU resources available
+:::
+
+## Overfitting and Generalization
+
+::: {.columns}
+::: {.column width="50%"}
+**Overfitting:**
+
+::: {.fragment}
+Model learns training data too well, including noise
+
+**Signs:**
+
+- High training accuracy
+- Low validation/test accuracy
+- Poor generalization to new regions/times
+:::
+
+::: {.fragment}
+**Prevention:**
+
+- Cross-validation
+- Regularization
+- Data augmentation
+- Early stopping
+- Simpler models
+:::
+:::
+
+::: {.column width="50%"}
+![Overfitting Diagram](images/overfitting.png){width=100%}
+:::
+:::
+
+## Class Imbalance
+
+**Common EO Problem:**
+
+::: {.fragment}
+Rare classes (e.g., water bodies, landslides) vs common classes (e.g., forest, agriculture)
+:::
+
+::: {.fragment}
+**Consequences:**
+
+- Model ignores minority classes
+- High overall accuracy but poor rare class performance
+- Biased towards majority class
+:::
+
+::: {.fragment}
+**Solutions:**
+
+::: {.incremental}
+- **Stratified sampling** - Equal samples per class
+- **Weighted loss** - Penalize minority class errors more
+- **Data augmentation** - Artificially increase minority samples
+- **Focal loss** - Emphasis on hard examples
+:::
+:::
+
+## Computational Considerations
+
+**Resources for ML/DL in EO:**
+
+::: {.columns}
+::: {.column width="50%"}
+**Cloud Platforms:**
+
+- Google Earth Engine (free)
+- Google Colab (free GPU)
+- AWS, Azure, GCP (paid)
+
+**Local Processing:**
+
+- GPU highly recommended for DL
+- 16+ GB RAM minimum
+- SSD for data storage
+:::
+
+::: {.column width="50%"}
+**Scale Considerations:**
+
+- Patch-based processing for large areas
+- Tiling strategies
+- Batch processing
+- Memory management
+- Processing time estimates
+:::
+:::
+
+## Common Pitfalls in EO ML/AI {.smaller}
+
+::: {.incremental}
+**1. Data Leakage:**
+
+Validation/test data too similar to training (same location, time, or scene)
+
+**2. Ignoring Spatial Autocorrelation:**
+
+Adjacent pixels are not independent - impacts validation strategy
+
+**3. Temporal Mismatch:**
+
+Training labels from one year, imagery from another (land use changes)
+
+**4. Sensor Dependence:**
+
+Model trained on one sensor fails on another (Sentinel-2 vs Landsat)
+
+**5. Atmospheric Effects:**
+
+Not using atmospherically corrected data (Level-2A)
+
+**6. Class Definition Issues:**
+
+Vague or overlapping classes lead to confused models
+
+**7. Insufficient Validation:**
+
+Testing only in training area doesn't assess generalization
+:::
+
+# Summary and Key Takeaways {background-color="#003399"}
+
+## Key Concepts Recap
+
+::: {.incremental}
+**1. AI/ML Hierarchy:**
+
+- AI ⊃ Machine Learning ⊃ Deep Learning
+- Each level increases automation and capability
+
+**2. The ML Workflow:**
+
+- 7 steps: Problem → Data → Preprocessing → Features → Model → Validation → Deployment
+- Iterative, not linear
+
+**3. Learning Paradigms:**
+
+- Supervised (labeled data) - Most common for EO
+- Unsupervised (no labels) - Exploratory analysis
+
+**4. Neural Networks:**
+
+- Layers of neurons with learned weights
+- CNNs specialized for images, automatic feature extraction
+
+**5. Data-Centric AI:**
+
+- Data quality > model complexity
+- Quality, quantity, diversity, annotation
+:::
+
+## The Modern EO AI Landscape (2025)
+
+::: {.incremental}
+**Foundation Models are Here:**
+
+- NASA-IBM Geospatial Foundation Model (open-source)
+- Reduced training data requirements
+- Transfer learning standard practice
+
+**Edge Computing:**
+
+- ESA Φsat-2 on-board AI
+- Satellogic GPU satellites
+- Processing at the source
+
+**Data-Centric Approach:**
+
+- Research confirms: quality > quantity
+- Careful data curation is critical
+- Systematic dataset improvement
+
+**Democratization:**
+
+- Cloud platforms (GEE, Colab)
+- Pre-trained models (DIMER)
+- Open-source tools and data
+:::
+
+## Why This Matters for the Philippines
+
+::: {.incremental}
+**DRR Applications:**
+
+- Rapid flood mapping during typhoons (Sentinel-1 + AI)
+- Landslide susceptibility (DEM + optical + ML)
+- Building damage assessment (pre/post imagery + DL)
+
+**CCA Applications:**
+
+- Drought monitoring (NDVI time series + LSTM)
+- Coastal erosion tracking (multi-temporal + segmentation)
+- Climate trend analysis (long time series + ML)
+
+**NRM Applications:**
+
+- Forest monitoring (Sentinel + CNN classification)
+- Mangrove mapping (high-res segmentation)
+- Agricultural monitoring (crop type mapping + yield prediction)
+:::
+
+## Your Learning Path
+
+**Today:**
+
+- ✓ Session 1: Copernicus & Philippine EO
+- ✓ Session 2: AI/ML Fundamentals (current)
+- → Session 3: Python for Geospatial (hands-on)
+- → Session 4: Google Earth Engine (hands-on)
+
+**Tomorrow (Day 2):**
+
+- Random Forest for land cover classification
+- CNNs for image classification
+
+**Days 3-4:**
+
+- Advanced deep learning (U-Net, Object Detection, LSTMs)
+- Foundation models and XAI
+
+## Preparing for Hands-On Sessions
+
+**Coming Up:**
+
+::: {.fragment}
+**Session 3: Python for Geospatial**
+
+- GeoPandas for vector data
+- Rasterio for raster data
+- Google Colab environment
+:::
+
+::: {.fragment}
+**Session 4: Google Earth Engine**
+
+- Accessing Sentinel data
+- Cloud masking and compositing
+- Exporting for ML workflows
+:::
+
+::: {.fragment}
+**What You'll Need:**
+
+- Google account (for Colab and GEE)
+- Stable internet connection
+- Enthusiasm to code!
+:::
+
+## Resources for Further Learning
+
+**Online Courses:**
+
+- NASA ARSET: Fundamentals of ML for Earth Science
+- Coursera: Deep Learning Specialization (Andrew Ng)
+- Fast.ai: Practical Deep Learning for Coders
+
+**Papers:**
+
+- "Better, Not Just More: Data-Centric ML for EO" (ArXiv 2312.05327)
+- "Data-Centric ML for EO: Necessary and Sufficient Features" (ArXiv 2408.11384v1)
+
+**Tools:**
+
+- TensorFlow and PyTorch documentation
+- Google Earth Engine tutorials
+- Scikit-learn documentation
+
+## Questions and Discussion
+
+::: {.r-fit-text}
+What questions do you have about AI/ML for EO?
+:::
+
+::: notes
+Encourage questions about:
+- Specific applications they're interested in
+- Challenges they foresee in their work
+- Technical concepts that need clarification
+- How to get started with their own projects
+:::
+
+## Break
+
+::: {.r-fit-text}
+15 Minute Break
+:::
+
+**Next Session:**
+
+Hands-On: Python for Geospatial Data
+
+Get ready to code!
+
+# Thank You {background-color="#003399"}
+
+**Session 2 Complete**
+
+::: {.fragment}
+See you in Session 3: Python for Geospatial Analysis
+:::

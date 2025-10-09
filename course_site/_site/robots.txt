@@ -1,1 +1,1 @@
-Sitemap: https://DimitrisKasabalis.github.io/ESAPhil/sitemap.xml
+Sitemap: https://DimitrisKasabalis.github.io/EO_trainning/sitemap.xml
