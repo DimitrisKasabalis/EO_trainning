@@ -1,63 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://DimitrisKasabalis.github.io/EO_trainning/notebooks/Day1_Session3_Python_Geospatial_Data.html</loc>
-    <lastmod>2025-10-10T10:31:12.418Z</lastmod>
+    <loc>https://YOUR_GITHUB_USERNAME.github.io/ESAPhil/notebooks/Day1_Session3_Python_Geospatial_Data.html</loc>
+    <lastmod>2025-10-09T12:38:08.275Z</lastmod>
   </url>
   <url>
-    <loc>https://DimitrisKasabalis.github.io/EO_trainning/notebooks/notebook2.html</loc>
+    <loc>https://YOUR_GITHUB_USERNAME.github.io/ESAPhil/notebooks/notebook2.html</loc>
     <lastmod>2025-10-09T17:56:37.905Z</lastmod>
   </url>
   <url>
-    <loc>https://DimitrisKasabalis.github.io/EO_trainning/sessions/session1.html</loc>
-    <lastmod>2025-10-10T10:29:35.241Z</lastmod>
+    <loc>https://YOUR_GITHUB_USERNAME.github.io/ESAPhil/sessions/session1.html</loc>
+    <lastmod>2025-10-09T18:30:22.981Z</lastmod>
   </url>
   <url>
-    <loc>https://DimitrisKasabalis.github.io/EO_trainning/sessions/session3.html</loc>
-    <lastmod>2025-10-10T10:30:17.926Z</lastmod>
+    <loc>https://YOUR_GITHUB_USERNAME.github.io/ESAPhil/sessions/session3.html</loc>
+    <lastmod>2025-10-09T18:34:49.893Z</lastmod>
+  </url>
+  <url>
+    <loc>https://YOUR_GITHUB_USERNAME.github.io/ESAPhil/index.html</loc>
+    <lastmod>2025-10-09T17:55:44.170Z</lastmod>
+  </url>
+  <url>
+    <loc>https://YOUR_GITHUB_USERNAME.github.io/ESAPhil/resources/setup.html</loc>
+    <lastmod>2025-10-09T18:12:27.432Z</lastmod>
+  </url>
+  <url>
+    <loc>https://YOUR_GITHUB_USERNAME.github.io/ESAPhil/resources/faq.html</loc>
+    <lastmod>2025-10-09T12:22:24.708Z</lastmod>
+  </url>
+  <url>
+    <loc>https://YOUR_GITHUB_USERNAME.github.io/ESAPhil/resources/downloads.html</loc>
+    <lastmod>2025-10-09T12:20:08.885Z</lastmod>
+  </url>
+  <url>
+    <loc>https://YOUR_GITHUB_USERNAME.github.io/ESAPhil/resources/glossary.html</loc>
+    <lastmod>2025-10-09T12:24:08.132Z</lastmod>
+  </url>
+  <url>
+    <loc>https://YOUR_GITHUB_USERNAME.github.io/ESAPhil/resources/philippine-eo.html</loc>
+    <lastmod>2025-10-09T11:57:00.648Z</lastmod>
+  </url>
+  <url>
+    <loc>https://YOUR_GITHUB_USERNAME.github.io/ESAPhil/resources/cheatsheets.html</loc>
+    <lastmod>2025-10-09T12:18:54.051Z</lastmod>
+  </url>
+  <url>
+    <loc>https://YOUR_GITHUB_USERNAME.github.io/ESAPhil/sessions/session4.html</loc>
+    <lastmod>2025-10-09T18:35:11.105Z</lastmod>
+  </url>
+  <url>
+    <loc>https://YOUR_GITHUB_USERNAME.github.io/ESAPhil/sessions/session2.html</loc>
+    <lastmod>2025-10-09T18:31:10.235Z</lastmod>
+  </url>
+  <url>
+    <loc>https://YOUR_GITHUB_USERNAME.github.io/ESAPhil/notebooks/notebook1.html</loc>
+    <lastmod>2025-10-09T17:56:13.562Z</lastmod>
+  </url>
+  <url>
+    <loc>https://YOUR_GITHUB_USERNAME.github.io/ESAPhil/notebooks/Day1_Session4_Google_Earth_Engine.html</loc>
+    <lastmod>2025-10-09T12:38:08.279Z</lastmod>
+  </url>
+  <url>
+    <loc>https://DimitrisKasabalis.github.io/ESAPhil/index.html</loc>
+    <lastmod>2025-10-09T17:55:44.170Z</lastmod>
   </url>
   <url>
     <loc>https://DimitrisKasabalis.github.io/EO_trainning/index.html</loc>
     <lastmod>2025-10-09T17:55:44.170Z</lastmod>
-  </url>
-  <url>
-    <loc>https://DimitrisKasabalis.github.io/EO_trainning/resources/setup.html</loc>
-    <lastmod>2025-10-09T18:12:27.432Z</lastmod>
-  </url>
-  <url>
-    <loc>https://DimitrisKasabalis.github.io/EO_trainning/resources/faq.html</loc>
-    <lastmod>2025-10-09T12:22:24.708Z</lastmod>
-  </url>
-  <url>
-    <loc>https://DimitrisKasabalis.github.io/EO_trainning/resources/downloads.html</loc>
-    <lastmod>2025-10-09T12:20:08.885Z</lastmod>
-  </url>
-  <url>
-    <loc>https://DimitrisKasabalis.github.io/EO_trainning/resources/glossary.html</loc>
-    <lastmod>2025-10-09T12:24:08.132Z</lastmod>
-  </url>
-  <url>
-    <loc>https://DimitrisKasabalis.github.io/EO_trainning/resources/philippine-eo.html</loc>
-    <lastmod>2025-10-09T11:57:00.648Z</lastmod>
-  </url>
-  <url>
-    <loc>https://DimitrisKasabalis.github.io/EO_trainning/resources/cheatsheets.html</loc>
-    <lastmod>2025-10-09T12:18:54.051Z</lastmod>
-  </url>
-  <url>
-    <loc>https://DimitrisKasabalis.github.io/EO_trainning/sessions/session4.html</loc>
-    <lastmod>2025-10-10T10:30:50.882Z</lastmod>
-  </url>
-  <url>
-    <loc>https://DimitrisKasabalis.github.io/EO_trainning/sessions/session2.html</loc>
-    <lastmod>2025-10-10T10:29:51.877Z</lastmod>
-  </url>
-  <url>
-    <loc>https://DimitrisKasabalis.github.io/EO_trainning/notebooks/notebook1.html</loc>
-    <lastmod>2025-10-09T17:56:13.562Z</lastmod>
-  </url>
-  <url>
-    <loc>https://DimitrisKasabalis.github.io/EO_trainning/notebooks/Day1_Session4_Google_Earth_Engine.html</loc>
-    <lastmod>2025-10-10T10:31:24.001Z</lastmod>
   </url>
 </urlset>
