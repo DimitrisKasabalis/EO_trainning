@@ -1,6 +1,17 @@
 # 4-Day CopPhil Training -- Day 1: EO Data, AI/ML Fundamentals & Geospatial Python
 
-## 1. Lecture Materials
+## 1. Session 1: Copernicus Program Overview & PH EO Landscape
+
+### Learning Objectives
+
+By the end of this session, you will be able to:
+
+*   **Describe** the Copernicus program and its goals in the Philippines.
+*   **Differentiate** between Sentinel-1 and Sentinel-2 missions and their key characteristics.
+*   **Identify** key Philippine agencies and platforms for Earth observation data.
+*   **Explain** how local and international EO data can be used together.
+
+### 1.1. Lecture Materials
 
 **Introduction to Copernicus in the Philippines:** The Copernicus
 Capacity Support Programme for the Philippines (CopPhil) is a flagship
@@ -20,8 +31,8 @@ Sentinel-2 are core satellites of the EU Copernicus program, providing
 free high-resolution imagery. Sentinel-1 is a radar (SAR) mission with
 **C-band synthetic aperture radar** enabling all-weather, day/night
 imaging. With two satellites (1A & 1B, now 1C) orbiting 180° apart,
-Sentinel-1 achieves a \~6-day revisit cycle globally. In its common
-Interferometric Wide (IW) swath mode, Sentinel-1 has \~**5 m by 20 m**
+Sentinel-1 achieves a ~6-day revisit cycle globally. In its common
+Interferometric Wide (IW) swath mode, Sentinel-1 has ~**5 m by 20 m**
 spatial resolution (range × azimuth) and a 250 km swath. It provides
 dual-polarization data (VV+VH or HH+HV) useful for mapping floods, land
 deformation (InSAR), forest biomass, and maritime surveillance. Typical
@@ -49,8 +60,8 @@ and APIs (e.g., ASF for Sentinel-1, and GEE).
 provides multi-spectral optical data at 10--60 m resolution across 13
 bands. With a 5-day revisit, it supports monitoring of dynamic
 environmental events. (Contains modified Copernicus Sentinel data
-\[2018\] processed by Pierre
-Markuse[\[1\]](https://commons.wikimedia.org/wiki/File:Mount_Mayon_Sentinel-2_L1C_from_2018-01-30_(28280091769).jpg#:~:text=))*
+[2018] processed by Pierre
+Markuse[[1]](https://commons.wikimedia.org/wiki/File:Mount_Mayon_Sentinel-2_L1C_from_2018-01-30_(28280091769).jpg#:~:text=))*
 
 **Philippine EO Data Ecosystem:** The Philippines has its own geospatial
 data platforms that complement Copernicus data. Slides should introduce
@@ -112,128 +123,7 @@ flood event, Sentinel-1 SAR can detect water extent, while NAMRIA flood
 hazard maps and PAGASA rain gauges provide context -- together
 supporting better DRR decisions.
 
-**AI/ML Concepts in Earth Observation:** This lecture segment introduces
-how artificial intelligence and machine learning are applied to EO data,
-covering key concepts and workflows:
-
-- **AI/ML Workflow for EO:** A typical **machine learning workflow** in
-  EO involves several stages. *Slides should illustrate:*
-- **Problem Definition:** e.g., identifying what environmental question
-  to answer (flood mapping? land cover classification? yield
-  prediction).
-- **Data Acquisition:** gathering relevant EO data (Sentinel images,
-  ground truth labels, ancillary data).
-- **Data Pre-processing:** crucial for EO (geometric corrections, cloud
-  masking, normalization, etc.) before feeding data to models.
-- **Feature Engineering:** deriving informative features (spectral
-  indices like NDVI, textures, DEM derivatives) from raw data.
-- **Model Selection & Training:** choosing an algorithm (e.g., Random
-  Forest, CNN) and training it on labeled examples.
-- **Validation & Evaluation:** using separate test data to assess
-  accuracy (confusion matrix, error metrics).
-- **Deployment:** applying the model to new data or integrating into
-  workflows for operational use. This end-to-end process ensures that
-  participants see the "big picture" of how AI/ML projects are executed
-  for EO applications.
-- **Types of ML -- Supervised vs Unsupervised:** Define the two main
-  paradigms with EO examples. In **supervised learning**, the model
-  learns from labeled data. EO examples: land cover classification
-  (labels = classes like water, urban, forest for each pixel) and
-  regression tasks (predicting a continuous value such as soil moisture
-  or air pollutant concentration from satellite data). In **unsupervised
-  learning**, the algorithm finds patterns without explicit labels.
-  Example: clustering multispectral images to discover land cover groups
-  or anomalies (useful for exploratory analysis or change detection).
-  *Slides:* could show an illustration of labeled training pixels on a
-  satellite image for supervised learning, versus an image segmented
-  into clusters for unsupervised.
-- **Neural Networks & Deep Learning Basics:** Briefly introduce that
-  **deep learning** is a subset of ML using neural networks with many
-  layers ("deep" networks) that excel at learning complex patterns. A
-  slide can depict a simple **Artificial Neural Network** with neurons
-  organized in layers (input layer → hidden layers → output). Explain
-  key concepts in simple terms: neurons apply activation functions to
-  weighted sums of inputs (introducing non-linearity), the network is
-  trained by adjusting weights to minimize a loss function (error) using
-  algorithms like gradient descent (optimizers). Emphasize how
-  **Convolutional Neural Networks (CNNs)** are specialized for images:
-  using convolutional layers to automatically extract spatial features
-  (edges, textures, objects) -- this will foreshadow Day 2 content. The
-  point is to demystify terms like "layers", "activation", "training"
-  for participants new to AI.
-- **Data-Centric AI in EO:** "Data-centric AI" is the philosophy that
-  improving your **data** (quality, quantity, diversity) is as important
-  as model tuning. This is **especially critical in EO** where
-  challenges like sensor noise, cloud cover, class imbalance, and label
-  uncertainty can derail an AI project. Slides should stress that model
-  performance in EO is often limited by the dataset: having
-  well-annotated, representative training data (e.g. good ground truth
-  for all land cover types, across different seasons and regions) is
-  crucial. Mention strategies like augmenting training data, cleaning
-  labels, and incorporating expert knowledge. The goal is to encourage
-  participants to focus on creating or curating high-quality datasets
-  for their projects, not just on choosing fancy algorithms. This aligns
-  with CopPhil's capacity building -- ensuring participants can develop
-  robust EO applications by paying attention to data suitability.
-
-**Intro to Google Earth Engine & Geospatial Pre-processing:** Google
-Earth Engine (GEE) is a cloud-based platform highly useful for EO data
-handling and was introduced as a tool for the training. Key concepts to
-cover:
-
-- **GEE Data Structures:** Explain that in Earth Engine, satellite
-  imagery is handled as **Image** objects (single raster image) and
-  **ImageCollection** (a time-series or stack of images). Vector data
-  are handled as **Feature** (with geometry and attributes) and
-  **FeatureCollection** (set of features). These abstractions let users
-  manage large datasets (e.g., an ImageCollection of all Sentinel-2
-  images for a year over the Philippines) with simple filter operations.
-- **Common GEE Operations:** Introduce **Filters** (to subset
-  ImageCollections by date, location, metadata) and **Reducers** (to
-  aggregate or summarize data, e.g., taking a median across images or
-  computing statistics over a region). For example, filtering a
-  Sentinel-2 ImageCollection to a date range and AOI, then using a
-  reducer to make a cloud-free composite.
-- **Cloud Masking in Optical Imagery:** As a specific pre-processing
-  task, mention that Sentinel-2 Level-2A data comes with QA bands (QA60)
-  that indicate cloud/cloud-shadow pixels which can be masked out.
-  Simpler approach: use the QA60 bitmask to remove cloudy pixels. More
-  advanced: use the **s2cloudless** cloud probability images provided in
-  GEE to mask clouds with a custom threshold. Cloud masking is critical
-  for producing clean composites and reliable inputs to AI models.
-- **Composites and Mosaics:** Demonstrate the idea of creating a
-  **temporal composite** -- e.g., taking the median reflectance per
-  pixel over a 3-month period to get a cloud-free Sentinel-2 image. Such
-  composites reduce noise and cloud effects, useful for mapping (e.g., a
-  2023 annual land cover composite). Also mention mosaicking images
-  (spatially) to cover larger areas.
-- **AOI Clipping:** Explain that in GEE one can define an Area of
-  Interest (as a geometry or FeatureCollection) and clip or mask images
-  to that boundary -- for instance, clipping a satellite image to the
-  province of Palawan.
-- **Data Access in GEE:** Note that GEE has a petabyte-scale data
-  catalog including Sentinel-1 and Sentinel-2 collections available on
-  demand. Users can **search** the catalog by dataset name or keywords,
-  and apply filters (e.g., cloud cover \< 20%, date range, bounds) to
-  find scenes. For example, searching for Sentinel-1 GRD images over
-  Manila in July 2025.
-- **Exporting from GEE:** Briefly foreshadow (to be done in hands-on)
-  that GEE allows export of images or tables to Google Drive or Cloud
-  Storage for use in local analysis. This is important when
-  transitioning from the prototyping in GEE to training a custom model
-  in Python.
-
-*Slide content:* likely a schematic of Earth Engine's structure (images
-& collections, with filters/reducers), and bullet points with examples:
-e.g., "Use median reducer to create cloud-free image composite; Use
-filterBounds + filterDate to get Sentinel-1 scenes for a flood event."
-Emphasize how GEE simplifies pre-processing workflows that would be
-tedious locally. This sets the stage for the Day 1 hands-on where they
-actually use GEE.
-
-------------------------------------------------------------------------
-
-## 2. Instructor Notes (Speaker's Script)
+### 1.2. Instructor Notes (Speaker's Script)
 
 **Introduction (CopPhil and Course Goals):** *Speaker notes:* Begin by
 welcoming participants and framing the training's purpose. Explain that
@@ -255,6 +145,8 @@ landscape, AI/ML fundamentals, and introductory coding sessions.
 Emphasize how each session today lays groundwork: by end of Day 1, they
 will have both conceptual understanding and practical skills to start
 working with satellite data.
+
+***(Interactive Element Suggestion):*** *Launch a quick poll: "How familiar are you with Copernicus Sentinel data?" (Options: Very familiar, Somewhat familiar, Not familiar at all). This will help gauge the audience's baseline knowledge.*
 
 **Session 1 -- Copernicus Program Overview & PH EO Landscape:** In this
 lecture, break it into two modules.
@@ -387,10 +279,93 @@ national data** together. Encourage any participants who belong to these
 agencies to briefly comment or invite others to explore their platforms,
 fostering a sense of community.
 
+***
+
+## 2. Session 2: Core AI/ML Concepts
+
+### Learning Objectives
+
+By the end of this session, you will be able to:
+
+*   **Outline** the typical workflow of an AI/ML project in Earth Observation.
+*   **Distinguish** between supervised and unsupervised learning with EO examples.
+*   **Explain** the basic concepts of neural networks and deep learning.
+*   **Define** data-centric AI and its importance in EO.
+
+### 2.1. Lecture Materials
+
+**AI/ML Concepts in Earth Observation:** This lecture segment introduces
+how artificial intelligence and machine learning are applied to EO data,
+covering key concepts and workflows:
+
+- **AI/ML Workflow for EO:** A typical **machine learning workflow** in
+  EO involves several stages. *Slides should illustrate:*
+- **Problem Definition:** e.g., identifying what environmental question
+  to answer (flood mapping? land cover classification? yield
+  prediction).
+- **Data Acquisition:** gathering relevant EO data (Sentinel images,
+  ground truth labels, ancillary data).
+- **Data Pre-processing:** crucial for EO (geometric corrections, cloud
+  masking, normalization, etc.) before feeding data to models.
+- **Feature Engineering:** deriving informative features (spectral
+  indices like NDVI, textures, DEM derivatives) from raw data.
+- **Model Selection & Training:** choosing an algorithm (e.g., Random
+  Forest, CNN) and training it on labeled examples.
+- **Validation & Evaluation:** using separate test data to assess
+  accuracy (confusion matrix, error metrics).
+- **Deployment:** applying the model to new data or integrating into
+  workflows for operational use. This end-to-end process ensures that
+  participants see the "big picture" of how AI/ML projects are executed
+  for EO applications.
+- **Types of ML -- Supervised vs Unsupervised:** Define the two main
+  paradigms with EO examples. In **supervised learning**, the model
+  learns from labeled data. EO examples: land cover classification
+  (labels = classes like water, urban, forest for each pixel) and
+  regression tasks (predicting a continuous value such as soil moisture
+  or air pollutant concentration from satellite data). In **unsupervised
+  learning**, the algorithm finds patterns without explicit labels.
+  Example: clustering multispectral images to discover land cover groups
+  or anomalies (useful for exploratory analysis or change detection).
+  *Slides:* could show an illustration of labeled training pixels on a
+  satellite image for supervised learning, versus an image segmented
+  into clusters for unsupervised.
+- **Neural Networks & Deep Learning Basics:** Briefly introduce that
+  **deep learning** is a subset of ML using neural networks with many
+  layers ("deep" networks) that excel at learning complex patterns. A
+  slide can depict a simple **Artificial Neural Network** with neurons
+  organized in layers (input layer → hidden layers → output). Explain
+  key concepts in simple terms: neurons apply activation functions to
+  weighted sums of inputs (introducing non-linearity), the network is
+  trained by adjusting weights to minimize a loss function (error) using
+  algorithms like gradient descent (optimizers). Emphasize how
+  **Convolutional Neural Networks (CNNs)** are specialized for images:
+  using convolutional layers to automatically extract spatial features
+  (edges, textures, objects) -- this will foreshadow Day 2 content. The
+  point is to demystify terms like "layers", "activation", "training"
+  for participants new to AI.
+- **Data-Centric AI in EO:** "Data-centric AI" is the philosophy that
+  improving your **data** (quality, quantity, diversity) is as important
+  as model tuning. This is **especially critical in EO** where
+  challenges like sensor noise, cloud cover, class imbalance, and label
+  uncertainty can derail an AI project. Slides should stress that model
+  performance in EO is often limited by the dataset: having
+  well-annotated, representative training data (e.g. good ground truth
+  for all land cover types, across different seasons and regions) is
+  crucial. Mention strategies like augmenting training data, cleaning
+  labels, and incorporating expert knowledge. The goal is to encourage
+  participants to focus on creating or curating high-quality datasets
+  for their projects, not just on choosing fancy algorithms. This aligns
+  with CopPhil's capacity building -- ensuring participants can develop
+  robust EO applications by paying attention to data suitability.
+
+### 2.2. Instructor Notes (Speaker's Script)
+
 **Session 2 -- Core AI/ML Concepts:** Now the instructor shifts to a
 more conceptual lecture. The tone should reassure participants that you
 don't need to be a math expert to grasp the basics, and these concepts
 will be applied in later hands-on sessions.
+
+***(Interactive Element Suggestion):*** *Think-Pair-Share: "Based on the EO challenges in the Philippines we've discussed, where do you think AI/ML could have the biggest impact?" (Give participants 2 minutes to think, 3 minutes to discuss with a partner, then ask a few pairs to share their ideas).*
 
 - *What is AI/ML & the EO workflow:* Start by clarifying terminology:
   **Artificial Intelligence** is a broad field of making machines
@@ -509,299 +484,24 @@ knowing the lineage of data is important). This mindset will pay off in
 later days when they prepare their own training sets for the hands-on
 exercises.
 
-**Session 3 -- Hands-on Python for Geospatial (Colab):** Here the
-instructor transitions from theory to practice. Likely before diving
-into the live notebook, they will give some context/slides:
+***
 
-- *Colab Setup:* Explain that Google Colab is essentially a free Jupyter
-  notebook environment in the cloud. Ensure everyone has the link to the
-  Day 1 Colab notebook (perhaps shared via chat or a Learning Management
-  System). Walk through the interface: where to write code vs text, how
-  to run a cell (Shift+Enter), and how to reset if needed. Mention that
-  Colab provides some resources like a small amount of Google Drive
-  storage (when mounted) and internet access to install libraries or
-  fetch data. It's important to show how to **mount Google Drive** (so
-  participants can save outputs or upload data). In the notes, the
-  instructor should say: "We'll now mount your Google Drive. This will
-  ask for authentication -- please follow the prompt to permit Colab to
-  access your Drive. Once mounted, you can read/write files as if it's a
-  local disk." This avoids confusion when they have to read a shapefile
-  or save a result.
+## 3. Session 3: Hands-on Python for Geospatial (Colab)
 
-- *Installing Packages:* Colab usually comes with many scientific
-  packages pre-installed, but specialized ones like `geopandas` or
-  `rasterio` might need installation. The instructor notes: "If you run
-  the cell I provided, it does `!pip install geopandas rasterio`. This
-  will take a minute to run. You might see a message to restart runtime
-  -- if so, go to Runtime \> Restart and then continue (this is needed
-  when new packages are installed)." Ensure everyone does this
-  successfully before moving on.
+### Learning Objectives
 
-- *Python Basics Recap:* Given varying Python experience, quickly review
-  what a pandas DataFrame is vs a GeoDataFrame, what a numpy array is
-  (for raster data), etc. Possibly mention basic Python types (lists,
-  dicts) if needed, but likely the group has some background. The
-  instructor can reassure: "Don't worry if you're not a Python expert --
-  we will provide template code. Focus on understanding the steps and
-  being able to modify them for your own data later."
+By the end of this session, you will be able to:
 
-- *GeoPandas (Vector data) hands-on:* Now lead the group through reading
-  a vector dataset. The sample provided (for example, *Philippine
-  administrative boundaries shapefile* for provinces or regions) can be
-  used. In the notes, explain each step:
+*   **Load, inspect, and visualize** vector and raster data in Python using GeoPandas and Rasterio.
+*   **Perform** basic data manipulation tasks, such as filtering and cropping.
+*   **Create** a simple map with overlaid vector and raster data.
 
-- "We use GeoPandas which extends Pandas to handle spatial data. When we
-  do `gpd.read_file('philippines_provinces.shp')`, it will load the
-  shapefile into a GeoDataFrame."
-
-- After loading, show `gdf.head()` and `gdf.crs` (to discuss coordinate
-  reference systems briefly, e.g., it might be WGS84 lat-long which is
-  typical). If needed, demonstrate re-projecting with `to_crs` if
-  planning to do area calculations.
-
-- Then, "Let's visualize the vector data." Show how `gdf.plot()` works
-  for a quick map. The instructor should mention that in a notebook,
-  plots appear inline. Possibly discuss how to change the color or add a
-  column-based coloring (e.g., color provinces by region by passing
-  `column='Region'` to plot).
-
-- If relevant, demonstrate filtering the GeoDataFrame: e.g.,
-  `gdf[gdf['Province']=='Palawan']` to get one province, and then
-  plotting that. This ties into clipping operations later.
-
-- Encourage participants to try simple tasks like identify how many
-  features (provinces) are in the data (`len(gdf)`) and to check
-  attribute names (`gdf.columns`).
-
-As they do this, the instructor walks around (or virtually checks) to
-make sure everyone is getting output maps.
-
-- *Rasterio (Raster data) hands-on:* Next, the instructor note
-  introduces Rasterio for reading raster files (like GeoTIFF). The
-  sample could be a small Sentinel-2 image tile (or a subset). Explain
-  that raster data = pixels in a grid with georeferencing. Using
-  `rasterio.open('image.tif')` provides a dataset object. Show how to
-  read metadata: e.g., `src.profile` or `src.count` (number of bands),
-  `src.width`, `src.height`, `src.crs`, `src.transform` (affine
-  transform tying pixel coords to real world). Then read data: e.g.,
-  `band1 = src.read(1)` to get the first band as a numpy array. If the
-  image has multiple bands, maybe read a few and display. This is a good
-  place to show an actual image: perhaps use `matplotlib` to display a
-  RGB composite. The instructor can include a code snippet using
-  `plt.imshow()` with a combination of bands (taking care to stretch or
-  normalize if needed). For example:
-
-<!-- -->
-
-    import numpy as np
-    rgb = np.dstack([src.read(4), src.read(3), src.read(2)])  # Sentinel-2 bands 4-3-2 as true color
-    plt.imshow(np.clip(rgb * 3, 0, 255).astype('uint8'))  # naive stretch
-    plt.title("Sentinel-2 True Color")
-
-Adjust as necessary for actual data values. If the sample is reflectance
-(0-1), scale to 0-255 for display.
-
-The instructor should narrate what they're doing: *"Here I'm stacking
-bands 4-3-2 which correspond to red, green, blue. I apply a simple
-scaling just to make it visible. The result is an image that looks like
-a photograph."* If the network is good, perhaps even overlay the vector
-boundary on the image (though that might be advanced for now -- could
-skip or mention it as possible with contextily or plotting libraries).
-
-Show basic raster ops: like cropping. To "crop to an AOI", one can use
-Rasterio's `mask` function with a GeoJSON geometry (e.g., geometry of a
-province from the GeoDataFrame). Demonstrate that if possible: retrieve
-a province polygon from GeoPandas
-(`geom = gdf.loc[gdf['Province']=='Palawan', 'geometry'].iloc[0]`), then
-use `rasterio.mask.mask(src, [geom], crop=True)` to get the image
-subset. This ties back to the concept of AOI clipping from the lecture.
-
-Another operation: resampling -- e.g., if you want to resample the image
-to a coarser resolution, show how to use `rasterio.warp.resize` or read
-with out_shape parameter. But due to time, might skip detailed
-resampling and just mention it.
-
-Throughout, reinforce why these operations are important: *"In many
-projects, you won\'t use entire global images; you'll subset to your
-area. Or you might need to align raster resolutions, say Sentinel-2 (10
-m) with another dataset at 30 m."*
-
-Ensure participants run these steps and see output. If any error (like
-CRS mismatch warnings), explain those.
-
-Ultimately, by the end of this hands-on, participants should feel "I can
-load a shapefile and a GeoTIFF in Python, inspect them, and do a simple
-plot." This is foundational for the upcoming days.
-
-- *Importance of Python skills:* As a closing note for Session 3, the
-  instructor should stress: *"We just covered a lot of technical steps,
-  but these form the bedrock of more complex workflows. If you're
-  comfortable loading and examining data like this, you'll be able to
-  preprocess inputs for AI models or analyze outputs."* Encourage
-  questions if anyone struggled. Possibly provide troubleshooting tips
-  (e.g., if a file won't read, check path; if a plot is blank, check if
-  you closed the dataset or if the array values need scaling).
-
-**Session 4 -- Intro to GEE for Data Access:** Now the last part of
-Day 1, which may be partly lecture/demo and partly interactive.
-
-- *Using the GEE Code Editor vs Python API:* The instructor might
-  briefly show the Earth Engine Code Editor web interface (if
-  participants have GEE accounts enabled). However, since the question
-  suggests using the Python API in Colab, focus on that. Explain that
-  Earth Engine's Python API allows you to run Earth Engine commands from
-  a Colab notebook -- effectively sending tasks to Google's servers
-  which hold the satellite data.
-
-- *Authentication:* In the notes, clearly instruct: "We need to
-  authenticate Earth Engine. When you run `ee.Authenticate()`, it will
-  give a URL -- click it, log in with your Google account (the one with
-  GEE access if needed), get the code, paste it back. Then run
-  `ee.Initialize()`. After this, we can call Earth Engine functions."
-  This process might trip some up, so ensure everyone completes it.
-
-- *Searching and Filtering ImageCollections:* Demonstrate with
-  Sentinel-2:
-
-<!-- -->
-
-- import ee
-      ee.Initialize()
-      s2 = ee.ImageCollection('COPERNICUS/S2_SR') \
-              .filterDate('2021-01-01', '2021-12-31') \
-              .filterBounds(ee.Geometry.Point(120.9842, 14.5995)) \
-              .filterMetadata('CLOUDY_PIXEL_PERCENTAGE', 'less_than', 20)
-      print(s2.size().getInfo())
-
-  This code example would filter the Sentinel-2 surface reflectance
-  collection for year 2021 over Manila city (just an example point) with
-  \<20% cloud cover. The instructor should explain each part:
-  *"filterDate for time range, filterBounds for location (using a point
-  or we could use ee.Geometry.Polygon for an AOI), filterMetadata for
-  metadata like cloud percentage."* Check how many images
-  (`s2.size().getInfo()` returns a number).
-
-Then show how to get one image or a composite: e.g.,
-`image = s2.median()` to take median. Or use `.first()` just to grab the
-first image in the filtered collection. Also, show how to **add new
-derived bands** if desired (maybe not now, but mention it's possible to
-map over collections and add bands).
-
-- *Cloud Masking Example in GEE:* Provide a short function for
-  Sentinel-2 cloud masking using the QA60 band (for simplicity):
-
-<!-- -->
-
-- def maskS2clouds(image):
-          qa = image.select('QA60')
-          # Bits 10 and 11 are clouds and cirrus
-          mask = qa.bitwiseAnd(int('010000000000',2)).eq(0) \
-                 .And(qa.bitwiseAnd(int('100000000000',2)).eq(0))
-          return image.updateMask(mask).copyProperties(image, ["system:time_start"])
-
-  Explain that this creates a mask where cloud bits are 0 (meaning
-  clear). Then apply: `s2_clean = s2.map(maskS2clouds)`. Now if you do
-  median composite on `s2_clean`, it should ignore clouds. The
-  instructor should clarify: *"We're using Earth Engine's ability to
-  handle bitmasks on the QA60 band to filter out cloudy pixels. This is
-  one approach; a more flexible one uses the s2cloudless probability as
-  mentioned earlier, but QA60 is quick and works ok for basic needs."*
-
-<!-- -->
-
-- *Creating a Composite & Visualization:* With `s2_clean`, do something
-  like:
-
-<!-- -->
-
-- composite = s2_clean.median().clip(ee.Geometry.Point(120.9842,14.5995).buffer(50000))
-      url = composite.getThumbURL({'min':0,'max':3000,'bands':'B4,B3,B2'})
-      display(Image(url=url))
-
-  (Note: getThumbURL is one way to get a quick preview; or use geemap
-  library to display on folium map, but that might be too much). If
-  using geemap, the instructor can show how to quickly visualize in a
-  notebook.
-
-Show that the composite has much less cloud (maybe none if done over
-enough time). Also mention you can do
-`composite.reduceRegion(ee.Reducer.mean(), geometry=..., scale=10)` to
-get average values, etc., just to hint at analytical capabilities.
-
-- *Sentinel-1 in GEE:* Also demonstrate a Sentinel-1 query:
-
-<!-- -->
-
-- s1 = ee.ImageCollection('COPERNICUS/S1_GRD') \
-              .filterDate('2021-07-01', '2021-07-31') \
-              .filterBounds(some_geometry) \
-              .filter(ee.Filter.eq('instrumentMode', 'IW')) \
-              .filter(ee.Filter.eq('orbitProperties_pass', 'DESCENDING')) \
-              .filter(ee.Filter.listContains('transmitterReceiverPolarisation', 'VV'))
-      s1_med = s1.median().clip(some_geometry)
-
-  Explain: *"We filtered Sentinel-1 to a specific month and area, chose
-  IW mode and descending orbit (just as an example, maybe for a specific
-  pass), and only VV polarization. Then we take a median composite (can
-  reduce speckle)."* If possible, display it similarly (though
-  interpreting SAR requires some stretch; maybe apply 10\*log10 and a
-  color map, but okay to just mention it).
-
-<!-- -->
-
-- *Clipping and Exporting:* The above examples used `.clip(geometry)`
-  which restricts to AOI. Note to participants that clipping in GEE is a
-  **remapping of pixel values to null outside the area, not reducing
-  processing cost** per se, but it's good for export. To **export**,
-  illustrate:
-
-<!-- -->
-
-- task = ee.batch.Export.image.toDrive(image=composite,
-                                          description='comp_export',
-                                          folder='EarthEngineExports',
-                                          fileNamePrefix='ManilaComposite',
-                                          scale=10, region=geometry)
-      task.start()
-
-  Explain that this will export the image to their Google Drive (folder
-  EarthEngineExports) and they can download it later. They should
-  monitor tasks in the GEE Code Editor or via `task.status()`. Since
-  this might be slow, perhaps just show how it's set up but not actually
-  wait for completion in class.
-
-<!-- -->
-
-- *Limitations and Next Steps:* Conclude by reminding participants that
-  while GEE is powerful for data prep and certain analyses, there are
-  times you need to download data and use other tools (like training a
-  custom PyTorch model, which GEE can't do on its servers). That's why
-  learning both GEE and Python is valuable -- use each for what it's
-  best at. Also, mention that tomorrow they will dive into actually
-  training a classifier (Random Forest) using either GEE or
-  scikit-learn, bridging these skills.
-
-- *Questions and common issues:* The instructor should anticipate some
-  may have issues like "Earth Engine says my user is not whitelisted"
-  (meaning they didn't sign up -- hopefully sorted beforehand) or
-  "Memory limit exceeded" if they tried a huge export. Advise using
-  reasonable AOIs and time ranges.
-
-By the end of Day 1, the instructor reiterates the key takeaways:
-*Participants have learned where to get satellite data (Copernicus,
-local sources), how AI/ML can extract information from these data, and
-have practiced basic data handling both on their own machine
-(GeoPandas/Rasterio) and in the cloud (Earth Engine).* This sets a
-strong foundation for the more advanced modeling in the coming days.
-
-------------------------------------------------------------------------
-
-## 3. Hands-on Google Colab Notebooks
+### 3.1. Hands-on Google Colab Notebooks
 
 To reinforce the lectures, Day 1 includes two interactive Colab
 notebooks that participants will run:
 
-### Notebook 1: **Python Geospatial Data Handling** (GeoPandas & Rasterio)
+#### Notebook 1: **Python Geospatial Data Handling** (GeoPandas & Rasterio)
 
 **Objective:** Introduce participants to using Python for basic
 geospatial data manipulation -- loading, inspecting, and visualizing
@@ -989,7 +689,157 @@ will be provided to them (via GitHub or Drive) so they can refer back.
 Instructors should ensure that any path or data needed is provided (or
 use `geopandas` to directly fetch data from a URL if possible).
 
-### Notebook 2: **Google Earth Engine Python API for EO Data**
+### 3.2. Instructor Notes (Speaker's Script)
+
+**Session 3 -- Hands-on Python for Geospatial (Colab):** Here the
+instructor transitions from theory to practice. Likely before diving
+into the live notebook, they will give some context/slides:
+
+- *Colab Setup:* Explain that Google Colab is essentially a free Jupyter
+  notebook environment in the cloud. Ensure everyone has the link to the
+  Day 1 Colab notebook (perhaps shared via chat or a Learning Management
+  System). Walk through the interface: where to write code vs text, how
+  to run a cell (Shift+Enter), and how to reset if needed. Mention that
+  Colab provides some resources like a small amount of Google Drive
+  storage (when mounted) and internet access to install libraries or
+  fetch data. It's important to show how to **mount Google Drive** (so
+  participants can save outputs or upload data). In the notes, the
+  instructor should say: "We'll now mount your Google Drive. This will
+  ask for authentication -- please follow the prompt to permit Colab to
+  access your Drive. Once mounted, you can read/write files as if it's a
+  local disk." This avoids confusion when they have to read a shapefile
+  or save a result.
+
+- *Installing Packages:* Colab usually comes with many scientific
+  packages pre-installed, but specialized ones like `geopandas` or
+  `rasterio` might need installation. The instructor notes: "If you run
+  the cell I provided, it does `!pip install geopandas rasterio`. This
+  will take a minute to run. You might see a message to restart runtime
+  -- if so, go to Runtime > Restart and then continue (this is needed
+  when new packages are installed)." Ensure everyone does this
+  successfully before moving on.
+
+- *Python Basics Recap:* Given varying Python experience, quickly review
+  what a pandas DataFrame is vs a GeoDataFrame, what a numpy array is
+  (for raster data), etc. Possibly mention basic Python types (lists,
+  dicts) if needed, but likely the group has some background. The
+  instructor can reassure: "Don't worry if you're not a Python expert --
+  we will provide template code. Focus on understanding the steps and
+  being able to modify them for your own data later."
+
+- *GeoPandas (Vector data) hands-on:* Now lead the group through reading
+  a vector dataset. The sample provided (for example, *Philippine
+  administrative boundaries shapefile* for provinces or regions) can be
+  used. In the notes, explain each step:
+
+- "We use GeoPandas which extends Pandas to handle spatial data. When we
+  do `gpd.read_file('philippines_provinces.shp')`, it will load the
+  shapefile into a GeoDataFrame."
+
+- After loading, show `gdf.head()` and `gdf.crs` (to discuss coordinate
+  reference systems briefly, e.g., it might be WGS84 lat-long which is
+  typical). If needed, demonstrate re-projecting with `to_crs` if
+  planning to do area calculations.
+
+- Then, "Let's visualize the vector data." Show how `gdf.plot()` works
+  for a quick map. The instructor should mention that in a notebook,
+  plots appear inline. Possibly discuss how to change the color or add a
+  column-based coloring (e.g., color provinces by region by passing
+  `column='Region'` to plot).
+
+- If relevant, demonstrate filtering the GeoDataFrame: e.g.,
+  `gdf[gdf['Province']=='Palawan']` to get one province, and then
+  plotting that. This ties into clipping operations later.
+
+- Encourage participants to try simple tasks like identify how many
+  features (provinces) are in the data (`len(gdf)`) and to check
+  attribute names (`gdf.columns`).
+
+As they do this, the instructor walks around (or virtually checks) to
+make sure everyone is getting output maps.
+
+- *Rasterio (Raster data) hands-on:* Next, the instructor note
+  introduces Rasterio for reading raster files (like GeoTIFF). The
+  sample could be a small Sentinel-2 image tile (or a subset). Explain
+  that raster data = pixels in a grid with georeferencing. Using
+  `rasterio.open('image.tif')` provides a dataset object. Show how to
+  read metadata: e.g., `src.profile` or `src.count` (number of bands),
+  `src.width`, `src.height`, `src.crs`, `src.transform` (affine
+  transform tying pixel coords to real world). Then read data: e.g.,
+  `band1 = src.read(1)` to get the first band as a numpy array. If the
+  image has multiple bands, maybe read a few and display. This is a good
+  place to show an actual image: perhaps use `matplotlib` to display a
+  RGB composite. The instructor can include a code snippet using
+  `plt.imshow()` with a combination of bands (taking care to stretch or
+  normalize if needed). For example:
+
+<!-- -->
+
+    import numpy as np
+    rgb = np.dstack([src.read(4), src.read(3), src.read(2)])  # Sentinel-2 bands 4-3-2 as true color
+    plt.imshow(np.clip(rgb * 3, 0, 255).astype('uint8'))  # naive stretch
+    plt.title("Sentinel-2 True Color")
+
+Adjust as necessary for actual data values. If the sample is reflectance
+(0-1), scale to 0-255 for display.
+
+The instructor should narrate what they're doing: *"Here I'm stacking
+bands 4-3-2 which correspond to red, green, blue. I apply a simple
+scaling just to make it visible. The result is an image that looks like
+a photograph."* If the network is good, perhaps even overlay the vector
+boundary on the image (though that might be advanced for now -- could
+skip or mention it as possible with contextily or plotting libraries).
+
+Show basic raster ops: like cropping. To "crop to an AOI", one can use
+Rasterio's `mask` function with a GeoJSON geometry (e.g., geometry of a
+province from the GeoDataFrame). Demonstrate that if possible: retrieve
+a province polygon from GeoPandas
+(`geom = gdf.loc[gdf['Province']=='Palawan', 'geometry'].iloc[0]`), then
+use `rasterio.mask.mask(src, [geom], crop=True)` to get the image
+subset. This ties back to the concept of AOI clipping from the lecture.
+
+Another operation: resampling -- e.g., if you want to resample the image
+to a coarser resolution, show how to use `rasterio.warp.resize` or read
+with out_shape parameter. But due to time, might skip detailed
+resampling and just mention it.
+
+Throughout, reinforce why these operations are important: *"In many
+projects, you won\'t use entire global images; you'll subset to your
+area. Or you might need to align raster resolutions, say Sentinel-2 (10
+m) with another dataset at 30 m."*
+
+Ensure participants run these steps and see output. If any error (like
+CRS mismatch warnings), explain those.
+
+Ultimately, by the end of this hands-on, participants should feel "I can
+load a shapefile and a GeoTIFF in Python, inspect them, and do a simple
+plot." This is foundational for the upcoming days.
+
+- *Importance of Python skills:* As a closing note for Session 3, the
+  instructor should stress: *"We just covered a lot of technical steps,
+  but these form the bedrock of more complex workflows. If you're
+  comfortable loading and examining data like this, you'll be able to
+  preprocess inputs for AI models or analyze outputs."* Encourage
+  questions if anyone struggled. Possibly provide troubleshooting tips
+  (e.g., if a file won't read, check path; if a plot is blank, check if
+  you closed the dataset or if the array values need scaling).
+
+***
+
+## 4. Session 4: Intro to GEE for Data Access
+
+### Learning Objectives
+
+By the end of this session, you will be able to:
+
+*   **Access and filter** Sentinel-1 and Sentinel-2 image collections in Google Earth Engine.
+*   **Apply** a cloud mask to Sentinel-2 imagery.
+*   **Create** a cloud-free composite image.
+*   **Export** processed imagery from Google Earth Engine.
+
+### 4.1. Hands-on Google Colab Notebooks
+
+#### Notebook 2: **Google Earth Engine Python API for EO Data**
 
 **Objective:** Teach participants how to use the Earth Engine Python API
 in Colab to find, filter, process, and download satellite images
@@ -1198,7 +1048,7 @@ see how the Sentinel-2 composite colors change (indicative of
 phenology)."* Or *"Try increasing cloud percentage filter to get more
 images -- does the composite improve or degrade?"*
 
-**Outcome:** After Notebook 2, participants will have: - Queried and
+**Outcome:** After Notebook¢, participants will have: - Queried and
 filtered satellite image collections in Earth Engine. - Applied a cloud
 mask on-the-fly for Sentinel-2. - Created a cloud-free composite. -
 Exported an image to their drive for offline use. - Done a similar
@@ -1215,9 +1065,164 @@ chosen (e.g., a small Sentinel-2 TIFF and a shapefile) will also be
 provided so that even outside of Colab, participants can run the
 notebooks (if they set up locally with the same libraries).
 
-------------------------------------------------------------------------
+### 4.2. Instructor Notes (Speaker's Script)
 
-## 4. Datasets for Day 1
+**Session 4 -- Intro to GEE for Data Access:** Now the last part of
+Day 1, which may be partly lecture/demo and partly interactive.
+
+- *Using the GEE Code Editor vs Python API:* The instructor might
+  briefly show the Earth Engine Code Editor web interface (if
+  participants have GEE accounts enabled). However, since the question
+  suggests using the Python API in Colab, focus on that. Explain that
+  Earth Engine's Python API allows you to run Earth Engine commands from
+  a Colab notebook -- effectively sending tasks to Google's servers
+  which hold the satellite data.
+
+- *Authentication:* In the notes, clearly instruct: "We need to
+  authenticate Earth Engine. When you run `ee.Authenticate()`, it will
+  give a URL -- click it, log in with your Google account (the one with
+  GEE access if needed), get the code, paste it back. Then run
+  `ee.Initialize()`. After this, we can call Earth Engine functions."
+  This process might trip some up, so ensure everyone completes it.
+
+- *Searching and Filtering ImageCollections:* Demonstrate with
+  Sentinel-2:
+
+<!-- -->
+
+- import ee
+      ee.Initialize()
+      s2 = ee.ImageCollection('COPERNICUS/S2_SR') \
+              .filterDate('2021-01-01', '2021-12-31') \
+              .filterBounds(ee.Geometry.Point(120.9842, 14.5995)) \
+              .filterMetadata('CLOUDY_PIXEL_PERCENTAGE', 'less_than', 20)
+      print(s2.size().getInfo())
+
+  This code example would filter the Sentinel-2 surface reflectance
+  collection for year 2021 over Manila city (just an example point) with
+  <20% cloud cover. The instructor should explain each part:
+  *"filterDate for time range, filterBounds for location (using a point
+  or we could use ee.Geometry.Polygon for an AOI), filterMetadata for
+  metadata like cloud percentage."* Check how many images
+  (`s2.size().getInfo()` returns a number).
+
+Then show how to get one image or a composite: e.g.,
+`image = s2.median()` to take median. Or use `.first()` just to grab the
+first image in the filtered collection. Also, show how to **add new
+derived bands** if desired (maybe not now, but mention it's possible to
+map over collections and add bands).
+
+- *Cloud Masking Example in GEE:* Provide a short function for
+  Sentinel-2 cloud masking using the QA60 band (for simplicity):
+
+<!-- -->
+
+- def maskS2clouds(image):
+          qa = image.select('QA60')
+          # Bits 10 and 11 are clouds and cirrus
+          cloud_bit_mask = (1 << 10) | (1 << 11)
+          mask = qa.bitwiseAnd(cloud_bit_mask).eq(0) \
+                 .And(qa.bitwiseAnd(int('100000000000',2)).eq(0))
+          return image.updateMask(mask).copyProperties(image, ["system:time_start"])
+
+  Explain that this creates a mask where cloud bits are 0 (meaning
+  clear). Then apply: `s2_clean = s2.map(maskS2clouds)`. Now if you do
+  median composite on `s2_clean`, it should ignore clouds. The
+  instructor should clarify: *"We're using Earth Engine's ability to
+  handle bitmasks on the QA60 band to filter out cloudy pixels. This is
+  one approach; a more flexible one uses the s2cloudless probability as
+  mentioned earlier, but QA60 is quick and works ok for basic needs."*
+
+<!-- -->
+
+- *Creating a Composite & Visualization:* With `s2_clean`, do something
+  like:
+
+<!-- -->
+
+- composite = s2_clean.median().clip(ee.Geometry.Point(120.9842,14.5995).buffer(50000))
+      url = composite.getThumbURL({'min':0,'max':3000,'bands':'B4,B3,B2'})
+      display(Image(url=url))
+
+  (Note: getThumbURL is one way to get a quick preview; or use geemap
+  library to display on folium map, but that might be too much). If
+  using geemap, the instructor can show how to quickly visualize in a
+  notebook.
+
+Show that the composite has much less cloud (maybe none if done over
+enough time). Also mention you can do
+`composite.reduceRegion(ee.Reducer.mean(), geometry=..., scale=10)` to
+get average values, etc., just to hint at analytical capabilities.
+
+- *Sentinel-1 in GEE:* Also demonstrate a Sentinel-1 query:
+
+<!-- -->
+
+- s1 = ee.ImageCollection('COPERNICUS/S1_GRD') \
+              .filterDate('2021-07-01', '2021-07-31') \
+              .filterBounds(some_geometry) \
+              .filter(ee.Filter.eq('instrumentMode', 'IW')) \
+              .filter(ee.Filter.eq('orbitProperties_pass', 'DESCENDING')) \
+              .filter(ee.Filter.listContains('transmitterReceiverPolarisation', 'VV'))
+      s1_med = s1.median().clip(some_geometry)
+
+  Explain: *"We filtered Sentinel-1 to a specific month and area, chose
+  IW mode and descending orbit (just as an example, maybe for a specific
+  pass), and only VV polarization. Then we take a median composite (can
+  reduce speckle)."* If possible, display it similarly (though
+  interpreting SAR requires some stretch; maybe apply 10*log10 and a
+  color map, but okay to just mention it).
+
+<!-- -->
+
+- *Clipping and Exporting:* The above examples used `.clip(geometry)`
+  which restricts to AOI. Note to participants that clipping in GEE is a
+  **remapping of pixel values to null outside the area, not reducing
+  processing cost** per se, but it's good for export. To **export**,
+  illustrate:
+
+<!-- -->
+
+- task = ee.batch.Export.image.toDrive(image=composite,
+                                          description='comp_export',
+                                          folder='EarthEngineExports',
+                                          fileNamePrefix='ManilaComposite',
+                                          scale=10, region=geometry)
+      task.start()
+
+  Explain that this will save the image in their Google Drive (folder
+  EarthEngineExports) and they can download it later. They should
+  monitor tasks in the GEE Code Editor or via `task.status()`. Since
+  this might be slow, perhaps just show how it's set up but not actually
+  wait for completion in class.
+
+<!-- -->
+
+- *Limitations and Next Steps:* Conclude by reminding participants that
+  while GEE is powerful for data prep and certain analyses, there are
+  times you need to download data and use other tools (like training a
+  custom PyTorch model, which GEE can't do on its servers). That's why
+  learning both GEE and Python is valuable -- use each for what it's
+  best at. Also, mention that tomorrow they will dive into actually
+  training a classifier (Random Forest) using either GEE or
+  scikit-learn, bridging these skills.
+
+- *Questions and common issues:* The instructor should anticipate some
+  may have issues like "Earth Engine says my user is not whitelisted"
+  (meaning they didn't sign up -- hopefully sorted beforehand) or
+  "Memory limit exceeded" if they tried a huge export. Advise using
+  reasonable AOIs and time ranges.
+
+By the end of Day 1, the instructor reiterates the key takeaways:
+*Participants have learned where to get satellite data (Copernicus,
+local sources), how AI/ML can extract information from these data, and
+have practiced basic data handling both on their own machine
+(GeoPandas/Rasterio) and in the cloud (Earth Engine).* This sets a
+strong foundation for the more advanced modeling in the coming days.
+
+***
+
+## 5. Datasets for Day 1
 
 To facilitate the hands-on exercises and case examples, a set of
 **sample datasets** (small and readily downloadable) will be provided:
@@ -1250,7 +1255,7 @@ To facilitate the hands-on exercises and case examples, a set of
   lower-resolution product like a Level-3 mosaic or the ESA WorldCover
   base map for demonstration.
 
-- Example: **"Sentinel2_L2A_Luzon_sample.tif"** -- \~50 MB file with
+- Example: **"Sentinel2_L2A_Luzon_sample.tif"** -- ~50 MB file with
   bands 2,3,4 (visible) and 8 (NIR) included. This is provided so
   participants can practice Rasterio on it.
 
@@ -1260,13 +1265,13 @@ To facilitate the hands-on exercises and case examples, a set of
 
 - **Sentinel-1 Sample:** To illustrate SAR, we might include a small
   Sentinel-1 GRD snippet. Possibly a 20x20 km GeoTIFF of VV backscatter
-  over Laguna de Bay or Cagayan River. This could be \~10 MB. If not
+  over Laguna de Bay or Cagayan River. This could be ~10 MB. If not
   providing as file, we show how to get it from GEE (as we did in
-  Notebook 2). Given time constraints, an actual file may not be needed
+  Notebook¢). Given time constraints, an actual file may not be needed
   if GEE is used directly.
 
 - **Land Cover Map (for reference):** The 2020 NAMRIA land cover map
-  (raster or vector) at national scale is large (\~ hundreds of MB).
+  (raster or vector) at national scale is large (~ hundreds of MB).
   Instead, we could include a simplified version (e.g., one region or a
   generalized raster). However, since it's mostly for context, we might
   skip including the file and just point participants to the NAMRIA
@@ -1307,9 +1312,9 @@ environment without long downloads. They illustrate the kinds of data
 (administrative, optical imagery, radar imagery) that will be used
 throughout the training.
 
-------------------------------------------------------------------------
+***
 
-## 5. Participant Handouts (DOCX/Markdown)
+## 6. Participant Handouts (DOCX/Markdown)
 
 To reinforce learning and for easy future reference, several handouts
 will be provided. These will be in both Word (DOCX) and Markdown (for
@@ -1328,17 +1333,20 @@ easy viewing on the course site). Key handouts for Day 1:
 - *4:30--5:30:* Session 4 -- Intro to Google Earth Engine (hands-on)
 - *5:30--5:45:* Q&A and Wrap-up.
 
-(Times can be adjusted as needed, but this gives structure.)\
+(Times can be adjusted as needed, but this gives structure.)\\
 Below the schedule, **learning objectives** are listed in bullet form: -
 *Understand* the goals of the Copernicus program in the Philippines and
 identify the main Sentinel satellites and their characteristics. -
 *Recognize* key Philippine agencies/platforms for Earth observation data
 (PhilSA, NAMRIA, DOST-ASTI projects) and how they can complement
-satellite data. - *Explain* fundamental AI/ML concepts (supervised vs
+satellite data. -
+*Explain* fundamental AI/ML concepts (supervised vs
 unsupervised learning, neural networks basics) and the typical workflow
-to develop an EO application using ML. - *Perform* basic tasks in Python
+to develop an EO application using ML. -
+*Perform* basic tasks in Python
 for geospatial data: reading and visualizing a map layer and satellite
-image. - *Use* Google Earth Engine to retrieve satellite imagery and
+image. -
+*Use* Google Earth Engine to retrieve satellite imagery and
 apply simple preprocessing (filtering dates, cloud masking, composites).
 
 This handout sets expectations and is something participants can quickly
@@ -1377,7 +1385,7 @@ review later without combing through slides.
     not covered deeply yet).
   - Filtering: examples of attribute filter
     (`gdf[gdf['FIELD']=='value']`).
-  - Merging dataframes (maybe not for Day 1, could be Day 3 topic, but
+  - Merging dataframes (maybe not for Day 1, could be Day£ topic, but
     could list).
   - *This cheat sheet* could be adapted from existing ones, simplified
     for our context.
@@ -1443,9 +1451,82 @@ All handouts will be written in a clear, concise manner with bullet
 points, short paragraphs, and possibly small graphics or tables. They
 serve as both in-class aids and post-class reference materials.
 
-------------------------------------------------------------------------
+***
 
-## 6. Web Hosting Solution for Course Materials
+## 7. Assessments
+
+### Knowledge Checks
+
+At the end of each session, a short, 3-5 question multiple-choice quiz will be administered to reinforce key concepts.
+
+**Session 1 Knowledge Check:**
+
+1.  What is the primary advantage of Sentinel-1's SAR sensor for monitoring in the Philippines?
+    a)  Higher spatial resolution than Sentinel-2
+    b)  Ability to see through clouds
+    c)  More spectral bands
+    d)  Longer historical archive
+
+2.  Which Philippine agency is the primary source for authoritative national base maps and land cover data?
+    a)  PhilSA
+    b)  PAGASA
+    c)  DOST-ASTI
+    d)  NAMRIA
+
+**Session 2 Knowledge Check:**
+
+1.  You are given a dataset of satellite images with corresponding labels of "forest" and "non-forest". What type of machine learning is most appropriate for this task?
+    a)  Supervised learning
+    b)  Unsupervised learning
+    c)  Reinforcement learning
+
+2.  What is the main principle of data-centric AI?
+    a)  Using the most complex model available
+    b)  Focusing on improving data quality
+    c)  Using the largest possible dataset
+    d)  Automating the entire AI workflow
+
+### Day 1 Graded Assignment
+
+**Objective:** Apply the skills learned in Day 1 to a new problem.
+
+**Task:**
+
+1.  Select a province in the Philippines (other than the one used in the notebook).
+2.  Using Google Earth Engine, create a cloud-free Sentinel-2 composite for your chosen province for the year 2023.
+3.  Export the composite as a GeoTIFF file to your Google Drive.
+4.  In a new Colab notebook, load the exported GeoTIFF and the provincial boundary.
+5.  Calculate the NDVI for the province.
+6.  Create a map that displays the NDVI of the province, with the provincial boundary overlaid.
+7.  Submit the Colab notebook and a screenshot of the final map.
+
+***
+
+## 8. Visual Design Recommendations
+
+When creating presentations and the course website, the following visual design principles should be followed:
+
+*   **Use high-quality satellite imagery:** Showcase the power of EO data with visually stunning and relevant images.
+*   **Create clear diagrams and flowcharts:** Visualize complex workflows and concepts to make them easier to understand.
+*   **Use a consistent color scheme:** Align with EO conventions (e.g., NDVI color ramps) and the branding of the CopPhil programme.
+*   **Keep slides clean and uncluttered:** Limit each slide to one core concept with 3-5 supporting points.
+*   **Use before/after comparisons:** Demonstrate the effectiveness of AI/ML models and other techniques.
+
+***
+
+## 9. Accessibility
+
+All training materials should be created with accessibility in mind, following WCAG 2.1 AA guidelines. This includes:
+
+*   **Providing alt text for all images and diagrams.**
+*   **Using a clear and logical heading structure.**
+*   **Ensuring sufficient color contrast.**
+*   **Providing transcripts for all video and audio content.**
+*   **Making sure all content is keyboard-navigable.**
+
+***
+
+## 10. Web Hosting Solution for Course Materials
 
 To publish all materials (notes, slides, notebooks, handouts) as an
 interactive course site, we recommend using **Jupyter Book or Quarto**,
@@ -1520,7 +1601,7 @@ chosen for its modern approach.
   them. There are community plugins and approaches (like using `nbdev`
   or `nbdoc`) that generate MDX from notebooks and embed outputs, which
   then Docusaurus can
-  host[\[2\]](https://outerbounds.com/blog/technical-docs-with-docusaurus-and-notebooks#:~:text=and%20tested%20for%20many%20scenarios%3A,needed%20the%20following%20additional%20capabilities).
+  host[[2]](https://outerbounds.com/blog/technical-docs-with-docusaurus-and-notebooks#:~:text=and%20tested%20for%20many%20scenarios%3A,needed%20the%20following%20additional%20capabilities).
   This means it's feasible to include our code outputs (as static images
   or interactive via some custom React components). Docusaurus has
   excellent theming and a fancy look; it also has a search and
@@ -1580,14 +1661,14 @@ through AI/EO.
 
 ------------------------------------------------------------------------
 
-[\[1\]](https://commons.wikimedia.org/wiki/File:Mount_Mayon_Sentinel-2_L1C_from_2018-01-30_(28280091769).jpg#:~:text=)
+[[1]](https://commons.wikimedia.org/wiki/File:Mount_Mayon_Sentinel-2_L1C_from_2018-01-30_(28280091769).jpg#:~:text=)
 File:Mount Mayon Sentinel-2 L1C from 2018-01-30 (28280091769).jpg -
 Wikimedia Commons
 
-<https://commons.wikimedia.org/wiki/File:Mount_Mayon_Sentinel-2_L1C_from_2018-01-30_(28280091769).jpg>
+https://commons.wikimedia.org/wiki/File:Mount_Mayon_Sentinel-2_L1C_from_2018-01-30_(28280091769).jpg
 
-[\[2\]](https://outerbounds.com/blog/technical-docs-with-docusaurus-and-notebooks#:~:text=and%20tested%20for%20many%20scenarios%3A,needed%20the%20following%20additional%20capabilities)
+[[2]](https://outerbounds.com/blog/technical-docs-with-docusaurus-and-notebooks#:~:text=and%20tested%20for%20many%20scenarios%3A,needed%20the%20following%20additional%20capabilities)
 Testable Technical Documentation with Notebooks, nbdev, and Docusaurus
-\| Outerbounds
+| Outerbounds
 
-<https://outerbounds.com/blog/technical-docs-with-docusaurus-and-notebooks>
+https://outerbounds.com/blog/technical-docs-with-docusaurus-and-notebooks
