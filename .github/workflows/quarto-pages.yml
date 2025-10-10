@@ -32,7 +32,7 @@ jobs:
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
         with:
-          version: 'stable'
+          version: 'release'
 
       - name: Install Python dependencies
         uses: actions/setup-python@v5
