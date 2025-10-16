@@ -60,8 +60,8 @@ Learn to work with vector data (GeoPandas) and raster data (Rasterio) in Python.
 - Google Colab (recommended)
 - Or local Jupyter with geopandas, rasterio installed
 
-[Download Notebook](#){.btn .btn-primary}
-[Open in Colab](#){.btn .btn-outline}
+[Download Notebook](../day1/notebooks/Day1_Session3_Python_Geospatial_Data.ipynb){.btn .btn-primary}
+[Open in Colab](https://colab.research.google.com/github/DimitrisKasabalis/EO_trainning/blob/main/course_site/day1/notebooks/Day1_Session3_Python_Geospatial_Data.ipynb){.btn .btn-outline}
 :::
 
 ### Session 4: Google Earth Engine
@@ -367,13 +367,13 @@ Direct links to open notebooks in Google Colab:
 ::: {.colab-links}
 **Session 3: Python for Geospatial Data**
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](#)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/DimitrisKasabalis/EO_trainning/blob/main/course_site/day1/notebooks/Day1_Session3_Python_Geospatial_Data.ipynb)
 
 ---
 
 **Session 4: Google Earth Engine**
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](#)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/DimitrisKasabalis/EO_trainning/blob/main/course_site/day1/notebooks/Day1_Session4_Google_Earth_Engine.ipynb)
 :::
 
 ::: {.callout-tip}

@@ -1,17 +1,50 @@
 ---
-title: "Setup Guide"
-subtitle: "Getting Ready for the Training"
+title: "🚀 Start Here: Complete Setup Guide"
+subtitle: "Getting Ready for the CopPhil EO AI/ML Training"
 date: last-modified
 ---
 
-## Welcome
+::: {.hero}
+# 🚀 Start Here: Complete Setup Guide
 
-This guide will help you set up everything you need for the CopPhil EO AI/ML Training. All exercises run in Google Colaboratory, so you won't need to install Python or libraries on your local machine.
+### Your First Stop Before Day 1
 
-::: {.callout-note}
-## Time Required
-Allow **15-20 minutes** to complete all setup steps before Day 1 begins.
+This is the **only setup guide** you need to complete before starting the training. Follow these steps in order, and you'll be ready for Day 1!
 :::
+
+::: {.callout-important}
+## ⏰ Complete This BEFORE Training Starts
+
+**Time Required:** 20-30 minutes
+**When:** At least **2 days before Day 1** (Google Earth Engine approval takes 24-48 hours)
+
+**What You'll Do:**
+1. ✅ Set up Google account
+2. ✅ Test Google Colab
+3. ✅ Register for Google Earth Engine (requires approval)
+4. ✅ Verify all systems work
+
+**Already done?** Jump to [Verification Tests](#final-verification) to confirm you're ready.
+:::
+
+---
+
+## Quick Check: Do You Have These?
+
+Before we begin, let's check if you already have the basics:
+
+::: {.prerequisites-checklist}
+- [ ] **Google account (Gmail)** - If yes, skip to [Step 2](#step-2-google-colaboratory-setup)
+- [ ] **Reliable internet** (5+ Mbps) - [Test your speed](https://fast.com)
+- [ ] **Modern web browser** (Chrome, Firefox, Safari, Edge - updated in last 6 months)
+- [ ] **Computer/laptop** (4GB+ RAM recommended)
+:::
+
+**All checked?** Great! Let's continue. 👇
+
+**Missing something?** No problem - we'll walk you through each step below.
+
+---
 
 ## Prerequisites Checklist
 
