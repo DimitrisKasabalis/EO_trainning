@@ -6,9 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2025-10-09">
+<meta name="dcterms.date" content="2025-10-16">
 
-<title>Philippine EO Resources – CopPhil EO AI/ML Training - Day 1</title>
+<title>Philippine EO Resources – CoPhil EO AI/ML Training</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -66,6 +66,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
+<link href="../resources/cheatsheets.html" rel="next">
+<link href="../resources/setup.html" rel="prev">
 <link href="../images/favicon.png" rel="icon" type="image/png">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -79,9 +81,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-c9822816d3895e59fda95a6fa7545fef.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-863aa4d8cd7d47b2ea71a40f543e327a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark-6c7212b2519dd7bebfa1236c409c2f09.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../site_libs/bootstrap/bootstrap-863aa4d8cd7d47b2ea71a40f543e327a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-3775014fae9fc394bbda1d6ff89dd45e.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-a15f5dce5650fb3fe5aba34e3b6df9a9.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-3775014fae9fc394bbda1d6ff89dd45e.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -113,6 +115,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 <link rel="stylesheet" href="../styles/custom.css">
+<link rel="stylesheet" href="../styles/phase2-enhancements.css">
 </head>
 
 <body class="nav-sidebar floating nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
@@ -287,7 +290,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <a href="../index.html" class="navbar-brand navbar-brand-logo">
     </a>
     <a class="navbar-brand" href="../index.html">
-    <span class="navbar-title">CopPhil EO AI/ML Training - Day 1</span>
+    <span class="navbar-title">CoPhil EO AI/ML Training</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -301,25 +304,25 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-sessions" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Sessions</span>
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-training-days" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Training Days</span>
     </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-sessions">    
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-training-days">    
         <li>
-    <a class="dropdown-item" href="../sessions/session1.html">
- <span class="dropdown-text">Session 1: Copernicus &amp; Philippine EO</span></a>
+    <a class="dropdown-item" href="../day1/index.html">
+ <span class="dropdown-text">Day 1: EO Data &amp; Fundamentals</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../sessions/session2.html">
- <span class="dropdown-text">Session 2: AI/ML Fundamentals</span></a>
+    <a class="dropdown-item" href="../day2/index.html">
+ <span class="dropdown-text">Day 2: Machine Learning</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../sessions/session3.html">
- <span class="dropdown-text">Session 3: Python for Geospatial</span></a>
+    <a class="dropdown-item" href="../day3/index.html">
+ <span class="dropdown-text">Day 3: Deep Learning</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../sessions/session4.html">
- <span class="dropdown-text">Session 4: Google Earth Engine</span></a>
+    <a class="dropdown-item" href="../day4/index.html">
+ <span class="dropdown-text">Day 4: Advanced Topics</span></a>
   </li>  
     </ul>
   </li>
@@ -374,12 +377,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../resources/philippine-eo.html">Resources</a></li><li class="breadcrumb-item"><a href="../resources/philippine-eo.html">Philippine EO Resources</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../resources/philippine-eo.html">Reference Materials</a></li><li class="breadcrumb-item"><a href="../resources/philippine-eo.html">Philippine EO Resources</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
-      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
-        <i class="bi bi-search"></i>
-      </button>
     </div>
   </nav>
 </header>
@@ -387,36 +387,25 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
-    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
       <a href="../index.html" class="sidebar-logo-link">
       </a>
       </div>
-        <div class="mt-2 flex-shrink-0 align-items-center">
-        <div class="sidebar-search">
-        <div id="quarto-search" class="" title="Search"></div>
-        </div>
-        </div>
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false">
  <span class="menu-text">Getting Started</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Welcome to Day 1</span></a>
-  </div>
-</li>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../resources/setup.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Setup Guide</span></a>
+ <span class="menu-text">🚀 Start Here: Complete Setup Guide</span></a>
   </div>
 </li>
       </ul>
@@ -424,47 +413,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
- <span class="menu-text">Training Sessions</span></a>
+ <span class="menu-text">Reference Materials</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../sessions/session1.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Session 1: Copernicus Sentinel Data Deep Dive &amp; Philippine EO Ecosystem</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../sessions/session2.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Session 2: Core Concepts of AI/ML for Earth Observation</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../sessions/session3.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Session 3: Hands-on Python for Geospatial Data</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../sessions/session4.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Session 4: Introduction to Google Earth Engine</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
- <span class="menu-text">Resources</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../resources/philippine-eo.html" class="sidebar-item-text sidebar-link active">
@@ -479,10 +433,21 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../resources/downloads.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Downloads</span></a>
+  <a href="../resources/glossary.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Glossary</span></a>
   </div>
 </li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false">
+ <span class="menu-text">Help &amp; Downloads</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../resources/faq.html" class="sidebar-item-text sidebar-link">
@@ -491,8 +456,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../resources/glossary.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Glossary</span></a>
+  <a href="../resources/downloads.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Downloads</span></a>
   </div>
 </li>
       </ul>
@@ -559,7 +524,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </ul></li>
   <li><a href="#upcoming-initiatives" id="toc-upcoming-initiatives" class="nav-link" data-scroll-target="#upcoming-initiatives">Upcoming Initiatives</a>
   <ul class="collapse">
-  <li><a href="#copphil-programme-milestones-2024-2026" id="toc-copphil-programme-milestones-2024-2026" class="nav-link" data-scroll-target="#copphil-programme-milestones-2024-2026">CopPhil Programme Milestones (2024-2026)</a></li>
+  <li><a href="#cophil-programme-milestones-2024-2026" id="toc-cophil-programme-milestones-2024-2026" class="nav-link" data-scroll-target="#cophil-programme-milestones-2024-2026">CoPhil Programme Milestones (2024-2026)</a></li>
   <li><a href="#dost-ai-investment-2024-2028" id="toc-dost-ai-investment-2024-2028" class="nav-link" data-scroll-target="#dost-ai-investment-2024-2028">DOST AI Investment (2024-2028)</a></li>
   </ul></li>
   <li><a href="#contact-directory" id="toc-contact-directory" class="nav-link" data-scroll-target="#contact-directory">Contact Directory</a></li>
@@ -577,7 +542,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <main class="content" id="quarto-document-content">
 
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../resources/philippine-eo.html">Resources</a></li><li class="breadcrumb-item"><a href="../resources/philippine-eo.html">Philippine EO Resources</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../resources/philippine-eo.html">Reference Materials</a></li><li class="breadcrumb-item"><a href="../resources/philippine-eo.html">Philippine EO Resources</a></li></ol></nav>
 <div class="quarto-title">
 <div class="quarto-title-block"><div><h1 class="title">Philippine EO Resources</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
 <p class="subtitle lead">Navigate the Philippine Earth Observation Ecosystem</p>
@@ -591,7 +556,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div>
     <div class="quarto-title-meta-heading">Date</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">October 9, 2025</p>
+      <p class="date">October 16, 2025</p>
     </div>
   </div>
   
@@ -612,11 +577,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span>CopPhil Programme Context
+<span class="screen-reader-only">Note</span>CoPhil Programme Context
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>This resource directory supports the <strong>EU-Philippines Copernicus Capacity Support Programme (CopPhil)</strong>, strengthening Philippine EO capabilities through international collaboration.</p>
+<p>This resource directory supports the <strong>EU-Philippines Copernicus Capacity Support Programme (CoPhil)</strong>, strengthening Philippine EO capabilities through international collaboration.</p>
 </div>
 </div>
 <hr>
@@ -626,7 +591,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="philippine-space-agency-philsa" class="level3">
 <h3 class="anchored" data-anchor-id="philippine-space-agency-philsa">1. Philippine Space Agency (PhilSA)</h3>
 <div class="agency-card">
-<p><strong>Role:</strong> National space authority and co-chair of CopPhil programme</p>
+<p><strong>Role:</strong> National space authority and co-chair of CoPhil programme</p>
 <p><strong>Established:</strong> 2019 (Republic Act No.&nbsp;11363)</p>
 <p><strong>Mandate:</strong> - Formulate national space policy - Establish space infrastructure - Promote space science and technology - Coordinate space-related activities across government</p>
 <p><strong>Key Platforms &amp; Services:</strong></p>
@@ -648,7 +613,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="copernicus-mirror-site-under-development" class="level4">
 <h4 class="anchored" data-anchor-id="copernicus-mirror-site-under-development">Copernicus Mirror Site (Under Development)</h4>
 <ul>
-<li><strong>Status:</strong> Being established under CopPhil programme</li>
+<li><strong>Status:</strong> Being established under CoPhil programme</li>
 <li><strong>Purpose:</strong> Local access to Copernicus Sentinel data</li>
 <li><strong>Benefits:</strong>
 <ul>
@@ -665,7 +630,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="department-of-science-and-technology-dost" class="level3">
 <h3 class="anchored" data-anchor-id="department-of-science-and-technology-dost">2. Department of Science and Technology (DOST)</h3>
 <div class="agency-card">
-<p><strong>Role:</strong> Science and technology advancement, co-chair of CopPhil programme</p>
+<p><strong>Role:</strong> Science and technology advancement, co-chair of CoPhil programme</p>
 <p><strong>Relevant Agencies:</strong></p>
 <section id="dost-asti-advanced-science-and-technology-institute" class="level4">
 <h4 class="anchored" data-anchor-id="dost-asti-advanced-science-and-technology-institute">DOST-ASTI (Advanced Science and Technology Institute)</h4>
@@ -805,7 +770,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>API access for automated workflows</li>
 </ul></li>
 </ul>
-<p><strong>Philippine Focus:</strong> - CopPhil Mirror Site integration (upcoming) - Dedicated training resources - Local technical support</p>
+<p><strong>Philippine Focus:</strong> - CoPhil Mirror Site integration (upcoming) - Dedicated training resources - Local technical support</p>
 </section>
 </section>
 <section id="esa-earth-observation-portal" class="level3">
@@ -900,7 +865,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="philsa-digital-space-campus" class="level3">
 <h3 class="anchored" data-anchor-id="philsa-digital-space-campus">1. PhilSA Digital Space Campus</h3>
 <ul>
-<li><strong>Status:</strong> Under development (CopPhil programme)</li>
+<li><strong>Status:</strong> Under development (CoPhil programme)</li>
 <li><strong>Purpose:</strong> Sustainable EO training infrastructure</li>
 <li><strong>Features:</strong>
 <ul>
@@ -982,7 +947,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="for-international-collaborators" class="level4">
 <h4 class="anchored" data-anchor-id="for-international-collaborators">For International Collaborators</h4>
 <ol type="1">
-<li>Coordinate through CopPhil programme channels</li>
+<li>Coordinate through CoPhil programme channels</li>
 <li>Establish memoranda of understanding (MOUs)</li>
 <li>Follow data sharing protocols</li>
 </ol>
@@ -1028,8 +993,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="upcoming-initiatives" class="level2">
 <h2 class="anchored" data-anchor-id="upcoming-initiatives">Upcoming Initiatives</h2>
-<section id="copphil-programme-milestones-2024-2026" class="level3">
-<h3 class="anchored" data-anchor-id="copphil-programme-milestones-2024-2026">CopPhil Programme Milestones (2024-2026)</h3>
+<section id="cophil-programme-milestones-2024-2026" class="level3">
+<h3 class="anchored" data-anchor-id="cophil-programme-milestones-2024-2026">CoPhil Programme Milestones (2024-2026)</h3>
 <div class="timeline">
 <p><strong>2024-2025:</strong> - Copernicus Mirror Site installation - Digital Space Campus platform launch - Pilot service co-development (DRR, CCA, NRM)</p>
 <p><strong>2025-2026:</strong> - Advanced AI/ML training programmes - Operational EO services rollout - Regional capacity building workshops</p>
@@ -1077,7 +1042,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h3 class="anchored" data-anchor-id="international-partnerships">International Partnerships</h3>
 <ul>
 <li><strong>JAXA</strong> (Japan Aerospace Exploration Agency) - Data sharing agreements</li>
-<li><strong>ESA</strong> (European Space Agency) - CopPhil programme</li>
+<li><strong>ESA</strong> (European Space Agency) - CoPhil programme</li>
 <li><strong>USGS</strong> (U.S. Geological Survey) - Landsat data access</li>
 <li><strong>UNOSAT</strong> - Disaster response support</li>
 </ul>
@@ -1089,7 +1054,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>Follow Philippine EO developments:</p>
 <ul>
 <li><strong>PhilSA Newsletter:</strong> Subscribe at <a href="https://philsa.gov.ph">philsa.gov.ph</a></li>
-<li><strong>CopPhil Updates:</strong> Check training portal announcements</li>
+<li><strong>CoPhil Updates:</strong> Check training portal announcements</li>
 <li><strong>Social Media:</strong> Follow <span class="citation" data-cites="PhilSpaceAgency">@PhilSpaceAgency</span> on Twitter/Facebook</li>
 </ul>
 <hr>
@@ -1107,7 +1072,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 <hr>
-<p><em>This resource directory is maintained by the CopPhil Training Programme. Last updated: 2025.</em></p>
+<p><em>This resource directory is maintained by the CoPhil Training Programme. Last updated: 2025.</em></p>
 
 
 <!-- -->
@@ -1252,7 +1217,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/YOUR_GITHUB_USERNAME\.github\.io\/ESAPhil");
+        var filterRegex = new RegExp("https:\/\/DimitrisKasabalis\.github\.io\/EO_trainning");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
@@ -1586,8 +1551,20 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     }
   });
   </script>
-<script src="https://utteranc.es/client.js" repo="copphil-training/day1" issue-term="pathname" theme="github-light" crossorigin="anonymous" async="">
-</script><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
+<script src="https://utteranc.es/client.js" repo="copphil-training/course-site" issue-term="pathname" theme="github-light" crossorigin="anonymous" async="">
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../resources/setup.html" class="pagination-link" aria-label="🚀 Start Here: Complete Setup Guide">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">🚀 Start Here: Complete Setup Guide</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../resources/cheatsheets.html" class="pagination-link" aria-label="Cheat Sheets">
+        <span class="nav-page-text">Cheat Sheets</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Philippine EO Resources"</span></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="an">subtitle:</span><span class="co"> "Navigate the Philippine Earth Observation Ecosystem"</span></span>
@@ -1599,8 +1576,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>The Philippines has a growing Earth Observation ecosystem with multiple agencies, platforms, and initiatives dedicated to using satellite data for national development, disaster risk reduction, and environmental monitoring.</span>
 <span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>::: {.callout-note}</span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="fu">## CopPhil Programme Context</span></span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>This resource directory supports the **EU-Philippines Copernicus Capacity Support Programme (CopPhil)**, strengthening Philippine EO capabilities through international collaboration.</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="fu">## CoPhil Programme Context</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>This resource directory supports the **EU-Philippines Copernicus Capacity Support Programme (CoPhil)**, strengthening Philippine EO capabilities through international collaboration.</span>
 <span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>:::</span>
 <span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>---</span>
@@ -1610,7 +1587,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a><span class="fu">### 1. Philippine Space Agency (PhilSA)</span></span>
 <span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>::: {.agency-card}</span>
-<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>**Role:** National space authority and co-chair of CopPhil programme</span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>**Role:** National space authority and co-chair of CoPhil programme</span>
 <span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>**Established:** 2019 (Republic Act No. 11363)</span>
 <span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a></span>
@@ -1633,7 +1610,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span>Ship detection and tracking</span>
 <span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Copernicus Mirror Site (Under Development)</span></span>
-<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Status:** Being established under CopPhil programme</span>
+<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Status:** Being established under CoPhil programme</span>
 <span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Purpose:** Local access to Copernicus Sentinel data</span>
 <span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Benefits:**</span>
 <span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span>Reduced latency for Philippine users</span>
@@ -1651,7 +1628,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-61"><a href="#cb1-61" aria-hidden="true" tabindex="-1"></a><span class="fu">### 2. Department of Science and Technology (DOST)</span></span>
 <span id="cb1-62"><a href="#cb1-62" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-63"><a href="#cb1-63" aria-hidden="true" tabindex="-1"></a>::: {.agency-card}</span>
-<span id="cb1-64"><a href="#cb1-64" aria-hidden="true" tabindex="-1"></a>**Role:** Science and technology advancement, co-chair of CopPhil programme</span>
+<span id="cb1-64"><a href="#cb1-64" aria-hidden="true" tabindex="-1"></a>**Role:** Science and technology advancement, co-chair of CoPhil programme</span>
 <span id="cb1-65"><a href="#cb1-65" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-66"><a href="#cb1-66" aria-hidden="true" tabindex="-1"></a>**Relevant Agencies:**</span>
 <span id="cb1-67"><a href="#cb1-67" aria-hidden="true" tabindex="-1"></a></span>
@@ -1795,7 +1772,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-205"><a href="#cb1-205" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span>API access for automated workflows</span>
 <span id="cb1-206"><a href="#cb1-206" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-207"><a href="#cb1-207" aria-hidden="true" tabindex="-1"></a>**Philippine Focus:**</span>
-<span id="cb1-208"><a href="#cb1-208" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>CopPhil Mirror Site integration (upcoming)</span>
+<span id="cb1-208"><a href="#cb1-208" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>CoPhil Mirror Site integration (upcoming)</span>
 <span id="cb1-209"><a href="#cb1-209" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Dedicated training resources</span>
 <span id="cb1-210"><a href="#cb1-210" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Local technical support</span>
 <span id="cb1-211"><a href="#cb1-211" aria-hidden="true" tabindex="-1"></a></span>
@@ -1861,7 +1838,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-271"><a href="#cb1-271" aria-hidden="true" tabindex="-1"></a><span class="fu">## Training and Capacity Building</span></span>
 <span id="cb1-272"><a href="#cb1-272" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-273"><a href="#cb1-273" aria-hidden="true" tabindex="-1"></a><span class="fu">### 1. PhilSA Digital Space Campus</span></span>
-<span id="cb1-274"><a href="#cb1-274" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Status:** Under development (CopPhil programme)</span>
+<span id="cb1-274"><a href="#cb1-274" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Status:** Under development (CoPhil programme)</span>
 <span id="cb1-275"><a href="#cb1-275" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Purpose:** Sustainable EO training infrastructure</span>
 <span id="cb1-276"><a href="#cb1-276" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Features:**</span>
 <span id="cb1-277"><a href="#cb1-277" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span>Online learning management system</span>
@@ -1956,7 +1933,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-366"><a href="#cb1-366" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>Request educational access to restricted datasets</span>
 <span id="cb1-367"><a href="#cb1-367" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-368"><a href="#cb1-368" aria-hidden="true" tabindex="-1"></a><span class="fu">#### For International Collaborators</span></span>
-<span id="cb1-369"><a href="#cb1-369" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>Coordinate through CopPhil programme channels</span>
+<span id="cb1-369"><a href="#cb1-369" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>Coordinate through CoPhil programme channels</span>
 <span id="cb1-370"><a href="#cb1-370" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>Establish memoranda of understanding (MOUs)</span>
 <span id="cb1-371"><a href="#cb1-371" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>Follow data sharing protocols</span>
 <span id="cb1-372"><a href="#cb1-372" aria-hidden="true" tabindex="-1"></a></span>
@@ -1988,7 +1965,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-398"><a href="#cb1-398" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-399"><a href="#cb1-399" aria-hidden="true" tabindex="-1"></a><span class="fu">## Upcoming Initiatives</span></span>
 <span id="cb1-400"><a href="#cb1-400" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-401"><a href="#cb1-401" aria-hidden="true" tabindex="-1"></a><span class="fu">### CopPhil Programme Milestones (2024-2026)</span></span>
+<span id="cb1-401"><a href="#cb1-401" aria-hidden="true" tabindex="-1"></a><span class="fu">### CoPhil Programme Milestones (2024-2026)</span></span>
 <span id="cb1-402"><a href="#cb1-402" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-403"><a href="#cb1-403" aria-hidden="true" tabindex="-1"></a>::: {.timeline}</span>
 <span id="cb1-404"><a href="#cb1-404" aria-hidden="true" tabindex="-1"></a>**2024-2025:**</span>
@@ -2045,7 +2022,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-455"><a href="#cb1-455" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-456"><a href="#cb1-456" aria-hidden="true" tabindex="-1"></a><span class="fu">### International Partnerships</span></span>
 <span id="cb1-457"><a href="#cb1-457" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**JAXA** (Japan Aerospace Exploration Agency) - Data sharing agreements</span>
-<span id="cb1-458"><a href="#cb1-458" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**ESA** (European Space Agency) - CopPhil programme</span>
+<span id="cb1-458"><a href="#cb1-458" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**ESA** (European Space Agency) - CoPhil programme</span>
 <span id="cb1-459"><a href="#cb1-459" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**USGS** (U.S. Geological Survey) - Landsat data access</span>
 <span id="cb1-460"><a href="#cb1-460" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**UNOSAT** - Disaster response support</span>
 <span id="cb1-461"><a href="#cb1-461" aria-hidden="true" tabindex="-1"></a></span>
@@ -2056,7 +2033,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-466"><a href="#cb1-466" aria-hidden="true" tabindex="-1"></a>Follow Philippine EO developments:</span>
 <span id="cb1-467"><a href="#cb1-467" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-468"><a href="#cb1-468" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**PhilSA Newsletter:** Subscribe at <span class="co">[</span><span class="ot">philsa.gov.ph</span><span class="co">](https://philsa.gov.ph)</span></span>
-<span id="cb1-469"><a href="#cb1-469" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**CopPhil Updates:** Check training portal announcements</span>
+<span id="cb1-469"><a href="#cb1-469" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**CoPhil Updates:** Check training portal announcements</span>
 <span id="cb1-470"><a href="#cb1-470" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Social Media:** Follow @PhilSpaceAgency on Twitter/Facebook</span>
 <span id="cb1-471"><a href="#cb1-471" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-472"><a href="#cb1-472" aria-hidden="true" tabindex="-1"></a>---</span>
@@ -2069,13 +2046,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-479"><a href="#cb1-479" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-480"><a href="#cb1-480" aria-hidden="true" tabindex="-1"></a>---</span>
 <span id="cb1-481"><a href="#cb1-481" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-482"><a href="#cb1-482" aria-hidden="true" tabindex="-1"></a>*This resource directory is maintained by the CopPhil Training Programme. Last updated: 2025.*</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
+<span id="cb1-482"><a href="#cb1-482" aria-hidden="true" tabindex="-1"></a>*This resource directory is maintained by the CoPhil Training Programme. Last updated: 2025.*</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-<p>CopPhil EO AI/ML Training Programme</p>
+<p>CoPhil EO AI/ML Training Programme</p>
 </div>   
     <div class="nav-footer-center">
 <p>Funded by the European Union - Global Gateway Initiative</p>

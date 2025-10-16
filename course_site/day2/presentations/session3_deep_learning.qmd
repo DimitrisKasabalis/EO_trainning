@@ -2,15 +2,15 @@
 title: "Session 3: Introduction to Deep Learning and CNNs"
 subtitle: "Neural Networks and Convolutional Architectures for Earth Observation"
 author: "Stylianos Kotsopoulos"
-institute: "EU-Philippines CopPhil Programme"
-date: "October 20-23, 2025"
+institute: "EU-Philippines CoPhil Programme"
+date: ""
 format:
   revealjs:
     theme: [default, custom.scss]
     slide-number: true
     chalkboard: true
     preview-links: auto
-    footer: "DAY 2 - Session 3 | Deep Learning & CNNs"
+    footer: "DAY 2 - Session 3 | Deep Learning & CNNs | 20-23 October 2025"
     transition: fade
     background-transition: fade
     width: 1920

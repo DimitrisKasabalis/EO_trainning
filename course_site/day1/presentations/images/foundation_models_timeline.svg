@@ -48,5 +48,5 @@
   <text x="960" y="840" font-family="Arial" font-size="24" fill="#374151" text-anchor="middle">✓ Faster deployment: Fine-tune existing models</text>
   <text x="960" y="880" font-family="Arial" font-size="24" fill="#374151" text-anchor="middle">✓ Lower compute requirements: Use pre-trained features</text>
   
-  <text x="960" y="1020" font-family="Arial" font-size="20" fill="#9ca3af" text-anchor="middle">CopPhil EO AI/ML Training | Foundation Models Timeline | 2025</text>
+  <text x="960" y="1020" font-family="Arial" font-size="20" fill="#9ca3af" text-anchor="middle">CoPhil EO AI/ML Training | Foundation Models Timeline | 2025</text>
 </svg>

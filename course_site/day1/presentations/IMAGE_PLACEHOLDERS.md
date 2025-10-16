@@ -60,7 +60,7 @@ Create simple placeholder images with text labels (e.g., "Sentinel-1 Satellite")
 | Image | Purpose | Source | License |
 |-------|---------|--------|---------|
 | `eu_global_gateway.png` | EU Global Gateway logo | [EU Website](https://ec.europa.eu/commission/presscorner/detail/en/ip_21_6433) | Fair use |
-| `copphil_logo.png` | CopPhil Programme logo | CopPhil Programme | Official |
+| `copphil_logo.png` | CoPhil Programme logo | CoPhil Programme | Official |
 
 #### **Organizations**
 | Image | Purpose | Source | License |
@@ -335,7 +335,7 @@ for filename, text in placeholders:
 **PhilSA:**
 - Email: info@philsa.gov.ph
 - Request official logos and platform screenshots
-- Explain educational use for CopPhil training
+- Explain educational use for CoPhil training
 
 **DOST-ASTI:**
 - Visit: https://asti.dost.gov.ph

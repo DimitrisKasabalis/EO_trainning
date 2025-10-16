@@ -71,7 +71,7 @@ Download just the **critical 7 logos** for professional appearance:
 | `dost_asti_logo.png` | https://asti.dost.gov.ph | 5 min |
 | `namria_logo.png` | https://www.namria.gov.ph | 5 min |
 | `gee_logo.png` | https://icon-icons.com/icon/google-earth-engine/104576 | 5 min |
-| `copphil_logo.png` | Your CopPhil materials | 5 min |
+| `copphil_logo.png` | Your CoPhil materials | 5 min |
 | `eu_global_gateway.png` | EU website | 5 min |
 
 **Result:** Professional branding + custom diagrams = 70% complete visually

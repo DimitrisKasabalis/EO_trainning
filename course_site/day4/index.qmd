@@ -20,7 +20,7 @@ The final day brings advanced techniques, cutting-edge trends, and your roadmap 
 
 ## Day 4 Overview
 
-Welcome to the final day of the CopPhil Advanced Training! Today you'll master **Long Short-Term Memory (LSTM) networks** for time series forecasting, explore **emerging AI trends** (Foundation Models, Self-Supervised Learning, Explainable AI), and synthesize everything you've learned with a clear path forward.
+Welcome to the final day of the CoPhil Advanced Training! Today you'll master **Long Short-Term Memory (LSTM) networks** for time series forecasting, explore **emerging AI trends** (Foundation Models, Self-Supervised Learning, Explainable AI), and synthesize everything you've learned with a clear path forward.
 
 ::: {.callout-important}
 ## What Makes Day 4 Special
@@ -56,7 +56,7 @@ By the end of Day 4, you will be able to:
 - **Deploy** best practices for model validation, monitoring, and maintenance in production
 - **Engage** with the Philippine EO AI community and continued learning ecosystem
 - **Design** actionable 3-month roadmaps for implementing AI/ML in your organization
-- **Contribute** to the CopPhil Digital Space Campus and community of practice
+- **Contribute** to the CoPhil Digital Space Campus and community of practice
 :::
 
 ## Today's Schedule
@@ -152,7 +152,7 @@ By the end of Day 4, you will be able to:
 
 - 4-day journey recap
 - Best practices deployment
-- CopPhil campus resources
+- CoPhil campus resources
 - Community of practice
 - Your action plan
 
@@ -256,7 +256,7 @@ Bring together all 4 days of learning with best practices, community building, a
 - Model monitoring and maintenance
 - Pre-deployment checklist
 
-**Part 3: CopPhil Campus & Resources (20 min)**
+**Part 3: CoPhil Campus & Resources (20 min)**
 - Digital Space Campus platform
 - SkAI-Pinas (DIMER, AIPI)
 - PhilSA Space+ Dashboard
@@ -312,7 +312,7 @@ Upon completing Day 4, you will:
 - ✅ **Master** time series analysis with LSTMs for drought forecasting
 - ✅ **Understand** cutting-edge AI trends (Foundation Models, SSL, XAI)
 - ✅ **Synthesize** all 4 days of learning into operational workflows
-- ✅ **Receive** a certificate of completion from the CopPhil Programme
+- ✅ **Receive** a certificate of completion from the CoPhil Programme
 - ✅ **Gain** access to the Digital Space Campus for continued learning
 - ✅ **Join** the Philippine EO AI/ML community of practice
 - ✅ **Be equipped** to propose and lead EO AI projects in your agency
@@ -354,4 +354,4 @@ All 4 sessions are complete and ready! Begin with Session 1 to master LSTMs, the
 
 ---
 
-*Day 4: Time Series Analysis, Emerging Trends, and Sustainable Learning - CopPhil 4-Day Advanced Training on AI/ML for Earth Observation, funded by the European Union under the Global Gateway initiative.*
+*Day 4: Time Series Analysis, Emerging Trends, and Sustainable Learning - CoPhil 4-Day Advanced Training on AI/ML for Earth Observation, funded by the European Union under the Global Gateway initiative.*

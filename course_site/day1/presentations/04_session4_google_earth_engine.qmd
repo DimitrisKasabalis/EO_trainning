@@ -1,9 +1,9 @@
 ---
 title: "Introduction to Google Earth Engine"
-subtitle: "CopPhil EO AI/ML Training - Day 1, Session 4"
+subtitle: "CoPhil EO AI/ML Training - Day 1, Session 4"
 author: "Stylianos Kotsopoulos"
-institute: "EU-Philippines CopPhil Programme"
-date: "October 20-23, 2025"
+institute: "EU-Philippines CoPhil Programme"
+date: ""
 format:
   revealjs:
     theme: default
@@ -11,7 +11,7 @@ format:
     slide-number: true
     chalkboard: true
     preview-links: auto
-    footer: "Day 1 Session 4 | Google Earth Engine"
+    footer: "Day 1 Session 4 | Google Earth Engine | 20-23 October 2025"
     navigation-mode: vertical
     controls: true
     progress: true
@@ -95,7 +95,7 @@ Like Session 3, this is heavily hands-on. Most time spent coding in notebooks fo
 :::
 
 ::: {.column width="40%"}
-![](/images/gee_logo.png){width="300px"}
+![](images/gee_logo.png){width="300px"}
 :::
 :::
 
@@ -212,7 +212,7 @@ GEE hosts 800+ public datasets. All preprocessed and analysis-ready. Focus today
 
 ## geemap Package
 
-![](/images/Google_colab_interface.png){fig-align="center" width="80%"}
+![](images/Google_colab_interface.png){fig-align="center" width="80%"}
 
 **Python package for interactive GEE mapping**
 

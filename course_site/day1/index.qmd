@@ -20,7 +20,7 @@ Building the essential skills for AI-powered satellite data analysis
 
 ## Day 1 Overview
 
-Welcome to Day 1 of the **CopPhil EO AI/ML Training Programme**! Today you'll build a solid foundation in Earth Observation data and AI/ML fundamentals. By the end of the day, you'll understand Copernicus missions, Philippine EO resources, and be ready to start building AI models.
+Welcome to Day 1 of the **CoPhil EO AI/ML Training Programme**! Today you'll build a solid foundation in Earth Observation data and AI/ML fundamentals. By the end of the day, you'll understand Copernicus missions, Philippine EO resources, and be ready to start building AI models.
 
 ::: {.callout-note}
 ## What You'll Learn Today
@@ -222,4 +222,4 @@ For technical issues during the training:
 
 ---
 
-*Day 1 is part of the CopPhil 4-Day Advanced Training on AI/ML for Earth Observation, funded by the European Union under the Global Gateway initiative and delivered in partnership with PhilSA and DOST.*
+*Day 1 is part of the CoPhil 4-Day Advanced Training on AI/ML for Earth Observation, funded by the European Union under the Global Gateway initiative and delivered in partnership with PhilSA and DOST.*

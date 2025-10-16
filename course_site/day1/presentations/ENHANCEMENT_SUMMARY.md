@@ -51,7 +51,7 @@ Added to every slide for instructor pacing:
 | 40-70 | Sentinel-2 Optical Mission | 30 |
 | 70-75 | **Break** ☕ | 5 |
 | 75-100 | Philippine EO Ecosystem | 25 |
-| 100-115 | CopPhil Programme | 15 |
+| 100-115 | CoPhil Programme | 15 |
 | 115-120 | Q&A & Summary | 5 |
 ```
 

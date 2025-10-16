@@ -8,19 +8,6 @@ format:
     toc: true
     toc-depth: 3
     code-fold: false
-  pdf:
-    toc: true
-    toc-depth: 3
-    number-sections: true
-    colorlinks: true
-    geometry:
-      - margin=1in
-    include-in-header:
-      text: |
-        \usepackage{fancyhdr}
-        \pagestyle{fancy}
-        \fancyhead[L]{CopPhil Training}
-        \fancyhead[R]{\thepage}
 ---
 
 <nav class="breadcrumb" aria-label="Breadcrumb">
@@ -43,14 +30,6 @@ Build an operational LSTM model to predict drought conditions 1-3 months ahead u
 
 This intensive 2.5-hour hands-on lab puts LSTM theory into practice. You'll build a complete drought forecasting system for Mindanao provinces (Bukidnon and South Cotabato) using multi-year Sentinel-2 NDVI time series, weather data, and climate indices. By the end, you'll have a trained model capable of predicting vegetation stress months in advance.
 
-
-::: {.callout-note icon=false}
-## 📄 Download Session Materials
-This session is also available as a PDF for offline reading and printing.
-
-[📥 Download PDF](session2.pdf){.btn .btn-primary target="_blank"}
-:::
-
 ---
 
 ::: {.callout-note}
@@ -70,13 +49,6 @@ By the end of this session, you will be able to:
 ## Presentation Slides
 
 <iframe src="../presentations/session2_drought_lab.html" width="100%" height="600" style="border: 1px solid #ccc; border-radius: 4px;"></iframe>
-
-::: {.callout-tip}
-## View Full Screen
-Click the presentation above and press `F` for fullscreen mode. Use arrow keys to navigate slides.
-
-[Open in new tab →](../presentations/session2_drought_lab.html){target="_blank" .btn .btn-sm .btn-primary}
-:::
 
 ---
 
@@ -993,7 +965,7 @@ for i, pred in enumerate(multi_step_preds, start=1):
 **Data Pipeline:**
 
 1. **Automated Data Acquisition:**
-   - Sentinel-2 NDVI: Download from CopPhil Infrastructure or Google Earth Engine
+   - Sentinel-2 NDVI: Download from CoPhil Infrastructure or Google Earth Engine
    - PAGASA data: API access to rainfall and temperature
    - NOAA ONI: Monthly updates
 
@@ -1221,7 +1193,7 @@ Session 3 explores emerging AI trends (foundation models, self-supervised learni
 
 ### Philippine EO Platforms
 
-- [CopPhil Infrastructure](https://infra.copphil.philsa.gov.ph)
+- [CoPhil Infrastructure](https://infra.copphil.philsa.gov.ph)
 - [Google Earth Engine](https://earthengine.google.com)
 - [PAGASA Climate Data](https://www.pagasa.dost.gov.ph)
 
@@ -1269,4 +1241,4 @@ Topics:
 
 ---
 
-*This session is part of Day 4: Time Series Analysis, Emerging Trends, and Sustainable Learning - CopPhil 4-Day Advanced Training on AI/ML for Earth Observation, funded by the European Union under the Global Gateway initiative.*
+*This session is part of Day 4: Time Series Analysis, Emerging Trends, and Sustainable Learning - CoPhil 4-Day Advanced Training on AI/ML for Earth Observation, funded by the European Union under the Global Gateway initiative.*

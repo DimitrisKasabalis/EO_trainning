@@ -9,8 +9,8 @@ date: last-modified
 The Philippines has a growing Earth Observation ecosystem with multiple agencies, platforms, and initiatives dedicated to using satellite data for national development, disaster risk reduction, and environmental monitoring.
 
 ::: {.callout-note}
-## CopPhil Programme Context
-This resource directory supports the **EU-Philippines Copernicus Capacity Support Programme (CopPhil)**, strengthening Philippine EO capabilities through international collaboration.
+## CoPhil Programme Context
+This resource directory supports the **EU-Philippines Copernicus Capacity Support Programme (CoPhil)**, strengthening Philippine EO capabilities through international collaboration.
 :::
 
 ---
@@ -20,7 +20,7 @@ This resource directory supports the **EU-Philippines Copernicus Capacity Suppor
 ### 1. Philippine Space Agency (PhilSA)
 
 ::: {.agency-card}
-**Role:** National space authority and co-chair of CopPhil programme
+**Role:** National space authority and co-chair of CoPhil programme
 
 **Established:** 2019 (Republic Act No. 11363)
 
@@ -43,7 +43,7 @@ This resource directory supports the **EU-Philippines Copernicus Capacity Suppor
   - Ship detection and tracking
 
 #### Copernicus Mirror Site (Under Development)
-- **Status:** Being established under CopPhil programme
+- **Status:** Being established under CoPhil programme
 - **Purpose:** Local access to Copernicus Sentinel data
 - **Benefits:**
   - Reduced latency for Philippine users
@@ -61,7 +61,7 @@ This resource directory supports the **EU-Philippines Copernicus Capacity Suppor
 ### 2. Department of Science and Technology (DOST)
 
 ::: {.agency-card}
-**Role:** Science and technology advancement, co-chair of CopPhil programme
+**Role:** Science and technology advancement, co-chair of CoPhil programme
 
 **Relevant Agencies:**
 
@@ -205,7 +205,7 @@ This resource directory supports the **EU-Philippines Copernicus Capacity Suppor
   - API access for automated workflows
 
 **Philippine Focus:**
-- CopPhil Mirror Site integration (upcoming)
+- CoPhil Mirror Site integration (upcoming)
 - Dedicated training resources
 - Local technical support
 
@@ -271,7 +271,7 @@ This resource directory supports the **EU-Philippines Copernicus Capacity Suppor
 ## Training and Capacity Building
 
 ### 1. PhilSA Digital Space Campus
-- **Status:** Under development (CopPhil programme)
+- **Status:** Under development (CoPhil programme)
 - **Purpose:** Sustainable EO training infrastructure
 - **Features:**
   - Online learning management system
@@ -366,7 +366,7 @@ This resource directory supports the **EU-Philippines Copernicus Capacity Suppor
 3. Request educational access to restricted datasets
 
 #### For International Collaborators
-1. Coordinate through CopPhil programme channels
+1. Coordinate through CoPhil programme channels
 2. Establish memoranda of understanding (MOUs)
 3. Follow data sharing protocols
 
@@ -398,7 +398,7 @@ This resource directory supports the **EU-Philippines Copernicus Capacity Suppor
 
 ## Upcoming Initiatives
 
-### CopPhil Programme Milestones (2024-2026)
+### CoPhil Programme Milestones (2024-2026)
 
 ::: {.timeline}
 **2024-2025:**
@@ -455,7 +455,7 @@ This resource directory supports the **EU-Philippines Copernicus Capacity Suppor
 
 ### International Partnerships
 - **JAXA** (Japan Aerospace Exploration Agency) - Data sharing agreements
-- **ESA** (European Space Agency) - CopPhil programme
+- **ESA** (European Space Agency) - CoPhil programme
 - **USGS** (U.S. Geological Survey) - Landsat data access
 - **UNOSAT** - Disaster response support
 
@@ -466,7 +466,7 @@ This resource directory supports the **EU-Philippines Copernicus Capacity Suppor
 Follow Philippine EO developments:
 
 - **PhilSA Newsletter:** Subscribe at [philsa.gov.ph](https://philsa.gov.ph)
-- **CopPhil Updates:** Check training portal announcements
+- **CoPhil Updates:** Check training portal announcements
 - **Social Media:** Follow @PhilSpaceAgency on Twitter/Facebook
 
 ---
@@ -479,4 +479,4 @@ Know of additional Philippine EO resources? Contact the training coordinators to
 
 ---
 
-*This resource directory is maintained by the CopPhil Training Programme. Last updated: 2025.*
+*This resource directory is maintained by the CoPhil Training Programme. Last updated: 2025.*

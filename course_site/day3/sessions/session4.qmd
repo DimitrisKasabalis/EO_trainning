@@ -8,19 +8,6 @@ format:
     toc: true
     toc-depth: 3
     code-fold: false
-  pdf:
-    toc: true
-    toc-depth: 3
-    number-sections: true
-    colorlinks: true
-    geometry:
-      - margin=1in
-    include-in-header:
-      text: |
-        \usepackage{fancyhdr}
-        \pagestyle{fancy}
-        \fancyhead[L]{CopPhil Training}
-        \fancyhead[R]{\thepage}
 ---
 
 <nav class="breadcrumb" aria-label="Breadcrumb">
@@ -30,7 +17,6 @@ format:
   <span class="breadcrumb-separator" aria-hidden="true">›</span>
   <span class="breadcrumb-current">Session 4</span>
 </nav>
-
 
 ::: {.hero}
 # Hands-on Lab: Object Detection from Sentinel Imagery
@@ -44,13 +30,6 @@ Apply transfer learning with pre-trained object detectors to identify buildings 
 
 ::: {.session-info}
 **Duration:** 2.5 hours | **Format:** Hands-on Coding Lab | **Platform:** Google Colab with GPU
-:::
-
-::: {.callout-note icon=false}
-## 📄 Download Session Materials
-This session is also available as a PDF for offline reading and printing.
-
-[📥 Download PDF](session4.pdf){.btn .btn-primary target="_blank"}
 :::
 
 ---
@@ -75,13 +54,6 @@ By the end of this lab, you will be able to:
 ## Presentation Slides
 
 <iframe src="../presentations/session4_object_detection_lab.html" width="100%" height="600" style="border: 1px solid #ccc; border-radius: 4px;"></iframe>
-
-::: {.callout-tip}
-## View Full Screen
-Click the presentation above and press `F` for fullscreen mode. Use arrow keys to navigate slides.
-
-[Open in new tab →](../presentations/session4_object_detection_lab.html){target="_blank" .btn .btn-sm .btn-primary}
-:::
 
 ---
 
@@ -633,4 +605,4 @@ Object detection is a powerful tool for operational Earth observation. By levera
 
 ---
 
-*Session 4: Hands-on Object Detection from Sentinel Imagery - CopPhil 4-Day Advanced Training on AI/ML for Earth Observation, funded by the European Union under the Global Gateway initiative.*
+*Session 4: Hands-on Object Detection from Sentinel Imagery - CoPhil 4-Day Advanced Training on AI/ML for Earth Observation, funded by the European Union under the Global Gateway initiative.*

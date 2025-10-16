@@ -7,19 +7,6 @@ format:
     toc: true
     toc-depth: 3
     code-fold: false
-  pdf:
-    toc: true
-    toc-depth: 3
-    number-sections: true
-    colorlinks: true
-    geometry:
-      - margin=1in
-    include-in-header:
-      text: |
-        \usepackage{fancyhdr}
-        \pagestyle{fancy}
-        \fancyhead[L]{CopPhil Training}
-        \fancyhead[R]{\thepage}
 ---
 
 <nav class="breadcrumb" aria-label="Breadcrumb">
@@ -30,7 +17,6 @@ format:
   <span class="breadcrumb-current">Session 2</span>
 </nav>
 
-
 ::: {.session-info}
 **Duration:** 2 hours | **Format:** Lecture + Conceptual Exercises | **Platform:** Presentation
 :::
@@ -38,14 +24,6 @@ format:
 ## Session Overview
 
 This session provides a comprehensive introduction to Artificial Intelligence and Machine Learning concepts specifically tailored for Earth Observation applications. You'll learn the complete AI/ML workflow, understand different learning paradigms, explore deep learning architectures including CNNs, Vision Transformers, and temporal models, discover benchmark datasets, and understand why data quality matters more than model complexity in 2025's data-centric AI paradigm.
-
-
-::: {.callout-note icon=false}
-## 📄 Download Session Materials
-This session is also available as a PDF for offline reading and printing.
-
-[📥 Download PDF](session2.pdf){.btn .btn-primary target="_blank"}
-:::
 
 ---
 
@@ -74,13 +52,6 @@ By the end of this session, you will be able to:
 ## Presentation Slides
 
 <iframe src="../presentations/02_session2_ai_ml_fundamentals.html" width="100%" height="600" style="border: 1px solid #ccc; border-radius: 4px;"></iframe>
-
-::: {.callout-tip}
-## View Full Screen
-Click the presentation above and press `F` for fullscreen mode. Use arrow keys to navigate slides.
-
-[Open in new tab →](../presentations/02_session2_ai_ml_fundamentals.html){target="_blank" .btn .btn-sm .btn-primary}
-:::
 
 ---
 
@@ -282,7 +253,7 @@ flowchart TD
 
 **Data sources for Philippines:**
 
-- **CopPhil Mirror Site (2025):** Local, high-bandwidth access to Sentinel data covering entire archipelago
+- **CoPhil Mirror Site (2025):** Local, high-bandwidth access to Sentinel data covering entire archipelago
 - **Copernicus Data Space Ecosystem:** STAC-compliant catalogues, API-driven access
 - **Google Earth Engine:** Harmonized Sentinel-2 surface reflectance, Sentinel-1 GRD collections
 - **PhilSA SIYASAT:** NovaSAR-1 X-band SAR data
@@ -575,7 +546,7 @@ F1-Score (Flood class): 91.8%
 - **ALaM (Automated Labeling Machine):** Combining automated labeling with crowdsourcing for continuous data quality improvement
 - **Integration with LGU disaster response protocols:** DATOS outputs delivered to local government units
 - **Delivery via PhilSA Digital Space Campus:** Training and capacity building
-- **CopPhil Data Centre (2025):** Cloud-native distribution with API-driven access
+- **CoPhil Data Centre (2025):** Cloud-native distribution with API-driven access
 
 ---
 
@@ -2702,7 +2673,7 @@ From Kili Technology's Earth Observation Data Labeling Guide:
 
 **International Support:**
 - Humanitarian OpenStreetMap Team (HOT OSM) for disaster mapping
-- CopPhil training programs on labeling best practices
+- CoPhil training programs on labeling best practices
 - European Copernicus expertise transfer
 :::
 
@@ -2967,8 +2938,8 @@ Despite significant advances in deep learning for remote sensing, **lack of expl
 20. **DATOS (DOST-ASTI):** 10-20 minute AI-powered flood mapping from Sentinel-1 SAR
 21. **PRiSM (PhilRice-IRRI):** Operational since 2014, all-weather rice monitoring combining SAR + optical
 22. **PhilSA-DENR:** Nationwide mangrove mapping with U-Net (99.73% accuracy)
-23. **CopPhil Data Centre (2025):** Local, high-bandwidth access to Sentinel data, cloud-native distribution
-24. **Leverage existing infrastructure:** DIMER, AIPI, ALaM, CopPhil to operationalize AI/ML workflows
+23. **CoPhil Data Centre (2025):** Local, high-bandwidth access to Sentinel data, cloud-native distribution
+24. **Leverage existing infrastructure:** DIMER, AIPI, ALaM, CoPhil to operationalize AI/ML workflows
 
 **Next steps:** Hands-on Python for geospatial data (Session 3) and Google Earth Engine (Session 4) to put these concepts into practice!
 :::
@@ -2998,7 +2969,7 @@ Despite significant advances in deep learning for remote sensing, **lack of expl
 
 9. **Temporal modeling:** For what applications would LSTM or temporal attention be valuable? What data would you need?
 
-10. **CopPhil opportunities:** How can you leverage the upcoming Data Centre and training programs? What collaborations would be valuable?
+10. **CoPhil opportunities:** How can you leverage the upcoming Data Centre and training programs? What collaborations would be valuable?
 :::
 
 ---
@@ -3054,7 +3025,7 @@ Despite significant advances in deep learning for remote sensing, **lack of expl
 - [Philippine News Agency: DOST AI R&D Projects](https://www.pna.gov.ph/articles/1136226) - SkAI-Pinas, DIMER, AIPI
 - [PRiSM: Philippine Rice Information System](https://prism.philrice.gov.ph/)
 - [PhilSA: Philippine Space Agency](https://philsa.gov.ph/)
-- [CopPhil Centre](https://copphil.philsa.gov.ph/)
+- [CoPhil Centre](https://copphil.philsa.gov.ph/)
 
 ### Recent Advances
 - [Artificial Intelligence to Advance Earth Observation: A Review](https://arxiv.org/abs/2305.08413) - 2023

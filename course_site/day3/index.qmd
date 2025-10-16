@@ -227,4 +227,4 @@ After Day 3, you'll progress to:
 
 ---
 
-*Day 3 is part of the CopPhil 4-Day Advanced Training on AI/ML for Earth Observation, funded by the European Union under the Global Gateway initiative and delivered in partnership with PhilSA and DOST.*
+*Day 3 is part of the CoPhil 4-Day Advanced Training on AI/ML for Earth Observation, funded by the European Union under the Global Gateway initiative and delivered in partnership with PhilSA and DOST.*

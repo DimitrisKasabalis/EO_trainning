@@ -1,6 +1,6 @@
 ---
 title: "🚀 Start Here: Complete Setup Guide"
-subtitle: "Getting Ready for the CopPhil EO AI/ML Training"
+subtitle: "Getting Ready for the CoPhil EO AI/ML Training"
 date: last-modified
 ---
 
@@ -170,7 +170,7 @@ Earth Engine registration can take **24-48 hours** for approval. Register well b
 5. **Complete the registration form:**
    - **Project type:** Education/Research
    - **Organization:** Your institution (e.g., "DOST-ASTI", "NAMRIA", "University of the Philippines")
-   - **Project description:** "CopPhil EO AI/ML Training - Earth Observation data analysis for DRR/CCA/NRM applications"
+   - **Project description:** "CoPhil EO AI/ML Training - Earth Observation data analysis for DRR/CCA/NRM applications"
    - **Intended use:** Describe your interest in using EO data
 
 6. **Submit and wait for approval**

@@ -1,3 +1,13 @@
+## codex-engineer (new)
+
+**Purpose:** Senior EO/ML coding + runnable notebooks for the CopPhil stack. Creates/repairs notebooks, hardens pipelines (GEE/GeoPandas/Rasterio), adds tests, and guarantees Quarto + nbconvert compatibility.
+
+**When to use:** Whenever code/notebooks must be created, fixed, or optimized; when presentation/course agents need short, tested snippets; when CI/local execution fails.
+
+**Outputs:** Colab-ready notebook(s), small helper modules, smoke/unit tests, slide‑ready code/figures, and HOWTO with exact commands.
+
+**Handoffs:** Implements specs from **eo-training-course-builder**; produces render‑stable chunks for **quarto-training-builder**; distills short snippets for **eo-presentation-builder**; accepts QA gates from **training-quality-supervisor**.
+
 # Repository Guidelines
 
 ## Project Structure & Module Organization
@@ -30,3 +40,12 @@
 ## Data & Asset Handling
 - Keep proprietary datasets untracked; document acquisition steps in `course_site/resources` or the relevant handout instead.
 - Retain Word originals in `source_materials/original_docs/` and re-export Markdown when source content changes to preserve traceability.
+## codex-engineer (new)
+
+**Purpose:** Senior EO/ML coding + runnable notebooks for the CopPhil stack. Creates/repairs notebooks, hardens pipelines (GEE/GeoPandas/Rasterio), adds tests, and guarantees Quarto + nbconvert compatibility.
+
+**When to use:** Whenever code/notebooks must be created, fixed, or optimized; when presentation/course agents need short, tested snippets; when CI/local execution fails.
+
+**Outputs:** Colab-ready notebook(s), small helper modules, smoke/unit tests, slide‑ready code/figures, and HOWTO with exact commands.
+
+**Handoffs:** Implements specs from **eo-training-course-builder**; produces render‑stable chunks for **quarto-training-builder**; distills short snippets for **eo-presentation-builder**; accepts QA gates from **training-quality-supervisor**.

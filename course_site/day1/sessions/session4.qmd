@@ -7,19 +7,6 @@ format:
     toc: true
     toc-depth: 3
     code-fold: false
-  pdf:
-    toc: true
-    toc-depth: 3
-    number-sections: true
-    colorlinks: true
-    geometry:
-      - margin=1in
-    include-in-header:
-      text: |
-        \usepackage{fancyhdr}
-        \pagestyle{fancy}
-        \fancyhead[L]{CopPhil Training}
-        \fancyhead[R]{\thepage}
 ---
 
 <nav class="breadcrumb" aria-label="Breadcrumb">
@@ -30,7 +17,6 @@ format:
   <span class="breadcrumb-current">Session 4</span>
 </nav>
 
-
 ::: {.session-info}
 **Duration:** 2 hours | **Format:** Hands-on Coding | **Platform:** Google Colaboratory + Earth Engine Python API
 :::
@@ -38,14 +24,6 @@ format:
 ## Session Overview
 
 Google Earth Engine (GEE) is a planetary-scale platform for Earth science data and analysis. This session introduces you to GEE's Python API, enabling you to access Sentinel-1 and Sentinel-2 data, filter massive image collections, perform cloud masking, create temporal composites, and export processed data - all without downloading terabytes of imagery. You'll learn core GEE concepts and apply them to Philippine use cases.
-
-
-::: {.callout-note icon=false}
-## 📄 Download Session Materials
-This session is also available as a PDF for offline reading and printing.
-
-[📥 Download PDF](session4.pdf){.btn .btn-primary target="_blank"}
-:::
 
 ---
 
@@ -71,13 +49,6 @@ By the end of this session, you will be able to:
 ## Presentation Slides
 
 <iframe src="../presentations/04_session4_google_earth_engine.html" width="100%" height="600" style="border: 1px solid #ccc; border-radius: 4px;"></iframe>
-
-::: {.callout-tip}
-## View Full Screen
-Click the presentation above and press `F` for fullscreen mode. Use arrow keys to navigate slides.
-
-[Open in new tab →](../presentations/04_session4_google_earth_engine.html){target="_blank" .btn .btn-sm .btn-primary}
-:::
 
 ---
 
@@ -997,7 +968,7 @@ flowchart LR
     H -->|COMPLETED| K[Success!<br/>Check Drive]
     H -->|FAILED| L[Error<br/>Check logs]
 
-    K --> M[Google Drive<br/>CopPhil_Training/<br/>filename.tif]
+    K --> M[Google Drive<br/>CoPhil_Training/<br/>filename.tif]
 
     M --> N1[Download<br/>Local use]
     M --> N2[Colab Access<br/>mount Drive]
@@ -1025,7 +996,7 @@ export_region = bohol_aoi
 export_task = ee.batch.Export.image.toDrive(
     image=composite_median.select(['B2', 'B3', 'B4', 'B8']),
     description='Bohol_S2_Median_Dry2024',
-    folder='CopPhil_Training',
+    folder='CoPhil_Training',
     fileNamePrefix='bohol_s2_composite',
     region=export_region,
     scale=10,  # Resolution in meters
@@ -1105,7 +1076,7 @@ sample_points = ndvi_composite.sample(
 export_vector = ee.batch.Export.table.toDrive(
     collection=sample_points,
     description='Bohol_NDVI_Samples',
-    folder='CopPhil_Training',
+    folder='CoPhil_Training',
     fileFormat='CSV'
 )
 
@@ -1219,7 +1190,7 @@ Map
 export_rgb = ee.batch.Export.image.toDrive(
     image=composite.select(['B4', 'B3', 'B2']),
     description='Palawan_RGB_DryS2024',
-    folder='CopPhil_Training',
+    folder='CoPhil_Training',
     region=palawan,
     scale=10,
     maxPixels=1e10,
@@ -1229,7 +1200,7 @@ export_rgb = ee.batch.Export.image.toDrive(
 export_ndvi = ee.batch.Export.image.toDrive(
     image=ndvi,
     description='Palawan_NDVI_DryS2024',
-    folder='CopPhil_Training',
+    folder='CoPhil_Training',
     region=palawan,
     scale=10,
     maxPixels=1e10,

@@ -2,8 +2,8 @@
 title: "Session 4: Synthesis, Q&A, and Pathway to Continued Learning"
 subtitle: "From Techniques to Operational EO AI in the Philippines"
 author: "Stylianos Kotsopoulos"
-institute: "EU-Philippines CopPhil Programme"
-date: "October 20-23, 2025"
+institute: "EU-Philippines CoPhil Programme"
+date: ""
 format:
   revealjs:
     theme: [default, custom.scss]
@@ -11,7 +11,7 @@ format:
     chalkboard: true
     preview-links: auto
     logo: ../../day1/presentations/images/copphil_logo.png
-    footer: "DAY 4 - Session 4 | Synthesis & Next Steps"
+    footer: "DAY 4 - Session 4 | Synthesis & Next Steps | 20-23 October 2025"
     transition: fade
     background-transition: fade
     width: 1920
@@ -26,7 +26,7 @@ format:
   - 0–15: 4-day journey recap
   - 15–45: Technique selection matrix
   - 45–75: Best practices for deployment
-  - 75–100: CopPhil Campus & community
+  - 75–100: CoPhil Campus & community
   - 100–115: Action plans (3-month roadmap)
   - 115–120: Closing & feedback
 
@@ -82,7 +82,7 @@ format:
 
 ---
 
-# CopPhil Campus & Community {background-color="#2C5F77"}
+# CoPhil Campus & Community {background-color="#2C5F77"}
 
 ## Stay Connected
 

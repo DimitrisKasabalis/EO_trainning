@@ -1,0 +1,42 @@
+---
+trigger: always_on
+---
+
+You will follow the following stracture for the course for DAY 4: "Day 4: Time Series Analysis, Emerging Trends, and Sustainable Learning
+
+Session 1: AI for Time Series Analysis in EO: LSTMs (1.5 hours)
+○	Module: Introduction to time series data in EO: This module will cover the nature and importance of time series data derived from Earth Observation satellites, such as sequences of Normalized Difference Vegetation Index (NDVI) values for monitoring vegetation phenology and health, or SAR backscatter time series for tracking land surface changes over time.
+○	Module: Recurrent Neural Networks (RNNs) basics and the vanishing/exploding gradient problem: A brief introduction to RNNs as networks designed to process sequential data will be provided, along with a discussion of their limitations in learning long-range dependencies due to issues like vanishing or exploding gradients.
+○	Module: Long Short-Term Memory (LSTM) Networks: The LSTM architecture will be introduced as a specialized type of RNN designed to overcome these limitations. Key components like the memory cell and the gating mechanisms (input gate, forget gate, output gate) that allow LSTMs to selectively remember or forget information over long sequences will be explained conceptually. Analogies to human memory can be helpful here.
+○	Module: Applications in EO: Practical applications of LSTMs in Earth Observation will be discussed, including drought monitoring and forecasting using vegetation indices, crop yield prediction, land cover change detection and phenological analysis.
+
+●	Session 2: Hands-on: Drought Monitoring (CCA Focus) using Sentinel-2 NDVI & LSTMs (2.5 hours)
+○	Case Study: Drought Monitoring in Mindanao Agricultural Zones (e.g., Bukidnon or South Cotabato). This case study directly addresses the Climate Change Adaptation (CCA) thematic area from the TOR and is of high relevance to Philippine agriculture.
+○	Platform: Google Colab with GPU acceleration. The deep learning framework (TensorFlow/Keras or PyTorch) will be consistent with previous sessions.
+○	Data: Pre-prepared time series data will be provided. This could consist of:
+■	Monthly or bi-monthly mean NDVI values derived from Sentinel-2 imagery for selected agricultural plots in Mindanao over several years.
+■	Optionally, corresponding historical drought indices (e.g., Standardized Precipitation Evapotranspiration Index - SPEI, if available from PAGASA) or rainfall data (e.g., from CHIRPS) could serve as target variables for prediction or as correlative data to interpret NDVI trends.
+■	Data Preparation Pitfall to Highlight: Creating a consistent, cloud-free NDVI time series from Sentinel-2 imagery requires meticulous pre-processing, including accurate cloud masking, atmospheric correction, and potentially interpolation of missing values. For the training session, providing curated time series data is essential to allow participants to focus on the LSTM modeling aspects. Challenges in acquiring consistent climate data in some regions will also be noted.
+○	Workflow:
+1.	Load and prepare the time series data (e.g., sequences of NDVI values as input features, and a corresponding drought index or vegetation stress level as the output to be predicted/classified).
+2.	Normalize the data (scaling values to a suitable range for the LSTM).
+3.	Create input sequences for the LSTM (e.g., using a sliding window approach to generate input sequences of past NDVI values and corresponding target values).
+4.	Define the LSTM model architecture (e.g., one or more LSTM layers followed by dense layers for output).
+5.	Compile and train the LSTM model.
+6.	Evaluate the model's performance (e.g., using Root Mean Squared Error - RMSE for regression tasks like predicting a drought index, or accuracy for classification tasks like categorizing drought severity).
+7.	Plot actual vs. predicted time series to visualize the model's forecasting capability.
+○	Conceptual Hurdle for EO Users: Understanding how LSTMs process sequential data (e.g., a series of NDVI values over several months or years) and how they "remember" past information to make future predictions or classifications can be challenging. Visualizing the input-output structure (sequence-to-sequence or sequence-to-value) and explaining the flow of information through the LSTM gates will be key.
+
+Session 3: Emerging AI in EO: Foundation Models, Self-Supervised Learning, Explainable AI (XAI) (2 hours)
+○	Module: Introduction to Foundation Models for EO (GeoFMs): This module will introduce the concept of Foundation Models – large-scale AI models pre-trained on vast amounts of diverse, often unlabeled data, which can then be adapted (fine-tuned) for various downstream tasks with minimal task-specific labeled data. The emergence of Geospatial Foundation Models (GeoFMs) specifically pre-trained on EO data (e.g., Prithvi, Clay, SatMAE, DOFA) will be discussed, highlighting their potential to revolutionize EO analysis by providing powerful, general-purpose representations.
+○	Module: Self-Supervised Learning (SSL) in EO: SSL techniques, which enable models to learn meaningful representations from unlabeled data by defining pretext tasks (e.g., masked autoencoding, contrastive learning), will be introduced. SSL is particularly relevant for EO due to the abundance of unlabeled satellite imagery and the high cost of acquiring labels. This approach helps address data scarcity and improves model transferability and efficiency.
+○	Module: Explainable AI (XAI) for EO: The importance of understanding the decision-making process of complex "black box" AI models like deep neural networks will be emphasized. XAI techniques aim to make these models more transparent and interpretable. Methods such as SHAP (SHapley Additive exPlanations) for feature importance, LIME (Local Interpretable Model-agnostic Explanations) for local explanations, and Grad-CAM (Gradient-weighted Class Activation Mapping) for visualizing which parts of an image a CNN focuses on, will be introduced. Discussing XAI is crucial for building trust in AI-driven EO solutions and for debugging and improving models.
+○	Activity: Brief demo of an XAI technique: If feasible within the Colab environment and time constraints, a short demonstration of an XAI method applied to one of the models trained earlier in the workshop (e.g., showing feature importance for the Random Forest land cover model using SHAP, or visualizing activation maps for the CNN/U-Net using Grad-CAM) will be conducted. 
+
+Session 4: Synthesis, Q&A, and Pathway to Continued Learning (2 hours)
+○	Module: Recap of key AI/ML techniques and their applications in the Philippine DRR, CCA, NRM context: A synthesis of the AI/ML methods covered (RF, CNNs, U-Net, LSTMs, Object Detection) and a reiteration of their relevance and application to the Philippine-specific case studies (Flood Mapping, Drought Monitoring, Land Cover Classification, Urban Monitoring).
+○	Module: Best practices for AI/ML model training, validation, and deployment in EO: A summary of best practices, including data-centric approaches, robust validation strategies (beyond simple accuracy metrics), and considerations for deploying models operationally.
+○	Module: Introduction to the CopPhil Digital Space Campus: A more detailed look at how the training materials (presentations, Colab notebooks, datasets, guides) will be made available on the CopPhil Digital Space Campus for self-paced learning, wider access, and continued skill development by the participants and their colleagues. 
+○	Module: Fostering a Community of Practice: Discussion on the importance of building a community among EO and AI/ML practitioners in the Philippines. Participants will be informed about relevant national initiatives like SkAI-Pinas (including DIMER and AIPI) and other PhilSA and DOST programs, creating avenues for collaboration and knowledge sharing.
+○	Open Q&A and Troubleshooting: Dedicated time to address any remaining questions from the four days of training, discuss specific challenges participants anticipate in applying these techniques in their work, and troubleshoot any lingering technical issues.
+○	Feedback session on the training: Collection of participant feedback to improve future iterations of the training. The final session is crucial not just for Q&A, but for empowering participants with concrete ideas on how to apply their newly acquired skills within their institutions and how to access further support and resources. "

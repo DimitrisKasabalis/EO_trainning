@@ -7,19 +7,6 @@ format:
     toc: true
     toc-depth: 3
     code-fold: false
-  pdf:
-    toc: true
-    toc-depth: 3
-    number-sections: true
-    colorlinks: true
-    geometry:
-      - margin=1in
-    include-in-header:
-      text: |
-        \usepackage{fancyhdr}
-        \pagestyle{fancy}
-        \fancyhead[L]{CopPhil Training}
-        \fancyhead[R]{\thepage}
 ---
 
 <nav class="breadcrumb" aria-label="Breadcrumb">
@@ -39,16 +26,6 @@ format:
 
 This session introduces the European Copernicus Earth Observation program, focusing on Sentinel-1 (SAR) and Sentinel-2 (Optical) missions with 2025 updates. You'll explore the Philippine EO landscape, including key agencies and data platforms that complement Copernicus data for disaster risk reduction, climate adaptation, and resource management applications.
 
-
-::: {.callout-note icon=false}
-## 📄 Download Session Materials
-This session is also available as a PDF for offline reading and printing.
-
-[📥 Download PDF](session1.pdf){.btn .btn-primary target="_blank"}
-:::
-
----
-
 ::: {.learning-objectives}
 ### Learning Objectives
 
@@ -59,8 +36,8 @@ By the end of this session, you will be able to:
 - **Identify** 2025 constellation updates (Sentinel-2C operational, Sentinel-1C launched)
 - **Navigate** the Copernicus Data Space Ecosystem and SentiBoard dashboard
 - **Locate** Philippine EO data through PhilSA SIYASAT, NAMRIA Geoportal, and DOST-ASTI platforms
-- **Explain** how CopPhil integrates European and Philippine EO capabilities
-- **Access** the CopPhil Mirror Site and Digital Space Campus for continued learning
+- **Explain** how CoPhil integrates European and Philippine EO capabilities
+- **Access** the CoPhil Mirror Site and Digital Space Campus for continued learning
 :::
 
 ---
@@ -68,13 +45,6 @@ By the end of this session, you will be able to:
 ## Presentation Slides
 
 <iframe src="../presentations/01_session1_copernicus_philippine_eo.html" width="100%" height="600" style="border: 1px solid #ccc; border-radius: 4px;"></iframe>
-
-::: {.callout-tip}
-## View Full Screen
-Click the presentation above and press `F` for fullscreen mode. Use arrow keys to navigate slides.
-
-[Open in new tab →](../presentations/01_session1_copernicus_philippine_eo.html){target="_blank" .btn .btn-sm .btn-primary}
-:::
 
 ---
 
@@ -853,14 +823,14 @@ Understanding where to work is crucial - don't try to train deep models on GEE o
 | **Data Prep & Exploration** | **Google Earth Engine** | Petabyte catalog, no download, cloud composites | Export limit 32 MB (tile large areas), no deep learning training |
 | **ML Training (RF, shallow)** | **GEE or Colab** | RF works in GEE; small data in Colab | GEE memory limits; Colab free tier quotas |
 | **Deep Learning (CNN, U-Net)** | **Local GPU / Colab Pro** | Requires PyTorch/TensorFlow | Colab free = limited GPU time; large models need local resources |
-| **Large-Scale Processing** | **CopPhil Mirror Site / COARE** | 400TB local data, HPC resources | Requires account; learning curve for APIs |
+| **Large-Scale Processing** | **CoPhil Mirror Site / COARE** | 400TB local data, HPC resources | Requires account; learning curve for APIs |
 | **Quick Viz & Download** | **Copernicus Browser** | Interactive, fast previews | Manual selection; bulk downloads tedious |
 
 **Quotas/Pitfalls to Know:**
 
 - **GEE:** Memory errors with large computations - tile exports for large areas
 - **Colab Free:** GPU disconnects after inactivity; limited sessions per day; 12-hour max runtime
-- **CopPhil/Digital Space Campus:** Hosts training materials + local data access (400TB)
+- **CoPhil/Digital Space Campus:** Hosts training materials + local data access (400TB)
 
 ---
 
@@ -1034,7 +1004,7 @@ Beyond the Copernicus Data Space, you can access Sentinel data through:
 - [ ] Google Earth Engine account enabled ([signup.earthengine.google.com](https://signup.earthengine.google.com))
 - [ ] Google Drive with ≥5 GB free space
 - [ ] Google Colab tested (login with same Google account)
-- [ ] CopPhil Infrastructure registration ([application.infra.copphil.philsa.gov.ph](https://application.infra.copphil.philsa.gov.ph))
+- [ ] CoPhil Infrastructure registration ([application.infra.copphil.philsa.gov.ph](https://application.infra.copphil.philsa.gov.ph))
 
 **✅ Software & Data:**
 - [ ] Downloaded sample vector/raster bundle (link provided via email)
@@ -1109,7 +1079,7 @@ graph TB
         P2[DATOS<br/>DOST Platform]
         P3[PRiSM<br/>Rice Monitoring]
         P4[ALaM<br/>Agri Monitor]
-        P5[CopPhil Mirror<br/>2025]
+        P5[CoPhil Mirror<br/>2025]
     end
 
     subgraph Apps["APPLICATIONS"]
@@ -1168,7 +1138,7 @@ graph TB
 5. Space Education and Awareness
 6. International Cooperation
 
-**Role in CopPhil:**
+**Role in CoPhil:**
 - Programme co-chair with DOST
 - Host of Copernicus Mirror Site infrastructure
 - Provider of training and capacity building
@@ -1919,11 +1889,11 @@ ALaM dramatically reduces this burden through automation and distributed annotat
 
 ---
 
-## Part 6: CopPhil Programme - Bridging Europe and the Philippines
+## Part 6: CoPhil Programme - Bridging Europe and the Philippines
 
-### CopPhil Overview
+### CoPhil Overview
 
-**Full Name:** National Copernicus Capacity Support Action Programme for the Philippines (CopPhil)
+**Full Name:** National Copernicus Capacity Support Action Programme for the Philippines (CoPhil)
 
 **Launch Date:** April 24, 2023
 
@@ -1934,14 +1904,14 @@ ALaM dramatically reduces this burden through automation and distributed annotat
 **Significance:** First Copernicus Earth observation data storing and processing facility in Asia
 
 ::: {.callout-important}
-## CopPhil - A Landmark Cooperation
+## CoPhil - A Landmark Cooperation
 
-CopPhil represents a **flagship programme of the EU's Global Gateway strategy**, demonstrating international commitment to space technology for sustainable development. It's the **first space cooperation agreement of its kind in Southeast Asia**, positioning the Philippines as a regional hub for Earth observation.
+CoPhil represents a **flagship programme of the EU's Global Gateway strategy**, demonstrating international commitment to space technology for sustainable development. It's the **first space cooperation agreement of its kind in Southeast Asia**, positioning the Philippines as a regional hub for Earth observation.
 :::
 
 ### Strategic Objectives
 
-CopPhil focuses on three core pillars:
+CoPhil focuses on three core pillars:
 
 **1. Infrastructure Development**
 - Establish Copernicus Data Centre in the Philippines
@@ -1968,7 +1938,7 @@ CopPhil focuses on three core pillars:
 
 **April 24, 2023:**
 - Official programme launch in the Philippines
-- PhilSA, DOST, and EU jointly launch CopPhil
+- PhilSA, DOST, and EU jointly launch CoPhil
 
 **June 30, 2023:**
 - Administrative Arrangement signing
@@ -1979,17 +1949,17 @@ CopPhil focuses on three core pillars:
 - **"First Light" Inaugural Event** in Manila
 - Unveiling of Copernicus Data Centre at PhilSA premises
 - First demonstrations of pilot services
-- Launch of CopPhil Infrastructure website
+- Launch of CoPhil Infrastructure website
 - Moderated by broadcast journalist Atom Araullo
 
 **November 2024:**
-- CopPhil Infrastructure website fully operational
+- CoPhil Infrastructure website fully operational
 - First training courses initiated with 80+ participants
 
 **2025:**
 - Full operational capacity of infrastructure
 - Continuation of training and service development
-- EU CopPhil Scholarship Programme active
+- EU CoPhil Scholarship Programme active
 
 ### Institutional Framework
 
@@ -2011,7 +1981,7 @@ CopPhil focuses on three core pillars:
 
 ---
 
-### CopPhil Infrastructure (Mirror Site)
+### CoPhil Infrastructure (Mirror Site)
 
 **Status:** Operational as of late 2024, reaching full capacity in 2025
 
@@ -2112,7 +2082,7 @@ CopPhil focuses on three core pillars:
 
 ---
 
-### CopPhil Digital Space Campus
+### CoPhil Digital Space Campus
 
 **Platform URL:** [https://courses.copphil.philsa.gov.ph](https://courses.copphil.philsa.gov.ph)
 
@@ -2122,9 +2092,9 @@ CopPhil focuses on three core pillars:
 
 **Training Approach:** Mix of online self-paced and hybrid (online + on-site) courses
 
-### CopPhil Pilot Services
+### CoPhil Pilot Services
 
-CopPhil is co-developing three operational pilot services tailored to Philippine priorities:
+CoPhil is co-developing three operational pilot services tailored to Philippine priorities:
 
 #### 1. Ground Motion Monitoring Service
 
@@ -2270,12 +2240,12 @@ The platform offers specialized training across three main thematic areas:
 **Major Training Events (2024):**
 
 **November 25, 2024 - First Training Course:**
-- Hosted at CopPhil Centre
+- Hosted at CoPhil Centre
 - **Over 80 participants** from government agencies, academia, other sectors
 - Starting point for ten-course training series
 - Positive feedback from participants
 
-### EU CopPhil Scholarship Programme
+### EU CoPhil Scholarship Programme
 
 **Launch:** Late 2024
 **Implementation:** Stantec-led consortium
@@ -2310,7 +2280,7 @@ Filipino citizens working in specific government agencies:
 - Occurred during Typhoon Gaemi (Typhoon Carina)
 - Significant environmental emergency
 
-**CopPhil Response:**
+**CoPhil Response:**
 - Copernicus satellites activated from Europe
 - Rapid Sentinel-1 SAR data acquisition
 - All-weather monitoring during typhoon conditions
@@ -2323,7 +2293,7 @@ Filipino citizens working in specific government agencies:
 - Oil spill extent mapped
 - Trajectory modeling for cleanup
 - Support for containment operations
-- **First major real-world application demonstrating CopPhil's operational readiness**
+- **First major real-world application demonstrating CoPhil's operational readiness**
 
 #### Key Achievements (2024)
 
@@ -2377,7 +2347,7 @@ Filipino citizens working in specific government agencies:
 
 **Data Integration:**
 1. **PAGASA rainfall data** → Understand precipitation drivers and intensity
-2. **Sentinel-1 SAR (via CopPhil)** → Detect flood extent under clouds
+2. **Sentinel-1 SAR (via CoPhil)** → Detect flood extent under clouds
 3. **DOST-ASTI DATOS AI** → Rapid processing (10-20 minutes)
 4. **NAMRIA HazardHunterPH** → Identify pre-existing high-risk zones
 5. **NAMRIA Geoportal** → Administrative boundaries and infrastructure context
@@ -2395,14 +2365,14 @@ Filipino citizens working in specific government agencies:
 #### Example 2: Land Cover Change Detection
 
 **Data Integration:**
-1. **Sentinel-2 time series (via CopPhil)** → Multi-temporal optical imagery
+1. **Sentinel-2 time series (via CoPhil)** → Multi-temporal optical imagery
 2. **NAMRIA land cover basemap** → Reference classification for baseline
 3. **SkAI-Pinas DIMER models** → Apply pre-trained classification model
 4. **AIPI processing** → Process large areas efficiently
 5. **COARE infrastructure** → High-performance computing
 
 **Workflow:**
-1. Download Sentinel-2 time series for province from CopPhil
+1. Download Sentinel-2 time series for province from CoPhil
 2. Load NAMRIA land cover as training reference
 3. Select land cover classification model from DIMER
 4. Deploy via AIPI for batch processing
@@ -2414,7 +2384,7 @@ Filipino citizens working in specific government agencies:
 #### Example 3: Agricultural Drought Monitoring
 
 **Data Integration:**
-1. **Sentinel-2 NDVI time series (CopPhil)** → Vegetation health indicator
+1. **Sentinel-2 NDVI time series (CoPhil)** → Vegetation health indicator
 2. **PAGASA rainfall and SPEI** → Meteorological drought indices
 3. **SkAI-Pinas models** → Predict crop stress levels
 4. **DOST agencies** → Deliver alerts to DA and LGUs
@@ -2432,14 +2402,14 @@ Filipino citizens working in specific government agencies:
 #### Example 4: Coral Reef Health Monitoring
 
 **Data Integration:**
-1. **Sentinel-2 coastal imagery (CopPhil)** → Shallow water habitat
-2. **CopPhil Benthic Habitat pilot service** → Classification algorithms
+1. **Sentinel-2 coastal imagery (CoPhil)** → Shallow water habitat
+2. **CoPhil Benthic Habitat pilot service** → Classification algorithms
 3. **NAMRIA coastal basemaps** → Reef locations and boundaries
 4. **PhilSA Diwata-2 imagery** → Higher resolution validation
 
 **Workflow:**
 1. Acquire Sentinel-2 Level-2A over coral reef areas
-2. Apply CopPhil benthic habitat classification
+2. Apply CoPhil benthic habitat classification
 3. Detect bleaching events through spectral change
 4. Validate with NAMRIA reef maps and Diwata-2 imagery
 5. Track recovery over time
@@ -2463,7 +2433,7 @@ Filipino citizens working in specific government agencies:
    - Search for a recent Sentinel-2 image over the Philippines
    - Note the three-satellite constellation status
 
-**2. CopPhil Infrastructure**
+**2. CoPhil Infrastructure**
    - Visit [https://copphil.philsa.gov.ph](https://copphil.philsa.gov.ph)
    - Explore "About" section
    - Check "First Light" event highlights
@@ -2490,7 +2460,7 @@ Filipino citizens working in specific government agencies:
 **Discussion Questions:**
 - What types of data or services are most relevant to your work?
 - How could you combine Copernicus data with Philippine platforms?
-- Which training courses on CopPhil Digital Campus interest you most?
+- Which training courses on CoPhil Digital Campus interest you most?
 :::
 
 ---
@@ -2587,7 +2557,7 @@ Prevent common mistakes that will waste time and produce poor results:
 - **PAGASA:** PANaHON weather data, CliMap climate projections, typhoon tracking
 - **P2.6 billion DOST AI investment** (until 2028) supporting 300+ institutions
 
-**CopPhil Programme:**
+**CoPhil Programme:**
 - **€10 million EU-Philippines cooperation** (2023-2027)
 - **First Copernicus mirror site in Asia** - operational late 2024
 - 400 TB capacity, 184 users, free access for Philippine institutions
@@ -2599,12 +2569,12 @@ Prevent common mistakes that will waste time and produce poor results:
 **Synergies:**
 - Combining European and Philippine data creates powerful DRR, CCA, and NRM applications
 - Integrated workflows leverage global coverage with local context and rapid response
-- CopPhil infrastructure enables local storage, processing, and capacity building
+- CoPhil infrastructure enables local storage, processing, and capacity building
 
 **Your Next Steps:**
-- Register for CopPhil Infrastructure access
-- Explore CopPhil Digital Campus training courses
-- Consider EU CopPhil Scholarship Programme (if eligible)
+- Register for CoPhil Infrastructure access
+- Explore CoPhil Digital Campus training courses
+- Consider EU CoPhil Scholarship Programme (if eligible)
 - Engage with DOST-ASTI initiatives (SkAI-Pinas, DIMER, DATOS)
 - Integrate Copernicus data into your operational workflows
 :::
@@ -2621,11 +2591,11 @@ Prevent common mistakes that will waste time and produce poor results:
 - [Sentinel-2 User Handbook](https://sentinels.copernicus.eu/web/sentinel/user-guides/sentinel-2-msi)
 - [ESA Earth Online](https://earth.esa.int)
 
-### CopPhil Programme
-- [CopPhil Main Portal](https://copphil.philsa.gov.ph)
-- [CopPhil Infrastructure](https://infra.copphil.philsa.gov.ph)
-- [CopPhil Digital Campus](https://courses.copphil.philsa.gov.ph)
-- [ESA CopPhil Announcement](https://www.esa.int/Applications/Observing_the_Earth/Copernicus/ESA_and_the_European_Commission_uniting_on_Earth_observation_for_the_Philippines)
+### CoPhil Programme
+- [CoPhil Main Portal](https://copphil.philsa.gov.ph)
+- [CoPhil Infrastructure](https://infra.copphil.philsa.gov.ph)
+- [CoPhil Digital Campus](https://courses.copphil.philsa.gov.ph)
+- [ESA CoPhil Announcement](https://www.esa.int/Applications/Observing_the_Earth/Copernicus/ESA_and_the_European_Commission_uniting_on_Earth_observation_for_the_Philippines)
 
 ### Philippine EO Resources
 - [PhilSA Official Website](https://philsa.gov.ph)

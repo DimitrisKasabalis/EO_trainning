@@ -6,9 +6,9 @@ date: last-modified
 
 ## General Questions
 
-### What is the CopPhil Programme?
+### What is the CoPhil Programme?
 
-The **Technical Assistance for the Philippines' Copernicus Capacity Support Programme (CopPhil)** is an EU-Philippines cooperation initiative under the Global Gateway strategy. It aims to:
+The **Technical Assistance for the Philippines' Copernicus Capacity Support Programme (CoPhil)** is an EU-Philippines cooperation initiative under the Global Gateway strategy. It aims to:
 
 - Establish a Copernicus Mirror Site in the Philippines
 - Build capacity in EO data analysis and AI/ML
@@ -66,7 +66,7 @@ However, if you prefer working locally, we provide installation guides in the [S
 
 ### Is this training free?
 
-Yes! The CopPhil training programme is **fully funded by the European Union** under the Global Gateway initiative. There are no fees for participants.
+Yes! The CoPhil training programme is **fully funded by the European Union** under the Global Gateway initiative. There are no fees for participants.
 
 ---
 
@@ -80,7 +80,7 @@ Yes! The CopPhil training programme is **fully funded by the European Union** un
 4. Select **"Noncommercial"** (for this training)
 5. Fill out the registration form:
    - **Organization:** Your institution
-   - **Project description:** "CopPhil EO AI/ML Training"
+   - **Project description:** "CoPhil EO AI/ML Training"
 6. Submit and wait for approval (24-48 hours)
 
 ::: {.callout-important}
@@ -151,7 +151,7 @@ from google.colab import drive
 drive.mount('/content/drive')
 
 # Save outputs to Drive
-output_path = '/content/drive/My Drive/CopPhil_Training/'
+output_path = '/content/drive/My Drive/CoPhil_Training/'
 ```
 
 **Option 2: Download Files**
@@ -549,7 +549,7 @@ print(f"Found {collection.size().getInfo()} images")
 
 ### Can I get a certificate for completing this training?
 
-Yes! Participants who complete all 4 days and pass the final assessment will receive a **CopPhil Training Programme Certificate** issued by PhilSA and DOST.
+Yes! Participants who complete all 4 days and pass the final assessment will receive a **CoPhil Training Programme Certificate** issued by PhilSA and DOST.
 
 **Requirements:**
 - Attend all 4 days
@@ -580,7 +580,7 @@ Yes! All training materials are licensed under **Creative Commons BY-SA 4.0**, w
 - Use commercially
 
 **Requirements:**
-- Provide attribution: "CopPhil EO AI/ML Training Programme"
+- Provide attribution: "CoPhil EO AI/ML Training Programme"
 - Share derivatives under the same license
 
 ---

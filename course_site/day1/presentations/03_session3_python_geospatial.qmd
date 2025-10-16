@@ -1,14 +1,14 @@
 ---
 title: "Python for Geospatial Data Analysis"
-subtitle: "CopPhil EO AI/ML Training - Day 1, Session 3"
+subtitle: "CoPhil EO AI/ML Training - Day 1, Session 3"
 author: "Stylianos Kotsopoulos"
-institute: "EU-Philippines CopPhil Programme"
-date: "October 20-23, 2025"
+institute: "EU-Philippines CoPhil Programme"
+date: ""
 format:
   revealjs:
     theme: default
     css: custom.scss
-    footer: "Day 1 Session 3 | Python Geospatial"
+    footer: "Day 1 Session 3 | Python Geospatial | 20-23 October 2025"
     slide-number: true
     progress: true
     history: true
@@ -256,7 +256,7 @@ prediction = model.predict(image)
 :::
 
 ::: {.column width="40%"}
-![Google Colab Logo](/images/icons8-google-colab-color/icons8-google-colab-240.svg){width=80%}
+![Google Colab Logo](images/icons8-google-colab-color/icons8-google-colab-240.svg){width=80%}
 :::
 :::
 
@@ -287,7 +287,7 @@ Google Colab is perfect for training environments. Everyone has the same setup, 
 4. **Easy Sharing**
    - Share notebooks instantly
    - Collaborative editing
-   - CopPhil materials readily accessible
+   - CoPhil materials readily accessible
 :::
 
 ## Colab Interface Overview
@@ -322,7 +322,7 @@ Google Colab is perfect for training environments. Everyone has the same setup, 
 :::
 
 ::: {.column width="50%"}
-![Colab Interface](/images/Google_colab_interface.png){width=100%}
+![Colab Interface](images/Google_colab_interface.png){width=100%}
 :::
 :::
 

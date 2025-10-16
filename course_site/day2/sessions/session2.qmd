@@ -2,25 +2,12 @@
 title: "Session 2: Advanced Palawan Land Cover Lab"
 subtitle: "Multi-temporal Classification and Change Detection"
 date: last-modified
-author: "CopPhil Advanced Training Program"
+author: "CoPhil Advanced Training Program"
 format:
   html:
     toc: true
     toc-depth: 3
     code-fold: false
-  pdf:
-    toc: true
-    toc-depth: 3
-    number-sections: true
-    colorlinks: true
-    geometry:
-      - margin=1in
-    include-in-header:
-      text: |
-        \usepackage{fancyhdr}
-        \pagestyle{fancy}
-        \fancyhead[L]{CopPhil Training}
-        \fancyhead[R]{\thepage}
 ---
 
 <nav class="breadcrumb" aria-label="Breadcrumb">
@@ -43,14 +30,6 @@ Advanced feature engineering and real-world NRM applications
 
 **Duration:** 2 hours | **Type:** Hands-on Lab | **Difficulty:** Intermediate
 
-
-::: {.callout-note icon=false}
-## 📄 Download Session Materials
-This session is also available as a PDF for offline reading and printing.
-
-[📥 Download PDF](session2.pdf){.btn .btn-primary target="_blank"}
-:::
-
 ---
 
 This session builds on Session 1 by implementing advanced classification techniques for a real-world Philippine conservation scenario: detailed land cover mapping of Palawan Biosphere Reserve.
@@ -58,13 +37,6 @@ This session builds on Session 1 by implementing advanced classification techniq
 ## Presentation Slides
 
 <iframe src="../presentations/session2_palawan_lab.html" width="100%" height="600" style="border: 1px solid #ccc; border-radius: 4px;"></iframe>
-
-::: {.callout-tip}
-## View Full Screen
-Click the presentation above and press `F` for fullscreen mode. Use arrow keys to navigate slides.
-
-[Open in new tab →](../presentations/session2_palawan_lab.html){target="_blank" .btn .btn-sm .btn-primary}
-:::
 
 ---
 

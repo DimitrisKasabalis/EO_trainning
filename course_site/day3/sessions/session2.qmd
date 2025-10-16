@@ -2,25 +2,12 @@
 title: "Session 2: Hands-on Flood Mapping with U-Net and Sentinel-1 SAR"
 subtitle: "Practical Implementation for Disaster Risk Reduction"
 date: last-modified
-author: "CopPhil Advanced Training Program"
+author: "CoPhil Advanced Training Program"
 format:
   html:
     toc: true
     toc-depth: 3
     code-fold: false
-  pdf:
-    toc: true
-    toc-depth: 3
-    number-sections: true
-    colorlinks: true
-    geometry:
-      - margin=1in
-    include-in-header:
-      text: |
-        \usepackage{fancyhdr}
-        \pagestyle{fancy}
-        \fancyhead[L]{CopPhil Training}
-        \fancyhead[R]{\thepage}
 ---
 
 <nav class="breadcrumb" aria-label="Breadcrumb">
@@ -30,7 +17,6 @@ format:
   <span class="breadcrumb-separator" aria-hidden="true">›</span>
   <span class="breadcrumb-current">Session 2</span>
 </nav>
-
 
 ::: {.hero}
 # Hands-on Lab: Flood Mapping with U-Net
@@ -46,25 +32,11 @@ Implement semantic segmentation for real-world flood extent mapping using Sentin
 **Duration:** 2.5 hours | **Format:** Hands-on Coding Lab | **Platform:** Google Colab with GPU
 :::
 
-::: {.callout-note icon=false}
-## 📄 Download Session Materials
-This session is also available as a PDF for offline reading and printing.
-
-[📥 Download PDF](session2.pdf){.btn .btn-primary target="_blank"}
-:::
-
 ---
 
 ## Presentation Slides
 
 <iframe src="../presentations/session2_flood_mapping_lab.html" width="100%" height="600" style="border: 1px solid #ccc; border-radius: 4px;"></iframe>
-
-::: {.callout-tip}
-## View Full Screen
-Click the presentation above and press `F` for fullscreen mode. Use arrow keys to navigate slides.
-
-[Open in new tab →](../presentations/session2_flood_mapping_lab.html){target="_blank" .btn .btn-sm .btn-primary}
-:::
 
 ---
 
@@ -1441,4 +1413,4 @@ Your skills can now contribute to saving lives through rapid, accurate flood ext
 
 ---
 
-*This hands-on lab is part of the CopPhil 4-Day Advanced Training on AI/ML for Earth Observation, funded by the European Union under the Global Gateway initiative. Materials developed in collaboration with PhilSA, DOST-ASTI, and the European Space Agency.*
+*This hands-on lab is part of the CoPhil 4-Day Advanced Training on AI/ML for Earth Observation, funded by the European Union under the Global Gateway initiative. Materials developed in collaboration with PhilSA, DOST-ASTI, and the European Space Agency.*

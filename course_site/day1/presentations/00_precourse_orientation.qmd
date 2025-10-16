@@ -1,7 +1,7 @@
 ---
-title: "Welcome to CopPhil EO AI/ML Training"
+title: "Welcome to CoPhil EO AI/ML Training"
 subtitle: "Pre-Course Orientation & Setup Guide"
-author: "EU-Philippines CopPhil Programme"
+author: "EU-Philippines CoPhil Programme"
 date: "2025"
 format:
   revealjs:
@@ -10,7 +10,7 @@ format:
     chalkboard: true
     preview-links: auto
     logo: images/copphil_logo.png
-    footer: "CopPhil Training | Pre-Course Orientation"
+    footer: "CoPhil Training | Pre-Course Orientation | 20-23 October 2025"
     navigation-mode: vertical
     controls: true
     progress: true
@@ -46,7 +46,7 @@ format:
 :::
 
 ::: {.notes}
-Welcome to the CopPhil 4-Day Advanced Training on AI/ML for Earth Observation. This is an intensive, hands-on programme designed specifically for Philippine EO professionals.
+Welcome to the CoPhil 4-Day Advanced Training on AI/ML for Earth Observation. This is an intensive, hands-on programme designed specifically for Philippine EO professionals.
 :::
 
 ---
@@ -85,7 +85,7 @@ This training is part of the EU Global Gateway Initiative, representing Europe's
 
 ---
 
-## CopPhil Programme
+## CoPhil Programme
 
 ::: {.columns}
 ::: {.column width="60%"}
@@ -105,7 +105,7 @@ Support **PhilSA** and **DOST** to enhance use of Earth Observation data for dis
 :::
 
 ::: {.notes}
-CopPhil positions the Philippines as a pioneer in the EU's international cooperation on Copernicus Earth Observation.
+CoPhil positions the Philippines as a pioneer in the EU's international cooperation on Copernicus Earth Observation.
 :::
 
 ---
@@ -267,14 +267,14 @@ GEE approval can take 24-48 hours, so sign up immediately. We'll need it for Ses
 3. In the first cell, type:
 
 ```python
-print("Hello, CopPhil Training!")
+print("Hello, CoPhil Training!")
 ```
 
 4. Press **Shift+Enter** to run
 5. You should see the output below the cell
 
 ::: {.fragment}
-✅ If you see "Hello, CopPhil Training!" — you're ready!
+✅ If you see "Hello, CoPhil Training!" — you're ready!
 :::
 
 ::: {.notes}
@@ -824,7 +824,7 @@ We're thrilled to have you join us. This is going to be an incredible learning e
 # Welcome Aboard! {background-image="https://images.unsplash.com/photo-1446776653964-20c1d3a81b06?w=1920" background-opacity="0.3"}
 
 ::: {.r-fit-text}
-**CopPhil EO AI/ML Training**
+**CoPhil EO AI/ML Training**
 
 🇪🇺 🤝 🇵🇭
 :::

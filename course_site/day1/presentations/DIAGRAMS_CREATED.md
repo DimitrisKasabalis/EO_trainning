@@ -12,7 +12,7 @@ I've created the **4 most critical diagrams** as SVG files for your Day 1 presen
 
 **Shows:**
 - EU Copernicus Programme at top
-- CopPhil Programme in middle
+- CoPhil Programme in middle
 - Three main agencies: PhilSA, NAMRIA, DOST-ASTI
 - Their respective platforms (SIYASAT, Geoportal, SkAI-Pinas)
 - Data flow from EU to Philippines
@@ -120,7 +120,7 @@ If SVG doesn't work, use a tool to convert:
 
 All diagrams use your presentation color scheme:
 - **Primary Blue:** #1e3a8a (headers, accents)
-- **Purple:** #7c3aed (CopPhil programme)
+- **Purple:** #7c3aed (CoPhil programme)
 - **Green:** #10b981 (PhilSA, core libraries)
 - **Orange:** #f59e0b (NAMRIA)
 - **Pink:** #ec4899 (DOST-ASTI)

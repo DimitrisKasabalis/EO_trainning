@@ -7,19 +7,6 @@ format:
     toc: true
     toc-depth: 3
     code-fold: false
-  pdf:
-    toc: true
-    toc-depth: 3
-    number-sections: true
-    colorlinks: true
-    geometry:
-      - margin=1in
-    include-in-header:
-      text: |
-        \usepackage{fancyhdr}
-        \pagestyle{fancy}
-        \fancyhead[L]{CopPhil Training}
-        \fancyhead[R]{\thepage}
 ---
 
 <nav class="breadcrumb" aria-label="Breadcrumb">
@@ -30,7 +17,6 @@ format:
   <span class="breadcrumb-current">Session 3</span>
 </nav>
 
-
 ::: {.session-info}
 **Duration:** 2 hours | **Format:** Hands-on Coding | **Platform:** Google Colaboratory
 :::
@@ -38,14 +24,6 @@ format:
 ## Session Overview
 
 This hands-on session teaches you how to work with geospatial data in Python - the foundation of Earth Observation workflows. Python has become the dominant language for EO and ML applications due to its rich ecosystem of libraries, active community, and seamless integration with operational systems. You'll use Google Colab (no installation needed!), learn vector data operations with GeoPandas, and master raster processing with Rasterio. By the end, you'll understand why Python powers Philippine EO platforms like DATOS, SkAI-Pinas, and PRiSM, and you'll be able to prepare satellite data for AI/ML workflows.
-
-
-::: {.callout-note icon=false}
-## 📄 Download Session Materials
-This session is also available as a PDF for offline reading and printing.
-
-[📥 Download PDF](session3.pdf){.btn .btn-primary target="_blank"}
-:::
 
 ---
 
@@ -77,13 +55,6 @@ By the end of this session, you will be able to:
 ## Presentation Slides
 
 <iframe src="../presentations/03_session3_python_geospatial.html" width="100%" height="600" style="border: 1px solid #ccc; border-radius: 4px;"></iframe>
-
-::: {.callout-tip}
-## View Full Screen
-Click the presentation above and press `F` for fullscreen mode. Use arrow keys to navigate slides.
-
-[Open in new tab →](../presentations/03_session3_python_geospatial.html){target="_blank" .btn .btn-sm .btn-primary}
-:::
 
 ---
 
@@ -268,7 +239,7 @@ In **Session 2**, you learned that data preprocessing is critical for ML success
 
 ```python
 print("Hello from Google Colab!")
-print("This is the CopPhil EO AI/ML Training")
+print("This is the CoPhil EO AI/ML Training")
 
 # Check Python version
 import sys
@@ -317,7 +288,7 @@ Create a folder structure in Google Drive for this training:
 
 ```
 MyDrive/
-  CopPhil_Training/
+  CoPhil_Training/
     data/
       vector/          # Shapefiles, GeoJSON (Philippine boundaries, AOIs)
       raster/          # Satellite imagery (Sentinel-2 tiles, NDVI, etc.)
@@ -349,7 +320,7 @@ This keeps your training materials organized and makes paths easier to reference
 ```python
 # Periodically save important results to Drive
 import shutil
-shutil.copy('important_result.tif', '/content/drive/MyDrive/CopPhil_Training/outputs/')
+shutil.copy('important_result.tif', '/content/drive/MyDrive/CoPhil_Training/outputs/')
 ```
 
 ---
@@ -675,7 +646,7 @@ Let's load provincial boundaries of the Philippines:
 
 ```python
 # Option 1: From Google Drive (if you uploaded data)
-provinces = gpd.read_file('/content/drive/MyDrive/CopPhil_Training/data/vector/philippines_provinces.shp')
+provinces = gpd.read_file('/content/drive/MyDrive/CoPhil_Training/data/vector/philippines_provinces.shp')
 
 # Option 2: From URL (using sample data from PhilGIS)
 url = "https://raw.githubusercontent.com/altcoder/philippines-json-maps/master/geojson/provinces/hires/BOHOL.json"
@@ -984,10 +955,10 @@ print(f"AOI bounds: {aoi_gdf.total_bounds}")
 
 ```python
 # Save as shapefile
-aoi_gdf.to_file('/content/drive/MyDrive/CopPhil_Training/data/vector/my_aoi.shp')
+aoi_gdf.to_file('/content/drive/MyDrive/CoPhil_Training/data/vector/my_aoi.shp')
 
 # Or save as GeoJSON (more portable)
-aoi_gdf.to_file('/content/drive/MyDrive/CopPhil_Training/data/vector/my_aoi.geojson', driver='GeoJSON')
+aoi_gdf.to_file('/content/drive/MyDrive/CoPhil_Training/data/vector/my_aoi.geojson', driver='GeoJSON')
 ```
 
 ---
@@ -1107,7 +1078,7 @@ Before opening rasters, let's review Sentinel-2's band structure (from Session 1
 ```python
 # Sample raster path (adjust to your data location)
 # For demo, we'll show the workflow with a hypothetical path
-raster_path = '/content/drive/MyDrive/CopPhil_Training/data/raster/sentinel2_bohol_subset.tif'
+raster_path = '/content/drive/MyDrive/CoPhil_Training/data/raster/sentinel2_bohol_subset.tif'
 
 # In real workflow, you'd download Sentinel-2 from Copernicus or GEE
 # For now, let's demonstrate with metadata inspection
@@ -1457,7 +1428,7 @@ plt.show()
 
 ```python
 # Save NDVI as GeoTIFF
-output_path = '/content/drive/MyDrive/CopPhil_Training/outputs/ndvi.tif'
+output_path = '/content/drive/MyDrive/CoPhil_Training/outputs/ndvi.tif'
 
 # Update profile for single-band float output
 profile.update(
@@ -1533,7 +1504,7 @@ plt.show()
 **Save clipped raster:**
 
 ```python
-clipped_path = '/content/drive/MyDrive/CopPhil_Training/outputs/clipped_raster.tif'
+clipped_path = '/content/drive/MyDrive/CoPhil_Training/outputs/clipped_raster.tif'
 
 with rasterio.open(clipped_path, 'w', **out_meta) as dest:
     dest.write(out_image)
@@ -1604,13 +1575,13 @@ print(survey_points[['site_id', 'land_cover', 'ndvi']])
 ```python
 # Save as CSV for Excel/analysis
 survey_points.drop('geometry', axis=1).to_csv(
-    '/content/drive/MyDrive/CopPhil_Training/outputs/field_validation.csv',
+    '/content/drive/MyDrive/CoPhil_Training/outputs/field_validation.csv',
     index=False
 )
 
 # Or save as shapefile with geometry
 survey_points.to_file(
-    '/content/drive/MyDrive/CopPhil_Training/outputs/field_validation.shp'
+    '/content/drive/MyDrive/CoPhil_Training/outputs/field_validation.shp'
 )
 
 print("✓ Validation data exported!")
@@ -2021,7 +1992,7 @@ from utils import safe_divide, calculate_ndvi
 2. **Define paths clearly:**
 ```python
 # Define all paths at the beginning
-BASE_DIR = Path('/content/drive/MyDrive/CopPhil_Training')
+BASE_DIR = Path('/content/drive/MyDrive/CoPhil_Training')
 DATA_DIR = BASE_DIR / 'data'
 RASTER_DIR = DATA_DIR / 'raster'
 VECTOR_DIR = DATA_DIR / 'vector'
@@ -2104,7 +2075,7 @@ from pathlib import Path
 # ============================================================
 
 # Define paths
-BASE_DIR = Path('/content/drive/MyDrive/CopPhil_Training')
+BASE_DIR = Path('/content/drive/MyDrive/CoPhil_Training')
 palawan_boundary = BASE_DIR / 'data/vector/palawan_province.shp'
 sentinel2_tile = BASE_DIR / 'data/raster/sentinel2_palawan_20240615.tif'
 training_areas = BASE_DIR / 'data/vector/rice_training_polygons.shp'

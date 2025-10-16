@@ -8,19 +8,6 @@ format:
     toc: true
     toc-depth: 3
     code-fold: false
-  pdf:
-    toc: true
-    toc-depth: 3
-    number-sections: true
-    colorlinks: true
-    geometry:
-      - margin=1in
-    include-in-header:
-      text: |
-        \usepackage{fancyhdr}
-        \pagestyle{fancy}
-        \fancyhead[L]{CopPhil Training}
-        \fancyhead[R]{\thepage}
 ---
 
 <nav class="breadcrumb" aria-label="Breadcrumb">
@@ -41,15 +28,7 @@ From Python basics to foundation models - your journey to operational AI for Phi
 
 ## Session Overview
 
-This final 2-hour session brings together everything you've learned across all four days. We'll synthesize key AI/ML techniques, discuss best practices for operational deployment in Philippine agencies, introduce pathways for continued learning through the CopPhil Digital Space Campus, and foster a community of practice.
-
-
-::: {.callout-note icon=false}
-## 📄 Download Session Materials
-This session is also available as a PDF for offline reading and printing.
-
-[📥 Download PDF](session4.pdf){.btn .btn-primary target="_blank"}
-:::
+This final 2-hour session brings together everything you've learned across all four days. We'll synthesize key AI/ML techniques, discuss best practices for operational deployment in Philippine agencies, introduce pathways for continued learning through the CoPhil Digital Space Campus, and foster a community of practice.
 
 ---
 
@@ -61,7 +40,7 @@ By the end of this session, you will be able to:
 1. **Synthesize** all AI/ML techniques learned across 4 days
 2. **Map** techniques to your agency's priority use cases
 3. **Apply** best practices for model deployment
-4. **Navigate** the CopPhil Digital Space Campus
+4. **Navigate** the CoPhil Digital Space Campus
 5. **Engage** with the Philippine EO AI community
 6. **Plan** your next steps and projects
 :::
@@ -69,13 +48,6 @@ By the end of this session, you will be able to:
 ## Presentation Slides
 
 <iframe src="../presentations/session4_synthesis.html" width="100%" height="600" style="border: 1px solid #ccc; border-radius: 4px;"></iframe>
-
-::: {.callout-tip}
-## View Full Screen
-Click the presentation above and press `F` for fullscreen mode. Use arrow keys to navigate slides.
-
-[Open in new tab →](../presentations/session4_synthesis.html){target="_blank" .btn .btn-sm .btn-primary}
-:::
 
 ---
 
@@ -384,11 +356,11 @@ def monitor_model_performance():
 
 ---
 
-## Part 3: CopPhil Digital Space Campus & Resources (20 minutes)
+## Part 3: CoPhil Digital Space Campus & Resources (20 minutes)
 
 ### Your Continued Learning Platform
 
-The **CopPhil Digital Space Campus** is your ongoing resource.
+The **CoPhil Digital Space Campus** is your ongoing resource.
 
 **What's Available:**
 
@@ -550,7 +522,7 @@ The **CopPhil Digital Space Campus** is your ongoing resource.
 
 **2. Set Up Environment**
 - Create Google Colab account
-- Bookmark CopPhil Campus
+- Bookmark CoPhil Campus
 - Register for SkAI-Pinas/DIMER
 - Join community forums
 
@@ -643,7 +615,7 @@ The **CopPhil Digital Space Campus** is your ongoing resource.
 **Q: "Our internet is slow. How to access large datasets?"**
 
 **A:** Workarounds:
-- CopPhil Mirror Site (local cache)
+- CoPhil Mirror Site (local cache)
 - Process in cloud (GEE), download results
 - Pre-download during off-peak
 - Request hard drives from DOST/PhilSA
@@ -734,7 +706,7 @@ Go forth and build amazing things! 🚀🇵🇭
 
 **Digital Certificate:**
 - Awarded upon 4-day completion
-- Download from CopPhil Campus
+- Download from CoPhil Campus
 - Includes competencies covered
 
 **Post-Training Support:**
@@ -743,7 +715,7 @@ Go forth and build amazing things! 🚀🇵🇭
 - Community forum: Ongoing
 
 **Alumni Network:**
-- Join CopPhil Alumni groups
+- Join CoPhil Alumni groups
 - Annual reunion and showcase
 - Exclusive webinars
 
@@ -771,7 +743,7 @@ Go forth and build amazing things! 🚀🇵🇭
 ::: {.hero}
 # Congratulations! 🎉
 
-You've completed the **CopPhil 4-Day Advanced Training on AI/ML for Earth Observation**.
+You've completed the **CoPhil 4-Day Advanced Training on AI/ML for Earth Observation**.
 
 **What matters now is what you do next.**
 
@@ -780,16 +752,16 @@ Take what you've learned, adapt it to your context, share with colleagues, and c
 **Mabuhay ang Philippine EO AI community!** 🇵🇭🛰️🤖
 
 **Stay connected:**
-- 🌐 CopPhil Digital Space Campus
+- 🌐 CoPhil Digital Space Campus
 - 📧 training@copphil.philsa.gov.ph
 - 💬 Community Forum
 - 🤝 SkAI-Pinas Platform
 
 **Thank you for your dedication!**
 
-*— The CopPhil Training Team*
+*— The CoPhil Training Team*
 :::
 
 ---
 
-*This session concludes Day 4: Time Series Analysis, Emerging Trends, and Sustainable Learning - CopPhil 4-Day Advanced Training on AI/ML for Earth Observation, funded by the European Union under the Global Gateway initiative.*
+*This session concludes Day 4: Time Series Analysis, Emerging Trends, and Sustainable Learning - CoPhil 4-Day Advanced Training on AI/ML for Earth Observation, funded by the European Union under the Global Gateway initiative.*

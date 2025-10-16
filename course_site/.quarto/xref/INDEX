@@ -1,47 +1,218 @@
 {
-  "index.qmd": {
-    "index.html": "fb34daba"
+  "day1/presentations/01_session1_copernicus_philippine_eo.qmd": {
+    "01_session1_copernicus_philippine_eo.html": "fa40ae5e"
   },
-  "sessions/session1.qmd": {
-    "session1.html": "38230252"
+  "day4/index.qmd": {
+    "index.html": "eb7a4a1c"
+  },
+  "day4/presentations/session4_synthesis.qmd": {
+    "session4_synthesis.html": "2481d855"
+  },
+  "day4/presentations/session2_drought_lab.qmd": {
+    "session2_drought_lab.html": "a06b0ff5"
+  },
+  "day4/presentations/session1_lstm_time_series.qmd": {
+    "session1_lstm_time_series.html": "6414b688"
+  },
+  "day4/presentations/session3_emerging_ai.qmd": {
+    "session3_emerging_ai.html": "15a6273a"
+  },
+  "day4/sessions/session4.qmd": {
+    "session4.html": "05c0de45"
+  },
+  "day4/sessions/session3.qmd": {
+    "session3.html": "769998b4"
+  },
+  "day4/sessions/session2.qmd": {
+    "session2.html": "b628f9e8"
+  },
+  "day4/sessions/session1.qmd": {
+    "session1.html": "1a871608"
+  },
+  "day4/notebooks/day4_session2_lstm_drought_lab_STUDENT.ipynb": {
+    "day4_session2_lstm_drought_lab_STUDENT.html": "d0ab5f3c"
+  },
+  "day4/notebooks/day4_session1_lstm_demo_STUDENT.ipynb": {
+    "day4_session1_lstm_demo_STUDENT.html": "71f179c4"
+  },
+  "day4/notebooks/day4_session1_lstm_demo_INSTRUCTOR.ipynb": {
+    "day4_session1_lstm_demo_INSTRUCTOR.html": "6bd56302"
+  },
+  "day4/notebooks/day4_session2_lstm_drought_lab_INSTRUCTOR.ipynb": {
+    "day4_session2_lstm_drought_lab_INSTRUCTOR.html": "cd8ecb9b"
+  },
+  "day3/index.qmd": {
+    "index.html": "24530dca"
+  },
+  "day3/presentations/session3_object_detection.qmd": {
+    "session3_object_detection.html": "a90b6ea3"
+  },
+  "day3/presentations/session1_unet_segmentation.qmd": {
+    "session1_unet_segmentation.html": "ecfaa2d4"
+  },
+  "day3/presentations/session4_object_detection_lab.qmd": {
+    "session4_object_detection_lab.html": "471e3cf4"
+  },
+  "day3/presentations/session2_flood_mapping_lab.qmd": {
+    "session2_flood_mapping_lab.html": "373bd459"
+  },
+  "day3/sessions/session4.qmd": {
+    "session4.html": "a2aba01d"
+  },
+  "day3/sessions/session3.qmd": {
+    "session3.html": "c3b4d512"
+  },
+  "day3/sessions/session2.qmd": {
+    "session2.html": "8b745ab4"
+  },
+  "day3/sessions/session1.qmd": {
+    "session1.html": "e00b3fad"
+  },
+  "day3/DATA_GUIDE.md": {
+    "DATA_GUIDE.html": "ad69bf9d"
+  },
+  "day3/notebooks/Day3_Session4_Object_Detection_STUDENT.ipynb": {
+    "Day3_Session4_Object_Detection_STUDENT.html": "a99bd93a"
+  },
+  "day3/notebooks/Day3_Session2_Flood_Mapping_UNet.ipynb": {
+    "Day3_Session2_Flood_Mapping_UNet.html": "67b0a21f"
+  },
+  "day2/documentation/TROUBLESHOOTING.md": {
+    "TROUBLESHOOTING.html": "542adbdc"
+  },
+  "day2/index.qmd": {
+    "index.html": "83b1cb60"
+  },
+  "day2/session1/data/class_definitions.md": {
+    "class_definitions.html": "f09d304a"
+  },
+  "day2/presentations/session3_deep_learning.qmd": {
+    "session3_deep_learning.html": "4c76fbec"
+  },
+  "day2/presentations/session1_random_forest.qmd": {
+    "session1_random_forest.html": "68ed7eb9"
+  },
+  "day2/presentations/session4_cnn_lab.qmd": {
+    "session4_cnn_lab.html": "9219a289"
+  },
+  "day2/presentations/session2_palawan_lab.qmd": {
+    "session2_palawan_lab.html": "b91df3ae"
+  },
+  "day2/sessions/session4.qmd": {
+    "session4.html": "9efdb0e0"
+  },
+  "day2/sessions/session3.qmd": {
+    "session3.html": "765d5786"
+  },
+  "day2/sessions/session2.qmd": {
+    "session2.html": "caf0d3a4"
+  },
+  "day2/sessions/session1.qmd": {
+    "session1.html": "91ff861d"
+  },
+  "day2/data/class_definitions.md": {
+    "class_definitions.html": "6c611a76"
+  },
+  "day2/notebooks/session4_cnn_classification_STUDENT.ipynb": {
+    "session4_cnn_classification_STUDENT.html": "485ac331"
+  },
+  "day2/notebooks/session1_hands_on_lab_student.ipynb": {
+    "session1_hands_on_lab_student.html": "84e4140d"
+  },
+  "day2/notebooks/session4_transfer_learning_STUDENT.ipynb": {
+    "session4_transfer_learning_STUDENT.html": "94c2b1e8"
+  },
+  "day2/notebooks/session1/data/class_definitions.md": {
+    "class_definitions.html": "5c19ddbf"
+  },
+  "day2/notebooks/session1_theory_notebook_STUDENT.ipynb": {
+    "session1_theory_notebook_STUDENT.html": "ce66d993"
+  },
+  "day2/notebooks/session3_theory_interactive.ipynb": {
+    "session3_theory_interactive.html": "445a5d82"
+  },
+  "day2/notebooks/session2_extended_lab_STUDENT.ipynb": {
+    "session2_extended_lab_STUDENT.html": "af84c12e"
   },
   "resources/downloads.qmd": {
-    "downloads.html": "6adb223f"
+    "downloads.html": "55310787"
   },
   "resources/glossary.qmd": {
-    "glossary.html": "f1f3dbf7"
+    "glossary.html": "e42bf676"
   },
   "resources/faq.qmd": {
-    "faq.html": "92a67243"
+    "faq.html": "7faa5050"
   },
   "resources/philippine-eo.qmd": {
-    "philippine-eo.html": "84346968"
+    "philippine-eo.html": "14db58f4"
   },
   "resources/setup.qmd": {
-    "setup.html": "f36ef12a"
+    "setup.html": "49787d80"
   },
   "resources/cheatsheets.qmd": {
-    "cheatsheets.html": "9787b1f0"
+    "cheatsheets.html": "567022b3"
   },
-  "sessions/session4.qmd": {
-    "session4.html": "0ac8f2d4"
+  "index.qmd": {
+    "index.html": "9916d228"
   },
-  "sessions/session3.qmd": {
-    "session3.html": "de77097f"
+  "day1/index.qmd": {
+    "index.html": "5edf6f7d"
   },
-  "sessions/session2.qmd": {
-    "session2.html": "559d6e86"
+  "day1/presentations/IMPLEMENTATION_STATUS.md": {
+    "IMPLEMENTATION_STATUS.html": "92ec46ad"
   },
-  "notebooks/notebook1.qmd": {
-    "notebook1.html": "be2e3f1b"
+  "day1/presentations/NEXT_STEPS.md": {
+    "NEXT_STEPS.html": "072420d7"
   },
-  "notebooks/notebook2.qmd": {
-    "notebook2.html": "1fd08671"
+  "day1/presentations/INSTRUCTOR_GUIDE.md": {
+    "INSTRUCTOR_GUIDE.html": "8014ff3f"
   },
-  "notebooks/Day1_Session4_Google_Earth_Engine.ipynb": {
-    "Day1_Session4_Google_Earth_Engine.html": "d01000f7"
+  "day1/presentations/02_session2_ai_ml_fundamentals.qmd": {
+    "02_session2_ai_ml_fundamentals.html": "a5fa60f5"
   },
-  "notebooks/Day1_Session3_Python_Geospatial_Data.ipynb": {
-    "Day1_Session3_Python_Geospatial_Data.html": "54c5a686"
+  "day1/presentations/00_precourse_orientation.qmd": {
+    "00_precourse_orientation.html": "12e606a1"
+  },
+  "day1/presentations/03_session3_python_geospatial.qmd": {
+    "03_session3_python_geospatial.html": "3fb4ad0e"
+  },
+  "day1/presentations/IMAGE_PLACEHOLDERS.md": {
+    "IMAGE_PLACEHOLDERS.html": "029e62d7"
+  },
+  "day1/presentations/IMAGES_TO_SOURCE.md": {
+    "IMAGES_TO_SOURCE.html": "3009f7bc"
+  },
+  "day1/presentations/DIAGRAMS_CREATED.md": {
+    "DIAGRAMS_CREATED.html": "32c86322"
+  },
+  "day1/presentations/ENHANCEMENT_SUMMARY.md": {
+    "ENHANCEMENT_SUMMARY.html": "0d93d916"
+  },
+  "day1/presentations/04_session4_google_earth_engine.qmd": {
+    "04_session4_google_earth_engine.html": "93919c3e"
+  },
+  "day1/sessions/session4.qmd": {
+    "session4.html": "3998f10f"
+  },
+  "day1/sessions/session3.qmd": {
+    "session3.html": "5158c665"
+  },
+  "day1/sessions/session2.qmd": {
+    "session2.html": "87b81360"
+  },
+  "day1/sessions/session1.qmd": {
+    "session1.html": "48708595"
+  },
+  "day1/notebooks/notebook1.qmd": {
+    "notebook1.html": "bf5ae685"
+  },
+  "day1/notebooks/notebook2.qmd": {
+    "notebook2.html": "3dfef82a"
+  },
+  "day1/notebooks/Day1_Session4_Google_Earth_Engine.ipynb": {
+    "Day1_Session4_Google_Earth_Engine.html": "2bb48ef5"
+  },
+  "day1/notebooks/Day1_Session3_Python_Geospatial_Data.ipynb": {
+    "Day1_Session3_Python_Geospatial_Data.html": "ac5a8043"
   }
 }

@@ -1,11 +1,11 @@
 ---
-title: "CopPhil EO AI/ML Training"
+title: "CoPhil EO AI/ML Training"
 subtitle: "4-Day Advanced Training on AI/ML for Earth Observation"
 date: last-modified
 ---
 
 ::: {.hero}
-# CopPhil EO AI/ML Training Programme
+# CoPhil EO AI/ML Training Programme
 
 ### 4-Day Advanced Training on AI/ML for Earth Observation
 
@@ -14,14 +14,14 @@ Advanced training for Philippine EO professionals on AI/ML applications for Disa
 
 ## About This Training
 
-Welcome to the **4-Day Advanced Online Training on AI/ML for Earth Observation** for Philippine EO Professionals. This comprehensive training is part of the **CopPhil Programme** (EU-Philippines Copernicus Capacity Support Programme), a flagship initiative under the European Union's Global Gateway strategy.
+Welcome to the **4-Day Advanced Online Training on AI/ML for Earth Observation** for Philippine EO Professionals. This comprehensive training is part of the **CoPhil Programme** (EU-Philippines Copernicus Capacity Support Programme), a flagship initiative under the European Union's Global Gateway strategy.
 
 ::: {.callout-note}
 ## Training Details
 
 **Dates:** October 20-23, 2025
 **Instructor:** Stylianos Kotsopoulos
-**Programme:** EU-Philippines CopPhil Programme
+**Programme:** EU-Philippines CoPhil Programme
 
 This course strengthens the Philippines' capacity to use Copernicus Earth Observation data for:
 
@@ -255,12 +255,12 @@ Quick reference guides for Python, geospatial libraries, and machine learning wo
 :::
 :::
 
-## About CopPhil Programme
+## About CoPhil Programme
 
 ::: {.callout-tip}
 ## Technical Assistance for Philippines' Copernicus Capacity Support
 
-The **CopPhil Programme** is part of the EU-Philippines cooperation programme and the EU's Global Gateway strategy.
+The **CoPhil Programme** is part of the EU-Philippines cooperation programme and the EU's Global Gateway strategy.
 
 **Key Partners:**
 
@@ -333,7 +333,7 @@ This training is made possible through the partnership between:
 - Philippine Space Agency (PhilSA)
 - Department of Science and Technology (DOST)
 - European Space Agency (ESA)
-- CopPhil Programme Consortium
+- CoPhil Programme Consortium
 
 ---
 

@@ -2,8 +2,8 @@
 title: "Session 3: Object Detection Techniques for Earth Observation"
 subtitle: "From Faster R-CNN to YOLO/DETR: Counting and Localizing Objects"
 author: "Stylianos Kotsopoulos"
-institute: "EU-Philippines CopPhil Programme"
-date: "October 20-23, 2025"
+institute: "EU-Philippines CoPhil Programme"
+date: ""
 format:
   revealjs:
     theme: [default, custom.scss]
@@ -11,7 +11,7 @@ format:
     chalkboard: true
     preview-links: auto
     logo: images/copphil_logo.png
-    footer: "DAY 3 - Session 3 | Object Detection for EO"
+    footer: "DAY 3 - Session 3 | Object Detection for EO | 20-23 October 2025"
     transition: fade
     background-transition: fade
     width: 1920

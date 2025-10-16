@@ -1,6 +1,6 @@
 # Day 1 Presentations - Instructor Guide
 
-**CopPhil EO AI/ML Training**  
+**CoPhil EO AI/ML Training**  
 **Last Updated:** January 14, 2025
 
 ---
@@ -106,7 +106,7 @@ Email participants with:
 | PhilSA & SIYASAT | 8 min | 86 min |
 | NAMRIA | 4 min | 90 min |
 | DOST-ASTI & SkAI-Pinas | 6 min | 96 min |
-| CopPhil Programme | 10 min | 106 min |
+| CoPhil Programme | 10 min | 106 min |
 | Data Access Methods | 12 min | 118 min |
 | Summary & Q&A | 3 min | 121 min |
 
@@ -125,7 +125,7 @@ Email participants with:
 - L2A = analysis-ready (atmospherically corrected)
 
 **Philippine Context:**
-- PhilSA: National space agency, CopPhil co-chair
+- PhilSA: National space agency, CoPhil co-chair
 - SIYASAT: Operational NovaSAR-1 data portal
 - DOST P2.6B AI investment (2024-2028)
 - SkAI-Pinas: 300+ institutions supported
@@ -755,7 +755,7 @@ Map.addLayer(image, vis_params, 'S2 RGB')
 - geemap Issues: https://github.com/giswqs/geemap/issues
 
 **Content Resources:**
-- CopPhil Programme: https://www.cophil.eu
+- CoPhil Programme: https://www.cophil.eu
 - Copernicus Data Space: https://dataspace.copernicus.eu
 - PhilSA: https://philsa.gov.ph
 

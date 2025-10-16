@@ -2,8 +2,8 @@
 title: "Session 2: Hands-on – LSTM Drought Monitoring Lab"
 subtitle: "Mindanao Case Study with NDVI, Rainfall, Temperature, and ONI"
 author: "Stylianos Kotsopoulos"
-institute: "EU-Philippines CopPhil Programme"
-date: "October 20-23, 2025"
+institute: "EU-Philippines CoPhil Programme"
+date: ""
 format:
   revealjs:
     theme: [default, custom.scss]
@@ -11,7 +11,7 @@ format:
     chalkboard: true
     preview-links: auto
     logo: ../../day1/presentations/images/copphil_logo.png
-    footer: "DAY 4 - Session 2 | LSTM Drought Lab"
+    footer: "DAY 4 - Session 2 | LSTM Drought Lab | 20-23 October 2025"
     transition: fade
     background-transition: fade
     width: 1920

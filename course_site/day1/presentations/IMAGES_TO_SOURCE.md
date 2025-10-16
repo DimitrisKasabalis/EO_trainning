@@ -15,7 +15,7 @@
 | `dost_asti_logo.png` | [DOST-ASTI](https://asti.dost.gov.ph) | Header logo |
 | `namria_logo.png` | [NAMRIA](https://www.namria.gov.ph) | Header logo |
 | `gee_logo.png` | [Google Earth Engine](https://earthengine.google.com) | Homepage or press kit |
-| `copphil_logo.png` | CopPhil materials | If you have CopPhil branding materials |
+| `copphil_logo.png` | CoPhil materials | If you have CoPhil branding materials |
 | `eu_global_gateway.png` | [EU Website](https://commission.europa.eu/strategy-and-policy/priorities-2019-2024/stronger-europe-world/global-gateway_en) | Logo/banner image |
 
 **Tips:**
@@ -75,7 +75,7 @@ Create a diagram showing:
                  │
                  ▼
 ┌─────────────────────────────────────────┐
-│           CopPhil Programme             │
+│           CoPhil Programme             │
 │    (EU-Philippines Cooperation)         │
 └─────┬─────────────┬──────────────┬──────┘
       │             │              │

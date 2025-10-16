@@ -1,9 +1,9 @@
 ---
 title: "Copernicus Sentinel Data & Philippine EO Ecosystem"
-subtitle: "CopPhil EO AI/ML Training - Day 1, Session 1"
+subtitle: "CoPhil EO AI/ML Training - Day 1, Session 1"
 author: "Stylianos Kotsopoulos"
-institute: "EU-Philippines CopPhil Programme"
-date: "October 20-23, 2025"
+institute: "EU-Philippines CoPhil Programme"
+date: ""
 format:
   revealjs:
     theme: default
@@ -11,7 +11,7 @@ format:
     slide-number: true
     chalkboard: true
     preview-links: auto
-    footer: "Day 1 Session 1 | Copernicus & Philippine EO"
+    footer: "Day 1 Session 1 | Copernicus & Philippine EO | 20-23 October 2025"
     navigation-mode: vertical
     controls: true
     progress: true
@@ -60,13 +60,13 @@ Welcome participants to the 4-day advanced training. Emphasize that this is part
 - Strengthening health, education, research systems globally
 :::
 
-![](/images/eu_global_gateway.png){fig-align="center" width="60%"}
+![](images/eu_global_gateway.png){fig-align="center" width="60%"}
 
 ::: {.notes}
-The Global Gateway strategy represents the EU's commitment to building partnerships that boost smart, clean and secure infrastructure globally. CopPhil is a unique flagship initiative within this framework.
+The Global Gateway strategy represents the EU's commitment to building partnerships that boost smart, clean and secure infrastructure globally. CoPhil is a unique flagship initiative within this framework.
 :::
 
-## CopPhil Programme Overview
+## CoPhil Programme Overview
 
 ::: {.columns}
 ::: {.column width="60%"}
@@ -90,7 +90,7 @@ Support Philippine Space Agency (PhilSA) and DOST to improve use of Earth Observ
 :::
 
 ::: {.notes}
-CopPhil is an EU-funded Technical Assistance programme positioning the Philippines as a pioneer in the EU's international cooperation on Copernicus.
+CoPhil is an EU-funded Technical Assistance programme positioning the Philippines as a pioneer in the EU's international cooperation on Copernicus.
 :::
 
 ## PhilSA & DOST Partnership
@@ -99,28 +99,28 @@ CopPhil is an EU-funded Technical Assistance programme positioning the Philippin
 ::: {.column width="50%"}
 **Philippine Space Agency**
 
-![](/images/philsa_logo.png){width="200px"}
+![](images/philsa_logo.png){width="200px"}
 
 - Established 2019
 - Central civilian space agency
 - Space+ Data Dashboard
-- Co-chair of CopPhil
+- Co-chair of CoPhil
 :::
 
 ::: {.column width="50%"}
 **Department of Science and Technology**
 
-![](/images/dost_logo.png){width="200px"}
+![](images/dost_logo.png){width="200px"}
 
 - ASTI AI initiatives
 - SkAI-Pinas program
 - National AI investments
-- Co-chair of CopPhil
+- Co-chair of CoPhil
 :::
 :::
 
 ::: {.notes}
-Both PhilSA and DOST are co-chairs of the CopPhil programme, demonstrating strong national commitment to building EO and AI capacity.
+Both PhilSA and DOST are co-chairs of the CoPhil programme, demonstrating strong national commitment to building EO and AI capacity.
 :::
 
 ## Session 1 Roadmap
@@ -131,7 +131,7 @@ Both PhilSA and DOST are co-chairs of the CopPhil programme, demonstrating stron
 3. Sentinel-2 Mission (Optical)
 4. Data Access Methods
 5. Philippine EO Ecosystem
-6. CopPhil Infrastructure
+6. CoPhil Infrastructure
 :::
 
 **Duration:** 2 hours
@@ -155,7 +155,7 @@ This session provides the foundation for understanding where EO data comes from 
 :::
 
 ::: {.column width="50%"}
-![](/images/copernicus_overview.jpg){width="100%"}
+![](images/copernicus_overview.jpg){width="100%"}
 :::
 :::
 
@@ -217,7 +217,7 @@ Copernicus is the European Union's Earth Observation program, providing free and
 
 ## Copernicus Applications
 
-![](/images/copernicus_applications.png){fig-align="center" width="80%"}
+![](images/copernicus_applications.png){fig-align="center" width="80%"}
 
 ::: {.columns}
 ::: {.column width="50%"}
@@ -256,7 +256,7 @@ Copernicus supports applications in emergency management, health care, agricultu
 :::
 
 ::: {.column width="40%"}
-![](/images/sentinel1_satellite.jpg){width="100%"}
+![](images/sentinel1_satellite.jpg){width="100%"}
 :::
 :::
 
@@ -285,7 +285,7 @@ Sentinel-1 operates in Interferometric Wide (IW) mode with ~5m by 20m spatial re
 
 ## SAR: How It Works
 
-![](/images/sar_principle.png){fig-align="center" width="70%"}
+![](images/sar_principle.png){fig-align="center" width="70%"}
 
 ::: {.incremental}
 1. Satellite sends **microwave pulses** to Earth
@@ -319,7 +319,7 @@ SAR satellites send microwave signals and measure the backscatter. Water appears
 :::
 :::
 
-![](/images/polarization_comparison.jpg){fig-align="center" width="60%"}
+![](images/polarization_comparison.jpg){fig-align="center" width="60%"}
 
 ::: {.notes}
 Sentinel-1 IW mode over land typically provides VV and VH polarizations. Different polarizations are sensitive to different surface characteristics.
@@ -477,7 +477,7 @@ For this training, we use **pre-processed Sentinel-1 GRD data**. Here's what hap
 ::: {.column width="50%"}
 **Flood Mapping**
 
-![](/images/s1_flood_mapping.jpg){width="100%"}
+![](images/s1_flood_mapping.jpg){width="100%"}
 
 - Water appears dark in SAR
 - Works through clouds
@@ -487,7 +487,7 @@ For this training, we use **pre-processed Sentinel-1 GRD data**. Here's what hap
 ::: {.column width="50%"}
 **Deformation Monitoring**
 
-![](/images/s1_insar.jpg){width="100%"}
+![](images/s1_insar.jpg){width="100%"}
 
 - InSAR technique
 - Millimeter precision
@@ -501,7 +501,7 @@ Sentinel-1's ability to penetrate clouds makes it invaluable for flood mapping d
 
 ## Philippine Example: Flood Monitoring
 
-![](/images/sentinel1_flood_ph.png){fig-align="center" width="80%"}
+![](images/sentinel1_flood_ph.png){fig-align="center" width="80%"}
 
 ::: {.columns}
 ::: {.column width="50%"}
@@ -585,7 +585,7 @@ During Typhoon Ulysses, Sentinel-1 provided crucial flood extent mapping when op
 ::: {.column width="50%"}
 **Philippine Example: Mayon Volcano**
 
-![](/images/sentinel2_mayon.jpg){fig-align="center" width="100%"}
+![](images/sentinel2_mayon.jpg){fig-align="center" width="100%"}
 
 **Sentinel-2 monitoring of 2018 eruption**
 
@@ -634,7 +634,7 @@ Sentinel-2 has 13 spectral bands spanning visible to shortwave infrared. The 10m
 :::
 
 ::: {.column width="40%"}
-![](/images/red_edge_spectrum.png){width="100%"}
+![](images/red_edge_spectrum.png){width="100%"}
 
 **Philippine Use:**
 - Rice crop assessment
@@ -803,7 +803,7 @@ Sentinel-1 and Sentinel-2 are complementary. SAR penetrates clouds and works at 
 :::
 :::
 
-![](/images/s1_s2_synergy.jpg){fig-align="center" width="60%"}
+![](images/s1_s2_synergy.jpg){fig-align="center" width="60%"}
 
 ::: {.notes}
 Using both missions together provides more complete information. After a typhoon, S1 maps floods under clouds while S2 assesses vegetation damage where it's clear.
@@ -850,14 +850,14 @@ Understanding where to work is crucial - don't try to train deep models on GEE o
 | **Data Prep & Exploration** | **Google Earth Engine** | Petabyte catalog, no download, cloud composites | Export limit 32 MB (tile large areas), no deep learning training |
 | **ML Training (RF, shallow)** | **GEE or Colab** | RF works in GEE; small data in Colab | GEE memory limits; Colab free tier quotas |
 | **Deep Learning (CNN, U-Net)** | **Local GPU / Colab Pro** | Requires PyTorch/TensorFlow | Colab free = limited GPU time; large models need local resources |
-| **Large-Scale Processing** | **CopPhil Mirror Site / COARE** | 400TB local data, HPC resources | Requires account; learning curve for APIs |
+| **Large-Scale Processing** | **CoPhil Mirror Site / COARE** | 400TB local data, HPC resources | Requires account; learning curve for APIs |
 | **Quick Viz & Download** | **Copernicus Browser** | Interactive, fast previews | Manual selection; bulk downloads tedious |
 
 ::: {.fragment}
 **Quotas/Pitfalls to know:**
 - GEE: Memory errors with large computations (tile exports!)
 - Colab Free: GPU disconnects after inactivity; limited sessions/day
-- **CopPhil/Digital Space Campus**: Hosts this training's materials + local data access
+- **CoPhil/Digital Space Campus**: Hosts this training's materials + local data access
 :::
 
 ::: {.notes}
@@ -866,7 +866,7 @@ Understanding where to work is crucial - don't try to train deep models on GEE o
 **Key Teaching Points:**
 - GEE is NOT for training U-Nets or downloading GBs
 - Colab free tier has GPU quotas - manage expectations
-- CopPhil infrastructure enables local processing
+- CoPhil infrastructure enables local processing
 - Choose the right tool for the right job
 
 **Timing:** 3 minutes
@@ -878,7 +878,7 @@ Understanding where to work is crucial - don't try to train deep models on GEE o
 
 ## Copernicus Data Space Ecosystem (2025)
 
-![](/images/dataspace_portal.jpg){fig-align="center" width="70%"}
+![](images/dataspace_portal.jpg){fig-align="center" width="70%"}
 
 ::: {.columns}
 ::: {.column width="50%"}
@@ -908,7 +908,7 @@ The Copernicus Data Space Ecosystem is the new portal replacing the legacy SciHu
 
 ## SentiBoard Dashboard (October 2025)
 
-![](/images/sentiboard.jpg){fig-align="center" width="75%"}
+![](images/sentiboard.jpg){fig-align="center" width="75%"}
 
 ::: {.incremental}
 - **Real-time mission status**
@@ -936,7 +936,7 @@ SentiBoard is a new feature (October 2025) providing real-time insights into Cop
 :::
 
 ::: {.column width="40%"}
-![](/images/gee_logo.png){width="100%"}
+![](images/gee_logo.png){width="100%"}
 :::
 :::
 
@@ -973,13 +973,13 @@ Google Earth Engine provides ready access to all Sentinel data with cloud-based 
 :::
 
 ::: {.fragment}
-**Now Available: CopPhil Mirror Site in the Philippines!** (Operational 2024-2025)
+**Now Available: CoPhil Mirror Site in the Philippines!** (Operational 2024-2025)
 :::
 
 ::: {.notes}
 **MICRO-EDIT APPLIED:** Mirror Site is NOW operational (not "coming soon").
 
-Multiple platforms provide Sentinel data access. The CopPhil Mirror Site provides **local data access in the Philippines for faster downloads** - critical for reducing international bandwidth bottlenecks.
+Multiple platforms provide Sentinel data access. The CoPhil Mirror Site provides **local data access in the Philippines for faster downloads** - critical for reducing international bandwidth bottlenecks.
 
 **Key Point:** 400TB capacity, focused on PH scenes, free for government/academia/researchers
 :::
@@ -988,7 +988,7 @@ Multiple platforms provide Sentinel data access. The CopPhil Mirror Site provide
 
 ## Overview of Philippine EO Landscape
 
-![](/images/ph_eo_ecosystem.png){fig-align="center" width="85%"}
+![](images/ph_eo_ecosystem.png){fig-align="center" width="85%"}
 
 ::: {.incremental}
 - **PhilSA:** Space data and operations
@@ -1015,23 +1015,23 @@ Beyond European satellites, the Philippines has its own geospatial data platform
 - Promote space data use
 - Build national capacity
 - Support DRR, CCA, NRM
-- Co-chair CopPhil programme
+- Co-chair CoPhil programme
 :::
 
 ::: {.column width="40%"}
-![](/images/philsa_building.jpg){width="100%"}
+![](images/philsa_building.jpg){width="100%"}
 :::
 :::
 
 **Website:** <https://philsa.gov.ph>
 
 ::: {.notes}
-PhilSA is the central civilian space agency established in 2019. As co-chair of CopPhil, PhilSA is leading national efforts to leverage Copernicus data.
+PhilSA is the central civilian space agency established in 2019. As co-chair of CoPhil, PhilSA is leading national efforts to leverage Copernicus data.
 :::
 
 ## SIYASAT Data Portal
 
-![](/images/siyasat_portal.jpg){fig-align="center" width="70%"}
+![](images/siyasat_portal.jpg){fig-align="center" width="70%"}
 
 ::: {.columns}
 ::: {.column width="50%"}
@@ -1069,7 +1069,7 @@ PhilSA is the central civilian space agency established in 2019. As co-chair of 
 
 ## Space+ Data Dashboard
 
-![](/images/space_plus_dashboard.jpg){fig-align="center" width="75%"}
+![](images/space_plus_dashboard.jpg){fig-align="center" width="75%"}
 
 ::: {.incremental}
 - **User-friendly web portal**
@@ -1125,7 +1125,7 @@ PhilSA's 2025 initiatives focus on empowering innovators and building capacity a
 :::
 
 ::: {.column width="40%"}
-![](/images/coare_infrastructure.jpg){width="100%"}
+![](images/coare_infrastructure.jpg){width="100%"}
 :::
 :::
 
@@ -1151,7 +1151,7 @@ COARE provides the computational infrastructure needed for processing large sate
 :::
 
 ::: {.column width="40%"}
-![](/images/namria_logo.png){width="150px"}
+![](images/namria_logo.png){width="150px"}
 :::
 :::
 
@@ -1163,7 +1163,7 @@ NAMRIA is the national mapping agency responsible for topographic maps, hydrogra
 
 ## NAMRIA Geoportal
 
-![](/images/namria_geoportal.jpg){fig-align="center" width="75%"}
+![](images/namria_geoportal.jpg){fig-align="center" width="75%"}
 
 **One-Stop Shop for Philippine Geospatial Data**
 
@@ -1181,7 +1181,7 @@ The NAMRIA Geoportal is the go-to source for official Philippine spatial data in
 
 ## Land Cover Mapping Project
 
-![](/images/namria_landcover.jpg){fig-align="center" width="70%"}
+![](images/namria_landcover.jpg){fig-align="center" width="70%"}
 
 ::: {.columns}
 ::: {.column width="50%"}
@@ -1217,7 +1217,7 @@ NAMRIA's land cover datasets are valuable for validation and comparison with sat
 
 ## HazardHunterPH Portal
 
-![](/images/hazardhunter.jpg){fig-align="center" width="75%"}
+![](images/hazardhunter.jpg){fig-align="center" width="75%"}
 
 **Comprehensive Hazard Assessment Platform**
 
@@ -1312,7 +1312,7 @@ NAMRIA data provides essential ground truth and context for satellite-based anal
 :::
 
 ::: {.column width="40%"}
-![](/images/dost_asti_logo.png){width="150px"}
+![](images/dost_asti_logo.png){width="150px"}
 :::
 :::
 
@@ -1324,7 +1324,7 @@ DOST-ASTI leads several projects at the intersection of remote sensing, AI, and 
 
 ## DATOS: Remote Sensing Help Desk
 
-![](/images/datos_logo.png){fig-align="center" width="40%"}
+![](images/datos_logo.png){fig-align="center" width="40%"}
 
 ::: {.incremental}
 - **Remote Sensing and Data Science Help Desk**
@@ -1342,7 +1342,7 @@ During past typhoons, DATOS used satellite images to produce flood maps and give
 
 ## SkAI-Pinas Programme
 
-![](/images/skai_pinas.jpg){fig-align="center" width="75%"}
+![](images/skai_pinas.jpg){fig-align="center" width="75%"}
 
 ::: {.columns}
 ::: {.column width="50%"}
@@ -1385,7 +1385,7 @@ During past typhoons, DATOS used satellite images to produce flood maps and give
 
 ## DIMER: AI Model Hub
 
-![](/images/dimer_interface.jpg){fig-align="center" width="70%"}
+![](images/dimer_interface.jpg){fig-align="center" width="70%"}
 
 ::: {.columns}
 ::: {.column width="50%"}
@@ -1425,7 +1425,7 @@ DIMER lowers barriers to AI by enabling end-users to reuse optimized AI models. 
 :::
 
 ::: {.column width="40%"}
-![](/images/aipi_workflow.png){width="100%"}
+![](images/aipi_workflow.png){width="100%"}
 :::
 :::
 
@@ -1471,7 +1471,7 @@ Creating labeled data is a big challenge in EO AI. ALaM tries to address this th
 
 ## How DOST-ASTI Tools Work Together
 
-![](/images/asti_ecosystem.png){fig-align="center" width="80%"}
+![](images/asti_ecosystem.png){fig-align="center" width="80%"}
 
 ::: {.incremental}
 1. **ALaM** creates training data
@@ -1503,7 +1503,7 @@ These initiatives work together to create a complete ecosystem from data labelin
 :::
 
 ::: {.column width="40%"}
-![](/images/pagasa_logo.png){width="150px"}
+![](images/pagasa_logo.png){width="150px"}
 :::
 :::
 
@@ -1542,14 +1542,14 @@ PAGASA provides meteorological and climate data that can be integrated with sate
 :::
 
 ::: {.notes}
-The Philippines is developing a rich EO ecosystem. The goal of CopPhil is to ensure you can leverage both international (Sentinel) and national data together effectively.
+The Philippines is developing a rich EO ecosystem. The goal of CoPhil is to ensure you can leverage both international (Sentinel) and national data together effectively.
 :::
 
-# CopPhil Infrastructure {background-color="#1e3a8a"}
+# CoPhil Infrastructure {background-color="#1e3a8a"}
 
-## CopPhil Mirror Site
+## CoPhil Mirror Site
 
-![](/images/mirror_site_concept.jpg){fig-align="center" width="70%"}
+![](images/mirror_site_concept.jpg){fig-align="center" width="70%"}
 
 ::: {.incremental}
 - **Philippines-based Copernicus data repository**
@@ -1562,12 +1562,12 @@ The Philippines is developing a rich EO ecosystem. The goal of CopPhil is to ens
 :::
 
 ::: {.notes}
-The CopPhil Mirror Site will locally store Sentinel data focused on the Philippines, enabling much faster downloads than from European servers.
+The CoPhil Mirror Site will locally store Sentinel data focused on the Philippines, enabling much faster downloads than from European servers.
 :::
 
 ## Digital Space Campus
 
-![](/images/digital_campus.jpg){fig-align="center" width="75%"}
+![](images/digital_campus.jpg){fig-align="center" width="75%"}
 
 ::: {.columns}
 ::: {.column width="50%"}
@@ -1611,7 +1611,7 @@ All materials from this 4-day training will be available on the Digital Space Ca
 :::
 
 ::: {.notes}
-CopPhil is building sustainable infrastructure ensuring you can continue working with Sentinel data and AI/ML tools after this training, without starting from scratch.
+CoPhil is building sustainable infrastructure ensuring you can continue working with Sentinel data and AI/ML tools after this training, without starting from scratch.
 :::
 
 # Summary & Integration {background-color="#1e3a8a"}
@@ -1624,7 +1624,7 @@ CopPhil is building sustainable infrastructure ensuring you can continue working
 3. **Sentinel-2** (optical) provides rich spectral information - 5 day revisit
 4. **Multiple access methods** available (Data Space, GEE, Mirror Site)
 5. **Philippine agencies** provide complementary data and expertise
-6. **CopPhil infrastructure** supports sustainable capacity building
+6. **CoPhil infrastructure** supports sustainable capacity building
 :::
 
 ::: {.notes}
@@ -1633,7 +1633,7 @@ You now understand the full picture from data sources through national infrastru
 
 ## How It All Connects
 
-![](/images/integration_diagram.png){fig-align="center" width="90%"}
+![](images/integration_diagram.png){fig-align="center" width="90%"}
 
 ::: {.notes}
 Satellite data + Philippine ground truth + AI models + processing infrastructure = Operational applications for DRR, CCA, and NRM
@@ -1655,7 +1655,7 @@ Satellite data + Philippine ground truth + AI models + processing infrastructure
 :::
 
 ::: {.notes}
-A real-world workflow leverages multiple data sources, AI tools, and institutional partnerships. This is exactly what CopPhil aims to enable.
+A real-world workflow leverages multiple data sources, AI tools, and institutional partnerships. This is exactly what CoPhil aims to enable.
 :::
 
 ---
@@ -1709,7 +1709,7 @@ These are real mistakes participants WILL make without explicit warnings. One sl
 - [ ] Google Earth Engine account enabled ([signup.earthengine.google.com](https://signup.earthengine.google.com))
 - [ ] Google Drive with ≥5 GB free space
 - [ ] Google Colab tested (login with same Google account)
-- [ ] CopPhil Infrastructure registration ([application.infra.copphil.philsa.gov.ph](https://application.infra.copphil.philsa.gov.ph))
+- [ ] CoPhil Infrastructure registration ([application.infra.copphil.philsa.gov.ph](https://application.infra.copphil.philsa.gov.ph))
 
 **✅ Software & Data:**
 - [ ] Downloaded sample vector/raster bundle (link provided via email)
@@ -1858,7 +1858,7 @@ Now that you understand where data comes from, we'll learn how AI/ML can extract
 
 **European Platforms:**  
 Copernicus Data Space: <https://dataspace.copernicus.eu>  
-CopPhil Programme: <https://www.cophil.eu>
+CoPhil Programme: <https://www.cophil.eu>
 
 **Philippine Platforms:**  
 PhilSA: <https://philsa.gov.ph>  

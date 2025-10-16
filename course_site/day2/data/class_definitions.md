@@ -341,7 +341,7 @@ Use **dry season** (January-April) for primary classification, supplemented with
 
 ## Version History
 
-- **v1.0** (Oct 2025): Initial classification scheme for CopPhil training
+- **v1.0** (Oct 2025): Initial classification scheme for CoPhil training
 - Based on pilot testing with Session 1 materials
 - Optimized for Sentinel-2 10m bands + indices
 

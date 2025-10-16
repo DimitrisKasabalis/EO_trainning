@@ -8,19 +8,6 @@ format:
     toc: true
     toc-depth: 3
     code-fold: false
-  pdf:
-    toc: true
-    toc-depth: 3
-    number-sections: true
-    colorlinks: true
-    geometry:
-      - margin=1in
-    include-in-header:
-      text: |
-        \usepackage{fancyhdr}
-        \pagestyle{fancy}
-        \fancyhead[L]{CopPhil Training}
-        \fancyhead[R]{\thepage}
 ---
 
 <nav class="breadcrumb" aria-label="Breadcrumb">
@@ -43,14 +30,6 @@ Explore cutting-edge AI technologies transforming Earth observation analysis
 
 This 2-hour session introduces three revolutionary AI trends reshaping Earth observation: **Geospatial Foundation Models** (pre-trained on massive satellite archives), **Self-Supervised Learning** (learning from unlabeled data), and **Explainable AI** (understanding model decisions). These technologies address key challenges in EO: limited labeled data, model interpretability, and generalization across diverse regions.
 
-
-::: {.callout-note icon=false}
-## 📄 Download Session Materials
-This session is also available as a PDF for offline reading and printing.
-
-[📥 Download PDF](session3.pdf){.btn .btn-primary target="_blank"}
-:::
-
 ---
 
 ::: {.callout-note}
@@ -69,13 +48,6 @@ By the end of this session, you will be able to:
 ## Presentation Slides
 
 <iframe src="../presentations/session3_emerging_ai.html" width="100%" height="600" style="border: 1px solid #ccc; border-radius: 4px;"></iframe>
-
-::: {.callout-tip}
-## View Full Screen
-Click the presentation above and press `F` for fullscreen mode. Use arrow keys to navigate slides.
-
-[Open in new tab →](../presentations/session3_emerging_ai.html){target="_blank" .btn .btn-sm .btn-primary}
-:::
 
 ---
 
@@ -492,7 +464,7 @@ Final: 0.48 + 0.24 = 0.72
 - Recap of all 4 days (Random Forest → Foundation Models)
 - Best practices for Philippine EO deployment
 - Building a Community of Practice
-- CopPhil Digital Space Campus
+- CoPhil Digital Space Campus
 - Your next steps in EO AI/ML
 
 **Reflection Questions for Session 4:**
@@ -524,4 +496,4 @@ Final: 0.48 + 0.24 = 0.72
 
 ---
 
-*This session is part of Day 4: Time Series Analysis, Emerging Trends, and Sustainable Learning - CopPhil 4-Day Advanced Training on AI/ML for Earth Observation, funded by the European Union under the Global Gateway initiative.*
+*This session is part of Day 4: Time Series Analysis, Emerging Trends, and Sustainable Learning - CoPhil 4-Day Advanced Training on AI/ML for Earth Observation, funded by the European Union under the Global Gateway initiative.*

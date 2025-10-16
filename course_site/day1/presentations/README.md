@@ -1,6 +1,6 @@
 # Day 1 Presentations - User Guide
 
-**CopPhil EO AI/ML Training Programme**  
+**CoPhil EO AI/ML Training Programme**  
 **EU-Philippines Copernicus Capacity Support**
 
 ---
@@ -181,7 +181,7 @@ All presentations use `custom.scss` with:
 - Sentinel-1 SAR mission
 - Sentinel-2 optical mission
 - Philippine EO agencies (PhilSA, NAMRIA, DOST-ASTI)
-- CopPhil Programme
+- CoPhil Programme
 - Data access methods
 
 **Live Demos:**
@@ -342,7 +342,7 @@ ls custom.scss
 - Colab: https://colab.research.google.com/
 
 **Training Content:**
-- CopPhil Programme: https://www.cophil.eu
+- CoPhil Programme: https://www.cophil.eu
 - PhilSA: https://philsa.gov.ph
 - DOST-ASTI: https://asti.dost.gov.ph
 
@@ -444,7 +444,7 @@ These presentations follow evidence-based teaching practices:
 ## 🙏 Acknowledgments
 
 **Developed for:**
-CopPhil - EU-Philippines Copernicus Capacity Support Programme
+CoPhil - EU-Philippines Copernicus Capacity Support Programme
 
 **Based on:**
 - Copernicus Programme materials
@@ -462,7 +462,7 @@ CopPhil - EU-Philippines Copernicus Capacity Support Programme
 ## 📄 License & Usage
 
 **Training Materials:**
-These presentations are developed for the CopPhil Programme. Please respect intellectual property and attribution requirements.
+These presentations are developed for the CoPhil Programme. Please respect intellectual property and attribution requirements.
 
 **Code Examples:**
 Code snippets in presentations and notebooks are provided for educational use.

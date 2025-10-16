@@ -2,25 +2,12 @@
 title: "Session 1: Supervised Classification with Random Forest"
 subtitle: "Theory and Practice for Earth Observation"
 date: last-modified
-author: "CopPhil Advanced Training Program"
+author: "CoPhil Advanced Training Program"
 format:
   html:
     toc: true
     toc-depth: 3
     code-fold: false
-  pdf:
-    toc: true
-    toc-depth: 3
-    number-sections: true
-    colorlinks: true
-    geometry:
-      - margin=1in
-    include-in-header:
-      text: |
-        \usepackage{fancyhdr}
-        \pagestyle{fancy}
-        \fancyhead[L]{CopPhil Training}
-        \fancyhead[R]{\thepage}
 ---
 
 <nav class="breadcrumb" aria-label="Breadcrumb">
@@ -42,14 +29,6 @@ Learn to classify satellite imagery using Random Forest and Google Earth Engine
 ## Session Overview
 
 This 3-hour session introduces supervised classification for Earth Observation, focusing on the Random Forest algorithm and its implementation in Google Earth Engine.
-
-
-::: {.callout-note icon=false}
-## 📄 Download Session Materials
-This session is also available as a PDF for offline reading and printing.
-
-[📥 Download PDF](session1.pdf){.btn .btn-primary target="_blank"}
-:::
 
 ---
 
@@ -77,13 +56,6 @@ By the end of this session, you will be able to:
 ## Presentation Slides
 
 <iframe src="../presentations/session1_random_forest.html" width="100%" height="600" style="border: 1px solid #ccc; border-radius: 4px;"></iframe>
-
-::: {.callout-tip}
-## View Full Screen
-Click the presentation above and press `F` for fullscreen mode. Use arrow keys to navigate slides.
-
-[Open in new tab →](../presentations/session1_random_forest.html){target="_blank" .btn .btn-sm .btn-primary}
-:::
 
 ---
 
@@ -446,4 +418,4 @@ Google Earth Engine provides:
 
 ---
 
-*This session is part of the CopPhil 4-Day Advanced Training on AI/ML for Earth Observation, funded by the European Union under the Global Gateway initiative.*
+*This session is part of the CoPhil 4-Day Advanced Training on AI/ML for Earth Observation, funded by the European Union under the Global Gateway initiative.*

@@ -131,7 +131,7 @@ classifier = ee.Classifier.smileRandomForest(100).train(
 
 **Version:** 1.0  
 **Last Updated:** October 2025  
-**Created By:** CopPhil Training Team
+**Created By:** CoPhil Training Team
 
 ### Change Log
 - 2025-10: Initial creation for Day 2 Session 1
@@ -146,11 +146,11 @@ classifier = ee.Classifier.smileRandomForest(100).train(
 ## License and Attribution
 
 **License:** CC-BY-4.0  
-**Attribution:** CopPhil Programme, EU-Philippines Copernicus Capacity Support
+**Attribution:** CoPhil Programme, EU-Philippines Copernicus Capacity Support
 
 **Recommended Citation:**
 ```
-CopPhil Programme (2025). Palawan Land Cover Training Data for Sentinel-2 Classification. 
+CoPhil Programme (2025). Palawan Land Cover Training Data for Sentinel-2 Classification. 
 EU-Philippines Copernicus Capacity Support Programme.
 ```
 

@@ -25,10 +25,10 @@
     </marker>
   </defs>
   
-  <!-- CopPhil Programme (Middle) -->
+  <!-- CoPhil Programme (Middle) -->
   <rect x="510" y="350" width="900" height="120" fill="#7c3aed" stroke="#5b21b6" stroke-width="3" rx="10"/>
   <text x="960" y="395" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="#ffffff" text-anchor="middle">
-    CopPhil Programme
+    CoPhil Programme
   </text>
   <text x="960" y="435" font-family="Arial, sans-serif" font-size="24" fill="#ede9fe" text-anchor="middle">
     EU-Philippines Copernicus Capacity Support
@@ -96,6 +96,6 @@
   
   <!-- Footer -->
   <text x="960" y="1020" font-family="Arial, sans-serif" font-size="20" fill="#9ca3af" text-anchor="middle">
-    CopPhil Programme | EU-Philippines Copernicus Capacity Support | 2025
+    CoPhil Programme | EU-Philippines Copernicus Capacity Support | 2025
   </text>
 </svg>

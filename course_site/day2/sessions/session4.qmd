@@ -2,25 +2,12 @@
 title: "Session 4: CNN Hands-on Lab"
 subtitle: "Building and Training CNNs for EO Image Classification"
 date: last-modified
-author: "CopPhil Advanced Training Program"
+author: "CoPhil Advanced Training Program"
 format:
   html:
     toc: true
     toc-depth: 3
     code-fold: false
-  pdf:
-    toc: true
-    toc-depth: 3
-    number-sections: true
-    colorlinks: true
-    geometry:
-      - margin=1in
-    include-in-header:
-      text: |
-        \usepackage{fancyhdr}
-        \pagestyle{fancy}
-        \fancyhead[L]{CopPhil Training}
-        \fancyhead[R]{\thepage}
 ---
 
 <nav class="breadcrumb" aria-label="Breadcrumb">
@@ -43,14 +30,6 @@ From theory to implementation with TensorFlow and PyTorch
 
 **Duration:** 2.5 hours | **Type:** Intensive Hands-On Lab | **Difficulty:** Intermediate-Advanced
 
-
-::: {.callout-note icon=false}
-## 📄 Download Session Materials
-This session is also available as a PDF for offline reading and printing.
-
-[📥 Download PDF](session4.pdf){.btn .btn-primary target="_blank"}
-:::
-
 ---
 
 This session transforms CNN theory from Session 3 into working code. You'll build, train, and evaluate real deep learning models for Earth Observation, achieving significantly higher accuracy than the Random Forest models from Sessions 1-2.
@@ -58,13 +37,6 @@ This session transforms CNN theory from Session 3 into working code. You'll buil
 ## Presentation Slides
 
 <iframe src="../presentations/session4_cnn_lab.html" width="100%" height="600" style="border: 1px solid #ccc; border-radius: 4px;"></iframe>
-
-::: {.callout-tip}
-## View Full Screen
-Click the presentation above and press `F` for fullscreen mode. Use arrow keys to navigate slides.
-
-[Open in new tab →](../presentations/session4_cnn_lab.html){target="_blank" .btn .btn-sm .btn-primary}
-:::
 
 ---
 
@@ -979,4 +951,4 @@ print("\n✓ Augmentation creates realistic variations")
 
 ---
 
-*This session is part of the CopPhil 4-Day Advanced Training on AI/ML for Earth Observation, funded by the European Union under the Global Gateway initiative and delivered in partnership with PhilSA and DOST.*
+*This session is part of the CoPhil 4-Day Advanced Training on AI/ML for Earth Observation, funded by the European Union under the Global Gateway initiative and delivered in partnership with PhilSA and DOST.*

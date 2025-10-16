@@ -6,7 +6,7 @@ date: last-modified
 
 ## How to Use This Glossary
 
-This glossary defines key terms used throughout the CopPhil EO AI/ML Training Programme. Terms are organized alphabetically within categories for easy reference.
+This glossary defines key terms used throughout the CoPhil EO AI/ML Training Programme. Terms are organized alphabetically within categories for easy reference.
 
 **Categories:**
 - [Earth Observation Terms](#earth-observation-terms)
@@ -294,14 +294,14 @@ Electromagnetic radiation with wavelengths 8-14 μm, measuring heat emitted by E
 
 ## Philippine EO Organizations
 
-### CopPhil Programme
+### CoPhil Programme
 EU-Philippines Copernicus Capacity Support Programme - partnership to strengthen Philippine EO capabilities, establish a Copernicus Mirror Site, and develop AI/ML capacity.
 
 ### DENR
 Department of Environment and Natural Resources - responsible for forest monitoring, land cover mapping, and natural resource management using EO data.
 
 ### DOST
-Department of Science and Technology - leads science and technology advancement, co-chairs CopPhil programme, operates PAGASA and ASTI.
+Department of Science and Technology - leads science and technology advancement, co-chairs CoPhil programme, operates PAGASA and ASTI.
 
 ### DOST-ASTI
 Advanced Science and Technology Institute - ICT research and development, AI platforms (SkAI-Pinas, DIMER, AIPI).
@@ -322,7 +322,7 @@ Philippine Atmospheric, Geophysical and Astronomical Services Administration - w
 Philippine GIS Data Clearinghouse - repository of geospatial datasets for the Philippines.
 
 ### PhilSA
-Philippine Space Agency - national space authority, co-chairs CopPhil programme, operates SIYASAT portal and develops Copernicus Mirror Site.
+Philippine Space Agency - national space authority, co-chairs CoPhil programme, operates SIYASAT portal and develops Copernicus Mirror Site.
 
 ### SIYASAT Portal
 PhilSA's secure data archive for NovaSAR-1 data and maritime monitoring products.

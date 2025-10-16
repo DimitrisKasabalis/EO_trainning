@@ -47,7 +47,7 @@ def create_placeholder(filename, text, size=(1920, 1080), bg_color='#1e3a8a'):
 images = [
     # Session 1: Copernicus & Philippine EO
     ('eu_global_gateway.png', 'EU Global Gateway', (800, 400)),
-    ('copphil_logo.png', 'CopPhil Logo', (400, 200)),
+    ('copphil_logo.png', 'CoPhil Logo', (400, 200)),
     ('philsa_logo.png', 'PhilSA Logo', (400, 200)),
     ('dost_logo.png', 'DOST Logo', (400, 200)),
     ('copernicus_overview.jpg', 'Copernicus Programme'),
