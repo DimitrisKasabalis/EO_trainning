@@ -46,6 +46,15 @@ Implement semantic segmentation for real-world flood extent mapping using Sentin
 **Duration:** 2.5 hours | **Format:** Hands-on Coding Lab | **Platform:** Google Colab with GPU
 :::
 
+::: {.callout-note icon=false}
+## 📄 Download Session Materials
+This session is also available as a PDF for offline reading and printing.
+
+[📥 Download PDF](session2.pdf){.btn .btn-primary target="_blank"}
+:::
+
+---
+
 ## Presentation Slides
 
 <iframe src="../presentations/session2_flood_mapping_lab.html" width="100%" height="600" style="border: 1px solid #ccc; border-radius: 4px;"></iframe>
