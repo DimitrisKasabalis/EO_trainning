@@ -3,6 +3,24 @@ title: "Session 2: Hands-on Flood Mapping with U-Net and Sentinel-1 SAR"
 subtitle: "Practical Implementation for Disaster Risk Reduction"
 date: last-modified
 author: "CopPhil Advanced Training Program"
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    code-fold: false
+  pdf:
+    toc: true
+    toc-depth: 3
+    number-sections: true
+    colorlinks: true
+    geometry:
+      - margin=1in
+    include-in-header:
+      text: |
+        \usepackage{fancyhdr}
+        \pagestyle{fancy}
+        \fancyhead[L]{CopPhil Training}
+        \fancyhead[R]{\thepage}
 ---
 
 <nav class="breadcrumb" aria-label="Breadcrumb">

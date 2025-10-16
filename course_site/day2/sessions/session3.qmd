@@ -3,6 +3,24 @@ title: "Session 3: Introduction to Deep Learning and CNNs"
 subtitle: "Neural Networks and Convolutional Architectures for Earth Observation"
 date: last-modified
 author: "CopPhil Advanced Training Program"
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    code-fold: false
+  pdf:
+    toc: true
+    toc-depth: 3
+    number-sections: true
+    colorlinks: true
+    geometry:
+      - margin=1in
+    include-in-header:
+      text: |
+        \usepackage{fancyhdr}
+        \pagestyle{fancy}
+        \fancyhead[L]{CopPhil Training}
+        \fancyhead[R]{\thepage}
 ---
 
 <nav class="breadcrumb" aria-label="Breadcrumb">
@@ -24,6 +42,16 @@ Transitioning from feature engineering to feature learning
 ## Session Overview
 
 **Duration:** 2.5 hours | **Type:** Theory + Interactive Demonstrations | **Difficulty:** Intermediate
+
+
+::: {.callout-note icon=false}
+## 📄 Download Session Materials
+This session is also available as a PDF for offline reading and printing.
+
+[📥 Download PDF](session3.pdf){.btn .btn-primary target="_blank"}
+:::
+
+---
 
 This pivotal session bridges traditional machine learning (Sessions 1-2) and modern deep learning approaches. You'll understand the fundamental shift from manual feature engineering to automatic feature learning through neural networks, with specific focus on Convolutional Neural Networks (CNNs) for Earth observation applications.
 

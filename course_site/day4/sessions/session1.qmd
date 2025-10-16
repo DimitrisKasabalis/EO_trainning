@@ -2,7 +2,25 @@
 title: "Session 1: LSTMs for Earth Observation Time Series"
 subtitle: "Understanding Recurrent Neural Networks and Long Short-Term Memory for Temporal Analysis"
 date: last-modified
-author: "CopPhil Advanced Training Program"
+author: "Stylianos Kotsopoulos"
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    code-fold: false
+  pdf:
+    toc: true
+    toc-depth: 3
+    number-sections: true
+    colorlinks: true
+    geometry:
+      - margin=1in
+    include-in-header:
+      text: |
+        \usepackage{fancyhdr}
+        \pagestyle{fancy}
+        \fancyhead[L]{CopPhil Training}
+        \fancyhead[R]{\thepage}
 ---
 
 <nav class="breadcrumb" aria-label="Breadcrumb">
@@ -24,6 +42,16 @@ Master the power of LSTMs for predicting future conditions from time series Eart
 ## Session Overview
 
 This 1.5-hour session introduces Long Short-Term Memory (LSTM) networks, a specialized type of recurrent neural network designed to learn patterns in sequential data. You'll understand why LSTMs are powerful for Earth observation time series analysis and see their architecture in action.
+
+
+::: {.callout-note icon=false}
+## 📄 Download Session Materials
+This session is also available as a PDF for offline reading and printing.
+
+[📥 Download PDF](session1.pdf){.btn .btn-primary target="_blank"}
+:::
+
+---
 
 ::: {.callout-note}
 ## Learning Objectives

@@ -2,6 +2,24 @@
 title: "Session 1: Copernicus Sentinel Data Deep Dive & Philippine EO Ecosystem"
 subtitle: "Understanding Europe's flagship EO program and the Philippines' space data infrastructure"
 date: last-modified
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    code-fold: false
+  pdf:
+    toc: true
+    toc-depth: 3
+    number-sections: true
+    colorlinks: true
+    geometry:
+      - margin=1in
+    include-in-header:
+      text: |
+        \usepackage{fancyhdr}
+        \pagestyle{fancy}
+        \fancyhead[L]{CopPhil Training}
+        \fancyhead[R]{\thepage}
 ---
 
 <nav class="breadcrumb" aria-label="Breadcrumb">
@@ -20,6 +38,16 @@ date: last-modified
 ## Session Overview
 
 This session introduces the European Copernicus Earth Observation program, focusing on Sentinel-1 (SAR) and Sentinel-2 (Optical) missions with 2025 updates. You'll explore the Philippine EO landscape, including key agencies and data platforms that complement Copernicus data for disaster risk reduction, climate adaptation, and resource management applications.
+
+
+::: {.callout-note icon=false}
+## 📄 Download Session Materials
+This session is also available as a PDF for offline reading and printing.
+
+[📥 Download PDF](session1.pdf){.btn .btn-primary target="_blank"}
+:::
+
+---
 
 ::: {.learning-objectives}
 ### Learning Objectives

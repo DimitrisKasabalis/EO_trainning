@@ -2,6 +2,24 @@
 title: "Session 2: Core Concepts of AI/ML for Earth Observation"
 subtitle: "Understanding the fundamentals of machine learning for satellite data analysis"
 date: last-modified
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    code-fold: false
+  pdf:
+    toc: true
+    toc-depth: 3
+    number-sections: true
+    colorlinks: true
+    geometry:
+      - margin=1in
+    include-in-header:
+      text: |
+        \usepackage{fancyhdr}
+        \pagestyle{fancy}
+        \fancyhead[L]{CopPhil Training}
+        \fancyhead[R]{\thepage}
 ---
 
 <nav class="breadcrumb" aria-label="Breadcrumb">
@@ -20,6 +38,16 @@ date: last-modified
 ## Session Overview
 
 This session provides a comprehensive introduction to Artificial Intelligence and Machine Learning concepts specifically tailored for Earth Observation applications. You'll learn the complete AI/ML workflow, understand different learning paradigms, explore deep learning architectures including CNNs, Vision Transformers, and temporal models, discover benchmark datasets, and understand why data quality matters more than model complexity in 2025's data-centric AI paradigm.
+
+
+::: {.callout-note icon=false}
+## 📄 Download Session Materials
+This session is also available as a PDF for offline reading and printing.
+
+[📥 Download PDF](session2.pdf){.btn .btn-primary target="_blank"}
+:::
+
+---
 
 The session integrates cutting-edge methodologies with concrete Philippine case studies, from DOST-ASTI's 10-20 minute flood detection using AI to PhilSA's mangrove mapping efforts, demonstrating operational AI/ML systems already serving disaster risk reduction and natural resource management needs.
 

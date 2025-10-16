@@ -2,6 +2,24 @@
 title: "Session 4: Introduction to Google Earth Engine"
 subtitle: "Harness cloud computing power to access and process petabytes of Earth observation data"
 date: last-modified
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    code-fold: false
+  pdf:
+    toc: true
+    toc-depth: 3
+    number-sections: true
+    colorlinks: true
+    geometry:
+      - margin=1in
+    include-in-header:
+      text: |
+        \usepackage{fancyhdr}
+        \pagestyle{fancy}
+        \fancyhead[L]{CopPhil Training}
+        \fancyhead[R]{\thepage}
 ---
 
 <nav class="breadcrumb" aria-label="Breadcrumb">
@@ -20,6 +38,16 @@ date: last-modified
 ## Session Overview
 
 Google Earth Engine (GEE) is a planetary-scale platform for Earth science data and analysis. This session introduces you to GEE's Python API, enabling you to access Sentinel-1 and Sentinel-2 data, filter massive image collections, perform cloud masking, create temporal composites, and export processed data - all without downloading terabytes of imagery. You'll learn core GEE concepts and apply them to Philippine use cases.
+
+
+::: {.callout-note icon=false}
+## 📄 Download Session Materials
+This session is also available as a PDF for offline reading and printing.
+
+[📥 Download PDF](session4.pdf){.btn .btn-primary target="_blank"}
+:::
+
+---
 
 ::: {.learning-objectives}
 ### Learning Objectives

@@ -1,8 +1,9 @@
 ---
 title: "Core Concepts of AI/ML for Earth Observation"
 subtitle: "CopPhil EO AI/ML Training - Day 1, Session 2"
-author: "EU-Philippines CopPhil Programme"
-date: "2025"
+author: "Stylianos Kotsopoulos"
+institute: "EU-Philippines CopPhil Programme"
+date: "October 20-23, 2025"
 format:
   revealjs:
     theme: default

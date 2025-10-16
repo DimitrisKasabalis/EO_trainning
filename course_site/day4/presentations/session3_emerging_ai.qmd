@@ -1,7 +1,9 @@
 ---
 title: "Session 3: Emerging AI Trends in Earth Observation"
 subtitle: "Foundation Models, Self-Supervised Learning, and Explainable AI"
-author: "CopPhil Advanced Training Program - DAY 4"
+author: "Stylianos Kotsopoulos"
+institute: "EU-Philippines CopPhil Programme"
+date: "October 20-23, 2025"
 format:
   revealjs:
     theme: [default, custom.scss]

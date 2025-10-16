@@ -2,6 +2,24 @@
 title: "Session 3: Hands-on Python for Geospatial Data"
 subtitle: "Master vector and raster data processing with GeoPandas and Rasterio"
 date: last-modified
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    code-fold: false
+  pdf:
+    toc: true
+    toc-depth: 3
+    number-sections: true
+    colorlinks: true
+    geometry:
+      - margin=1in
+    include-in-header:
+      text: |
+        \usepackage{fancyhdr}
+        \pagestyle{fancy}
+        \fancyhead[L]{CopPhil Training}
+        \fancyhead[R]{\thepage}
 ---
 
 <nav class="breadcrumb" aria-label="Breadcrumb">
@@ -20,6 +38,16 @@ date: last-modified
 ## Session Overview
 
 This hands-on session teaches you how to work with geospatial data in Python - the foundation of Earth Observation workflows. Python has become the dominant language for EO and ML applications due to its rich ecosystem of libraries, active community, and seamless integration with operational systems. You'll use Google Colab (no installation needed!), learn vector data operations with GeoPandas, and master raster processing with Rasterio. By the end, you'll understand why Python powers Philippine EO platforms like DATOS, SkAI-Pinas, and PRiSM, and you'll be able to prepare satellite data for AI/ML workflows.
+
+
+::: {.callout-note icon=false}
+## 📄 Download Session Materials
+This session is also available as a PDF for offline reading and printing.
+
+[📥 Download PDF](session3.pdf){.btn .btn-primary target="_blank"}
+:::
+
+---
 
 ::: {.learning-objectives}
 ### Learning Objectives

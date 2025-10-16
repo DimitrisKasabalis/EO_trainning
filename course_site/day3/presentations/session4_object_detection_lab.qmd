@@ -1,7 +1,9 @@
 ---
 title: "Session 4: Hands-on Object Detection Lab"
 subtitle: "Transfer Learning for Building Detection (Metro Manila)"
-author: "CopPhil Advanced Training Program - DAY 3"
+author: "Stylianos Kotsopoulos"
+institute: "EU-Philippines CopPhil Programme"
+date: "October 20-23, 2025"
 format:
   revealjs:
     theme: [default, custom.scss]

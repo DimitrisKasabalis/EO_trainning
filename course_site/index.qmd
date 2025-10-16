@@ -17,7 +17,11 @@ Advanced training for Philippine EO professionals on AI/ML applications for Disa
 Welcome to the **4-Day Advanced Online Training on AI/ML for Earth Observation** for Philippine EO Professionals. This comprehensive training is part of the **CopPhil Programme** (EU-Philippines Copernicus Capacity Support Programme), a flagship initiative under the European Union's Global Gateway strategy.
 
 ::: {.callout-note}
-## Training Context
+## Training Details
+
+**Dates:** October 20-23, 2025
+**Instructor:** Stylianos Kotsopoulos
+**Programme:** EU-Philippines CopPhil Programme
 
 This course strengthens the Philippines' capacity to use Copernicus Earth Observation data for:
 

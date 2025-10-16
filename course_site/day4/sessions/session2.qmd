@@ -2,7 +2,25 @@
 title: "Session 2: LSTM Drought Monitoring Lab"
 subtitle: "Hands-on Implementation of LSTM Time Series Forecasting for Mindanao"
 date: last-modified
-author: "CopPhil Advanced Training Program"
+author: "Stylianos Kotsopoulos"
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    code-fold: false
+  pdf:
+    toc: true
+    toc-depth: 3
+    number-sections: true
+    colorlinks: true
+    geometry:
+      - margin=1in
+    include-in-header:
+      text: |
+        \usepackage{fancyhdr}
+        \pagestyle{fancy}
+        \fancyhead[L]{CopPhil Training}
+        \fancyhead[R]{\thepage}
 ---
 
 <nav class="breadcrumb" aria-label="Breadcrumb">
@@ -24,6 +42,16 @@ Build an operational LSTM model to predict drought conditions 1-3 months ahead u
 ## Session Overview
 
 This intensive 2.5-hour hands-on lab puts LSTM theory into practice. You'll build a complete drought forecasting system for Mindanao provinces (Bukidnon and South Cotabato) using multi-year Sentinel-2 NDVI time series, weather data, and climate indices. By the end, you'll have a trained model capable of predicting vegetation stress months in advance.
+
+
+::: {.callout-note icon=false}
+## 📄 Download Session Materials
+This session is also available as a PDF for offline reading and printing.
+
+[📥 Download PDF](session2.pdf){.btn .btn-primary target="_blank"}
+:::
+
+---
 
 ::: {.callout-note}
 ## Learning Objectives

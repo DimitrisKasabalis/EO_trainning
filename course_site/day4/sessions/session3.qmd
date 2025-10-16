@@ -2,7 +2,25 @@
 title: "Session 3: Emerging AI Trends in Earth Observation"
 subtitle: "Foundation Models, Self-Supervised Learning, and Explainable AI"
 date: last-modified
-author: "CopPhil Advanced Training Program"
+author: "Stylianos Kotsopoulos"
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    code-fold: false
+  pdf:
+    toc: true
+    toc-depth: 3
+    number-sections: true
+    colorlinks: true
+    geometry:
+      - margin=1in
+    include-in-header:
+      text: |
+        \usepackage{fancyhdr}
+        \pagestyle{fancy}
+        \fancyhead[L]{CopPhil Training}
+        \fancyhead[R]{\thepage}
 ---
 
 <nav class="breadcrumb" aria-label="Breadcrumb">
@@ -24,6 +42,16 @@ Explore cutting-edge AI technologies transforming Earth observation analysis
 ## Session Overview
 
 This 2-hour session introduces three revolutionary AI trends reshaping Earth observation: **Geospatial Foundation Models** (pre-trained on massive satellite archives), **Self-Supervised Learning** (learning from unlabeled data), and **Explainable AI** (understanding model decisions). These technologies address key challenges in EO: limited labeled data, model interpretability, and generalization across diverse regions.
+
+
+::: {.callout-note icon=false}
+## 📄 Download Session Materials
+This session is also available as a PDF for offline reading and printing.
+
+[📥 Download PDF](session3.pdf){.btn .btn-primary target="_blank"}
+:::
+
+---
 
 ::: {.callout-note}
 ## Learning Objectives

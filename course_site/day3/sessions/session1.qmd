@@ -3,6 +3,24 @@ title: "Session 1: Semantic Segmentation with U-Net for Earth Observation"
 subtitle: "Advanced Deep Learning for Pixel-Level Analysis"
 date: last-modified
 author: "CopPhil Advanced Training Program"
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    code-fold: false
+  pdf:
+    toc: true
+    toc-depth: 3
+    number-sections: true
+    colorlinks: true
+    geometry:
+      - margin=1in
+    include-in-header:
+      text: |
+        \usepackage{fancyhdr}
+        \pagestyle{fancy}
+        \fancyhead[L]{CopPhil Training}
+        \fancyhead[R]{\thepage}
 ---
 
 <nav class="breadcrumb" aria-label="Breadcrumb">
@@ -27,6 +45,16 @@ Master the U-Net architecture for precise Earth Observation segmentation tasks
 ::: {.session-info}
 **Duration:** 1.5 hours | **Format:** Lecture + Discussion | **Platform:** Presentation & Slides
 :::
+
+
+::: {.callout-note icon=false}
+## 📄 Download Session Materials
+This session is also available as a PDF for offline reading and printing.
+
+[📥 Download PDF](session1.pdf){.btn .btn-primary target="_blank"}
+:::
+
+---
 
 This session introduces semantic segmentation as a pixel-wise classification task and explores the U-Net architecture—one of the most successful deep learning models for Earth Observation applications. You'll understand how U-Net's encoder-decoder structure with skip connections enables precise boundary delineation for tasks like flood mapping, land cover classification, and infrastructure extraction.
 

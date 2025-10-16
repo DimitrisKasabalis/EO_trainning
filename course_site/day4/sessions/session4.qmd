@@ -2,7 +2,25 @@
 title: "Session 4: Synthesis, Q&A, and Pathway to Continued Learning"
 subtitle: "Bringing It All Together: From Basics to Operational AI for Philippine Earth Observation"
 date: last-modified
-author: "CopPhil Advanced Training Program"
+author: "Stylianos Kotsopoulos"
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    code-fold: false
+  pdf:
+    toc: true
+    toc-depth: 3
+    number-sections: true
+    colorlinks: true
+    geometry:
+      - margin=1in
+    include-in-header:
+      text: |
+        \usepackage{fancyhdr}
+        \pagestyle{fancy}
+        \fancyhead[L]{CopPhil Training}
+        \fancyhead[R]{\thepage}
 ---
 
 <nav class="breadcrumb" aria-label="Breadcrumb">
@@ -24,6 +42,16 @@ From Python basics to foundation models - your journey to operational AI for Phi
 ## Session Overview
 
 This final 2-hour session brings together everything you've learned across all four days. We'll synthesize key AI/ML techniques, discuss best practices for operational deployment in Philippine agencies, introduce pathways for continued learning through the CopPhil Digital Space Campus, and foster a community of practice.
+
+
+::: {.callout-note icon=false}
+## 📄 Download Session Materials
+This session is also available as a PDF for offline reading and printing.
+
+[📥 Download PDF](session4.pdf){.btn .btn-primary target="_blank"}
+:::
+
+---
 
 ::: {.callout-note}
 ## Learning Objectives

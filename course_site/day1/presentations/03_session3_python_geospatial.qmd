@@ -1,8 +1,9 @@
 ---
 title: "Python for Geospatial Data Analysis"
 subtitle: "CopPhil EO AI/ML Training - Day 1, Session 3"
-author: "EU Technical Assistance for the Philippines' Copernicus Capacity Support Programme"
-date: "October 2025"
+author: "Stylianos Kotsopoulos"
+institute: "EU-Philippines CopPhil Programme"
+date: "October 20-23, 2025"
 format:
   revealjs:
     theme: default
