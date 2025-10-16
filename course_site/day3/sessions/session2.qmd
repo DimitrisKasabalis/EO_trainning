@@ -28,11 +28,18 @@ Implement semantic segmentation for real-world flood extent mapping using Sentin
 **Duration:** 2.5 hours | **Format:** Hands-on Coding Lab | **Platform:** Google Colab with GPU
 :::
 
-::: {.callout-tip}
-## Open Slides
+## Presentation Slides
 
-[Open revealjs slides →](../presentations/session2_flood_mapping_lab.qmd)
+<iframe src="../presentations/session2_flood_mapping_lab.html" width="100%" height="600" style="border: 1px solid #ccc; border-radius: 4px;"></iframe>
+
+::: {.callout-tip}
+## View Full Screen
+Click the presentation above and press `F` for fullscreen mode. Use arrow keys to navigate slides.
+
+[Open in new tab →](../presentations/session2_flood_mapping_lab.html){target="_blank" .btn .btn-sm .btn-primary}
 :::
+
+---
 
 This hands-on session puts the U-Net concepts from Session 1 into practice. You'll build, train, and evaluate a complete flood mapping system using real Sentinel-1 SAR data from a major typhoon event in Central Luzon, Philippines. By the end, you'll have a trained model capable of automatically detecting flood extent from satellite imagery.
 

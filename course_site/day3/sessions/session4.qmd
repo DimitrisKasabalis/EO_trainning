@@ -28,12 +28,6 @@ Apply transfer learning with pre-trained object detectors to identify buildings 
 **Duration:** 2.5 hours | **Format:** Hands-on Coding Lab | **Platform:** Google Colab with GPU
 :::
 
-::: {.callout-tip}
-## Open Slides
-
-[Open revealjs slides →](../presentations/session4_object_detection_lab.qmd)
-:::
-
 This practical session demonstrates object detection for Earth observation using transfer learning. You'll fine-tune a pre-trained object detection model (YOLO or SSD) to detect buildings and informal settlements in Metro Manila from Sentinel-2 optical imagery. This approach minimizes data annotation requirements while achieving operational accuracy.
 
 ::: {.learning-objectives}
@@ -49,6 +43,17 @@ By the end of this lab, you will be able to:
 - **Visualize** detected bounding boxes on satellite imagery
 - **Interpret** model predictions for urban monitoring
 - **Deploy** object detection for operational Philippine use cases
+:::
+
+## Presentation Slides
+
+<iframe src="../presentations/session4_object_detection_lab.html" width="100%" height="600" style="border: 1px solid #ccc; border-radius: 4px;"></iframe>
+
+::: {.callout-tip}
+## View Full Screen
+Click the presentation above and press `F` for fullscreen mode. Use arrow keys to navigate slides.
+
+[Open in new tab →](../presentations/session4_object_detection_lab.html){target="_blank" .btn .btn-sm .btn-primary}
 :::
 
 ---

@@ -27,12 +27,18 @@ From theory to implementation with TensorFlow and PyTorch
 
 This session transforms CNN theory from Session 3 into working code. You'll build, train, and evaluate real deep learning models for Earth Observation, achieving significantly higher accuracy than the Random Forest models from Sessions 1-2.
 
-## Presentation
+## Presentation Slides
+
+<iframe src="../presentations/session4_cnn_lab.html" width="100%" height="600" style="border: 1px solid #ccc; border-radius: 4px;"></iframe>
 
 ::: {.callout-tip}
-### Interactive Reveal.js Slides
-[Open Slides →](../presentations/session4_cnn_lab.html){.btn .btn-primary target="_blank"}
+## View Full Screen
+Click the presentation above and press `F` for fullscreen mode. Use arrow keys to navigate slides.
+
+[Open in new tab →](../presentations/session4_cnn_lab.html){target="_blank" .btn .btn-sm .btn-primary}
 :::
+
+---
 
 ::: {.callout-important}
 ## Prerequisites

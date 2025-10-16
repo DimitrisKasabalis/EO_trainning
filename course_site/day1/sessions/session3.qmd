@@ -46,6 +46,19 @@ By the end of this session, you will be able to:
 
 ---
 
+## Presentation Slides
+
+<iframe src="../presentations/03_session3_python_geospatial.html" width="100%" height="600" style="border: 1px solid #ccc; border-radius: 4px;"></iframe>
+
+::: {.callout-tip}
+## View Full Screen
+Click the presentation above and press `F` for fullscreen mode. Use arrow keys to navigate slides.
+
+[Open in new tab →](../presentations/03_session3_python_geospatial.html){target="_blank" .btn .btn-sm .btn-primary}
+:::
+
+---
+
 ## Part 1: Why Python for Earth Observation?
 
 ### The Python EO Ecosystem

@@ -75,9 +75,10 @@ Registration takes 24-48 hours for approval.
 - Complete workflow from setup to export
 - ~60 cells, ~2 hours
 
-**Download Option:**
 ::: {.download-box}
-[Download Notebook 1 .ipynb](Day1_Session4_Google_Earth_Engine.ipynb){.btn .btn-primary}
+**Download Option:**
+
+[Download Notebook 1 .ipynb](Day1_Session4_Google_Earth_Engine.ipynb){.btn .btn-primary download="Day1_Session4_Google_Earth_Engine.ipynb"}
 :::
 
 ---

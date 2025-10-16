@@ -28,12 +28,6 @@ Master the U-Net architecture for precise Earth Observation segmentation tasks
 **Duration:** 1.5 hours | **Format:** Lecture + Discussion | **Platform:** Presentation & Slides
 :::
 
-::: {.callout-tip}
-## Open Slides
-
-[Open revealjs slides →](../presentations/session1_unet_segmentation.qmd)
-:::
-
 This session introduces semantic segmentation as a pixel-wise classification task and explores the U-Net architecture—one of the most successful deep learning models for Earth Observation applications. You'll understand how U-Net's encoder-decoder structure with skip connections enables precise boundary delineation for tasks like flood mapping, land cover classification, and infrastructure extraction.
 
 ::: {.learning-objectives}
@@ -46,6 +40,19 @@ By the end of this session, you will be able to:
 - **Describe** how loss functions (Cross-Entropy, Dice, IoU) handle class imbalance
 - **Identify** Earth Observation applications suited for semantic segmentation
 - **Evaluate** when to use different loss functions for segmentation tasks
+:::
+
+---
+
+## Presentation Slides
+
+<iframe src="../presentations/session1_unet_segmentation.html" width="100%" height="600" style="border: 1px solid #ccc; border-radius: 4px;"></iframe>
+
+::: {.callout-tip}
+## View Full Screen
+Click the presentation above and press `F` for fullscreen mode. Use arrow keys to navigate slides.
+
+[Open in new tab →](../presentations/session1_unet_segmentation.html){target="_blank" .btn .btn-sm .btn-primary}
 :::
 
 ---

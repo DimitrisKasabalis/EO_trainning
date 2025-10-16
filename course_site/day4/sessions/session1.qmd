@@ -38,6 +38,17 @@ By the end of this session, you will be able to:
 6. **Recognize** the advantages of LSTMs over traditional RNNs
 :::
 
+## Presentation Slides
+
+<iframe src="../presentations/session1_lstm_time_series.html" width="100%" height="600" style="border: 1px solid #ccc; border-radius: 4px;"></iframe>
+
+::: {.callout-tip}
+## View Full Screen
+Click the presentation above and press `F` for fullscreen mode. Use arrow keys to navigate slides.
+
+[Open in new tab →](../presentations/session1_lstm_time_series.html){target="_blank" .btn .btn-sm .btn-primary}
+:::
+
 ---
 
 ## Session Details

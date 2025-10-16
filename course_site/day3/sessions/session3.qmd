@@ -51,6 +51,19 @@ By the end of this session, you will be able to:
 
 ---
 
+## Presentation Slides
+
+<iframe src="../presentations/session3_object_detection.html" width="100%" height="600" style="border: 1px solid #ccc; border-radius: 4px;"></iframe>
+
+::: {.callout-tip}
+## View Full Screen
+Click the presentation above and press `F` for fullscreen mode. Use arrow keys to navigate slides.
+
+[Open in new tab →](../presentations/session3_object_detection.html){target="_blank" .btn .btn-sm .btn-primary}
+:::
+
+---
+
 ## Part 1: What is Object Detection?
 
 ### Definition and Output

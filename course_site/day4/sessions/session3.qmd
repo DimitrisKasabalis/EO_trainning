@@ -38,6 +38,17 @@ By the end of this session, you will be able to:
 6. **Evaluate** when to use foundation models vs. training from scratch
 :::
 
+## Presentation Slides
+
+<iframe src="../presentations/session3_emerging_ai.html" width="100%" height="600" style="border: 1px solid #ccc; border-radius: 4px;"></iframe>
+
+::: {.callout-tip}
+## View Full Screen
+Click the presentation above and press `F` for fullscreen mode. Use arrow keys to navigate slides.
+
+[Open in new tab →](../presentations/session3_emerging_ai.html){target="_blank" .btn .btn-sm .btn-primary}
+:::
+
 ---
 
 ## Session Details

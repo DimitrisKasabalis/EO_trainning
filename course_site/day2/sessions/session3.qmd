@@ -27,12 +27,18 @@ Transitioning from feature engineering to feature learning
 
 This pivotal session bridges traditional machine learning (Sessions 1-2) and modern deep learning approaches. You'll understand the fundamental shift from manual feature engineering to automatic feature learning through neural networks, with specific focus on Convolutional Neural Networks (CNNs) for Earth observation applications.
 
-## Presentation
+## Presentation Slides
+
+<iframe src="../presentations/session3_deep_learning.html" width="100%" height="600" style="border: 1px solid #ccc; border-radius: 4px;"></iframe>
 
 ::: {.callout-tip}
-### Interactive Reveal.js Slides
-[Open Slides →](../presentations/session3_deep_learning.html){.btn .btn-primary target="_blank"}
+## View Full Screen
+Click the presentation above and press `F` for fullscreen mode. Use arrow keys to navigate slides.
+
+[Open in new tab →](../presentations/session3_deep_learning.html){target="_blank" .btn .btn-sm .btn-primary}
 :::
+
+---
 
 ::: {.callout-important}
 ## Prerequisites
